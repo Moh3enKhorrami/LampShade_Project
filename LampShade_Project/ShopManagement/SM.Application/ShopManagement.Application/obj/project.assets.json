@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "ShopManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ShopManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Application.Contracts.dll": {}
+        }
+      },
       "ShopManagement.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "ShopManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
+      "msbuildProject": "../ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj"
+    },
     "ShopManagement.Domain/1.0.0": {
       "type": "project",
       "path": "../../SM.Domain/ShopManagement.Domain/ShopManagement.Domain.csproj",
@@ -23,7 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "ShopManagement.Domain >= 1.0.0"
+      "ShopManagement.Application.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Application/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
-      "projectName": "ShopManagement.Application.Contracts",
-      "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Application/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
+      "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Application/ShopManagement.Application/ShopManagement.Application.csproj",
+      "projectName": "ShopManagement.Application",
+      "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Application/ShopManagement.Application/ShopManagement.Application.csproj",
       "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
-      "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Application/ShopManagement.Application.Contracts/obj/",
+      "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Application/ShopManagement.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
@@ -51,8 +69,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Domain/ShopManagement.Domain/ShopManagement.Domain.csproj": {
-              "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Domain/ShopManagement.Domain/ShopManagement.Domain.csproj"
+            "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Application/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj": {
+              "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade_Project/ShopManagement/SM.Application/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj"
             }
           }
         }

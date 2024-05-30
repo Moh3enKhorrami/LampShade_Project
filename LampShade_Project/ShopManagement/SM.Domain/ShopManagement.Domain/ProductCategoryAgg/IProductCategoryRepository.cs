@@ -6,6 +6,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
 		void Create(ProductCategory entity);
 		ProductCategory GetBy(long Id);
 		List<ProductCategory> GetAll();
+		bool Exists(string name);
 
 	}
 }

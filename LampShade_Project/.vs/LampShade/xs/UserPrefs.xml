@@ -1,27 +1,28 @@
 ﻿<Properties>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ShopManagement.Domain FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.0__Framework FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShopManagement/SM.Application/ShopManagement.Application/ProductCategoryApplication.cs">
+    <Files>
+      <File FileName="ShopManagement/SM.Application/ShopManagement.Application/ProductCategoryApplication.cs" Line="28" Column="56" />
+      <File FileName="0_Framework/Application/OprationResult.cs" Line="9" Column="3" />
+      <File FileName="ShopManagement/SM.Domain/ShopManagement.Domain/ProductCategoryAgg/IProductCategoryRepository.cs" Line="9" Column="28" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LampShade" expanded="True" selected="True">
+          <Node name="LampShade" expanded="True">
             <Node name="0_Framework">
+              <Node name="Application" expanded="True" />
               <Node name="Domain" expanded="True" />
             </Node>
-            <Node name="ShopManagement.Domain" expanded="True">
-              <Node name="ProductCategoryAgg" expanded="True" />
+            <Node name="ShopManagement.Application">
+              <Node name="ProductCategoryApplication.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ShopManagement.Application.Contracts FirstBuild="True" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>
