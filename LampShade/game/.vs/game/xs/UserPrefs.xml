@@ -1,4 +1,17 @@
-﻿<Properties StartupConfiguration="{2C81E667-5BF6-457E-A070-6E0FC8520ABB}|https">
+﻿<Properties>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.game FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="game" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
