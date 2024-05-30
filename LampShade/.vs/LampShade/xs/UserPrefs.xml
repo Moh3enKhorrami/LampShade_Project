@@ -1,3 +1,9 @@
 ﻿<Properties>
+  <MonoDevelop.Ide.ItemProperties.ShopManagement.SM.Application.ShopManagement.Application.Contracts FirstBuild="True" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ShopManagement.SM.Domain.ShopManagement.Domain FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.0__Framework FirstBuild="True" />
+  <DisabledProjects>
+    <String>ShopManagement.Application.Contracts/ShopManagement.Application/ShopManagement.Application.csproj</String>
+  </DisabledProjects>
 </Properties>
