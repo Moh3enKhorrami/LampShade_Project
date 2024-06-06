@@ -1,5 +1,4 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.ItemProperties.ShopManagement.SM.Infrastructure.ShopManagement.Infrastructure.EFCore FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <DisabledProjects>
@@ -40,5 +39,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ShopManagement.SM.Infrastructure.ShopManagement.Configuration FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>

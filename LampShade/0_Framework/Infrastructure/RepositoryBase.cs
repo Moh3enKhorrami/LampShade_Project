@@ -30,7 +30,7 @@ namespace _0_Framework.Infrastructure
 
         public List<T> Get()
         {
-            return _context.Set<T>().ToList();
+            return _context.Set<T>().ToList();  // .Set??
         }
 
         public void Savechanges()
