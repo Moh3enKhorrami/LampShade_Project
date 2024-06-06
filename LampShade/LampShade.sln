@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM.Application", "SM.Applic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Application.Contracts", "ShopManagement.Application.Contracts\ShopManagement.Application.Contracts.csproj", "{C53B7F99-729F-4CC6-BF1A-C408BC7D1585}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Application", "ShopManagement.Application\ShopManagement.Application.csproj", "{51460AAA-6CBF-417A-A356-429D9409A78B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM.Infrastructure", "SM.Infrastructure", "{F6C1C93A-EBF6-4F35-B057-BDA3A44819E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Infrastructure.EFCore", "ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj", "{4C162DD5-C6A0-4313-8011-552335E6FF7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,14 @@ Global
 		{C53B7F99-729F-4CC6-BF1A-C408BC7D1585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53B7F99-729F-4CC6-BF1A-C408BC7D1585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C53B7F99-729F-4CC6-BF1A-C408BC7D1585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51460AAA-6CBF-417A-A356-429D9409A78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51460AAA-6CBF-417A-A356-429D9409A78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51460AAA-6CBF-417A-A356-429D9409A78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51460AAA-6CBF-417A-A356-429D9409A78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C162DD5-C6A0-4313-8011-552335E6FF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C162DD5-C6A0-4313-8011-552335E6FF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C162DD5-C6A0-4313-8011-552335E6FF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C162DD5-C6A0-4313-8011-552335E6FF7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,5 +59,8 @@ Global
 		{0397469C-A1D4-4AE2-A1DD-2571ADC85407} = {8E9C8C37-428E-424A-90E7-977C460EBBCE}
 		{280E0EB2-CF54-4584-94C2-C853476F739C} = {643E45B1-FC26-4739-8D33-D08F8CC814EF}
 		{C53B7F99-729F-4CC6-BF1A-C408BC7D1585} = {280E0EB2-CF54-4584-94C2-C853476F739C}
+		{51460AAA-6CBF-417A-A356-429D9409A78B} = {280E0EB2-CF54-4584-94C2-C853476F739C}
+		{F6C1C93A-EBF6-4F35-B057-BDA3A44819E7} = {643E45B1-FC26-4739-8D33-D08F8CC814EF}
+		{4C162DD5-C6A0-4313-8011-552335E6FF7A} = {F6C1C93A-EBF6-4F35-B057-BDA3A44819E7}
 	EndGlobalSection
 EndGlobal

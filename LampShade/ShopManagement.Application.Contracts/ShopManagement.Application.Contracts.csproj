@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ProductCategory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProductCategory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\0_Framework\0_Framework.csproj" />
+  </ItemGroup>
 </Project>

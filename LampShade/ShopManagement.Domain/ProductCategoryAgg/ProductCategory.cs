@@ -5,8 +5,6 @@ namespace ShopManagement.Domain.ProductCategoryAgg
 {
 	public class ProductCategory : EntityBase
 	{
-        
-
         public string Name { get; private set; }
 		public string Description { get; private set; }
 		public string Picture { get; private set; }
@@ -15,6 +13,8 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         public string Keywords { get; private set; }
         public string MetaDescription { get; private set; }
         public string Slug { get; private set; }
+
+
 
         public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug)
         {
@@ -28,7 +28,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             Slug = slug;
         }
 
-
+       
         public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug)
         {
             Name = name;

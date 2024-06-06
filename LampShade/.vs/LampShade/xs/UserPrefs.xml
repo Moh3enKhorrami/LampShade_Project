@@ -1,9 +1,44 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.ItemProperties.ShopManagement.SM.Application.ShopManagement.Application.Contracts FirstBuild="True" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ShopManagement.SM.Domain.ShopManagement.Domain FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.0__Framework FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.ShopManagement.SM.Infrastructure.ShopManagement.Infrastructure.EFCore FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <DisabledProjects>
     <String>ShopManagement.Application.Contracts/ShopManagement.Application/ShopManagement.Application.csproj</String>
   </DisabledProjects>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShopManagement.Domain/ProductCategoryAgg/IProductCategoryRepository.cs">
+    <Files>
+      <File FileName="0_Framework/Application/OperationResult.cs" Line="10" Column="25" />
+      <File FileName="ShopManagement.Application/ProductCategoryApplication.cs" Line="20" Column="43" />
+      <File FileName="ShopManagement.Domain/ProductCategoryAgg/IProductCategoryRepository.cs" Line="19" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LampShade">
+            <Node name="ShopManagement" expanded="True">
+              <Node name="SM.Application" expanded="True">
+                <Node name="ShopManagement.Application" expanded="True" />
+                <Node name="ShopManagement.Application.Contracts" expanded="True">
+                  <Node name="ProductCategory" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="SM.Domain" expanded="True">
+                <Node name="ShopManagement.Domain" expanded="True">
+                  <Node name="ProductCategoryAgg" expanded="True">
+                    <Node name="IProductCategoryRepository.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node name="0_Framework" expanded="True">
+              <Node name="Application" expanded="True" />
+              <Node name="Domain" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>
