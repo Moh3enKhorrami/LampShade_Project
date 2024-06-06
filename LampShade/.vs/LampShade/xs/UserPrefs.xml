@@ -1,44 +1,32 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|https">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <DisabledProjects>
     <String>ShopManagement.Application.Contracts/ShopManagement.Application/ShopManagement.Application.csproj</String>
+    <String>ShopManagement.Infrastructure.EFCore/ShopManagement.Configuration/ShopManagement.Configuration.csproj</String>
   </DisabledProjects>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShopManagement.Domain/ProductCategoryAgg/IProductCategoryRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Program.cs">
     <Files>
-      <File FileName="0_Framework/Application/OperationResult.cs" Line="10" Column="25" />
-      <File FileName="ShopManagement.Application/ProductCategoryApplication.cs" Line="20" Column="43" />
-      <File FileName="ShopManagement.Domain/ProductCategoryAgg/IProductCategoryRepository.cs" Line="19" Column="1" />
+      <File FileName="ServiceHost/Program.cs" Line="33" Column="1" />
+      <File FileName="ShopManagement.Configuration/ShopManagementBoostrapper.cs" Line="13" Column="86" />
+      <File FileName="0_Framework/Infrastructure/RepositoryBase.cs" Line="31" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LampShade">
-            <Node name="ShopManagement" expanded="True">
-              <Node name="SM.Application" expanded="True">
-                <Node name="ShopManagement.Application" expanded="True" />
-                <Node name="ShopManagement.Application.Contracts" expanded="True">
-                  <Node name="ProductCategory" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="SM.Domain" expanded="True">
-                <Node name="ShopManagement.Domain" expanded="True">
-                  <Node name="ProductCategoryAgg" expanded="True">
-                    <Node name="IProductCategoryRepository.cs" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-            <Node name="0_Framework" expanded="True">
-              <Node name="Application" expanded="True" />
-              <Node name="Domain" expanded="True" />
+            <Node name="ShopManagement" expanded="True" />
+            <Node name="ServiceHost">
+              <Node name="Dependencies" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ShopManagement.SM.Infrastructure.ShopManagement.Configuration FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

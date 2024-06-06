@@ -9,7 +9,7 @@ namespace _0_Framework.Domain
 		List<T> Get();
 		void Create(T entity);
 		bool Exists(Expression<Func<T, bool>> expression); //?
-		void Savechanges();
+		void SaveChanges();
 
 	}
 }

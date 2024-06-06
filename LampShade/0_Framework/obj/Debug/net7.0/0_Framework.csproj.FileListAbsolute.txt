@@ -9,3 +9,4 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/refint/0_Framework.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/ref/0_Framework.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.csproj.AssemblyReference.cache
