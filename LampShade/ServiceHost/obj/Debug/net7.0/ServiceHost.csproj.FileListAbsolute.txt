@@ -80,3 +80,4 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceHost.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceHost.genruntimeconfig.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ref/ServiceHost.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/scopedcss/Areas/Administration/Pages/Shared/_AdminLayout.cshtml.rz.scp.css
