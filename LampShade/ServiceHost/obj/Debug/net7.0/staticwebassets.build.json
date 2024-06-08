@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eoJy3tuRpZbdef2qUmwaywk2+m0SBmXKRRlBdVXQri4=",
+  "Hash": "4S6ZGCZyXAtBEfrTkznQqme/81DFpj1oE/BehF2QliE=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/.DS_Store",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "AdminTheme/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/AdminTheme/.DS_Store"
     },
     {
       "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/bootstrap-inputmask/bootstrap-inputmask.min.js",

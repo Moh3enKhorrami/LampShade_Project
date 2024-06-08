@@ -87,6 +87,9 @@
             "projectReferences": {
               "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/ShopManagement.Configuration.csproj": {
                 "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/ShopManagement.Configuration.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -100,6 +103,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -287,6 +298,20 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -411,6 +436,12 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
             },

@@ -8,10 +8,11 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ShopManagement.Domain.AssemblyInfoInputs.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ShopManagement.Domain.AssemblyInfo.cs
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ShopManagement.Domain.csproj.CoreCompileInputs.cache
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ShopManagement.Domain.csproj.CopyComplete
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ShopManagement.Domain.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/refint/ShopManagement.Domain.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ShopManagement.Domain.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ref/ShopManagement.Domain.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/bin/Debug/net7.0/ShopManagement.Application.Contracts.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ShopManagement.Domain.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/Debug/net7.0/ShopMana.2E6A1FF6.Up2Date

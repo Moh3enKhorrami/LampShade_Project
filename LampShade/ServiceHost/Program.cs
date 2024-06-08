@@ -1,12 +1,13 @@
-﻿using ShopManagement.Configuration;
+﻿using Microsoft.Extensions.Configuration;
+using ShopManagement.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-var connectionstring = builder.Configuration.GetConnectionString("LampshadeDb");
-ShopManagementBoostrapper.Configure(builder.Services, connectionstring); //?
+var connectionString = builder.Configuration.GetConnectionString("LampshadeDb");
 
+ShopManagementBoostrapper.Configure(builder.Services, connectionString);
 
 builder.Services.AddRazorPages();
 

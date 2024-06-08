@@ -11,6 +11,7 @@ namespace ShopManagement.Infrastructure.EFCore.Mapping
         {
             builder.ToTable("ProductCategories");
             builder.HasKey(x => x.Id);
+
             builder.Property(x => x.Name).HasMaxLength(255).IsRequired();
             builder.Property(x => x.Description).HasMaxLength(500);
             builder.Property(x => x.Picture).HasMaxLength(1000);
@@ -19,6 +20,9 @@ namespace ShopManagement.Infrastructure.EFCore.Mapping
             builder.Property(x => x.MetaDescription).HasMaxLength(150).IsRequired();
             builder.Property(x => x.Keywords).HasMaxLength(80).IsRequired();
             builder.Property(x => x.Slug).HasMaxLength(300).IsRequired();
+
+
+           
         }
     }
 }

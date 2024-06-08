@@ -1,37 +1,30 @@
 ﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <DisabledProjects>
     <String>ShopManagement.Application.Contracts/ShopManagement.Application/ShopManagement.Application.csproj</String>
     <String>ShopManagement.Infrastructure.EFCore/ShopManagement.Configuration/ShopManagement.Configuration.csproj</String>
   </DisabledProjects>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Areas/Administration/Pages/Shared/_AdminLayout.cshtml">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Program.cs">
     <Files>
-      <File FileName="ServiceHost/Areas/Administration/Pages/Index.cshtml" Line="1" Column="1" />
-      <File FileName="ServiceHost/Areas/Administration/Pages/Shared/_AdminLayout.cshtml" Line="324" Column="21" />
+      <File FileName="ServiceHost/Program.cs" Line="22" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LampShade">
-            <Node name="ShopManagement">
-              <Node name="SM.Infrastructure">
-                <Node name="ShopManagement.Configuration" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="ServiceHost">
-              <Node name="Areas" expanded="True">
-                <Node name="Administration">
-                  <Node name="Pages">
-                    <Node name="Shared" expanded="True" />
-                    <Node name="Index.cshtml" expanded="True" />
-                  </Node>
+          <Node name="LampShade" expanded="True">
+            <Node name="ShopManagement" expanded="True">
+              <Node name="SM.Infrastructure" expanded="True">
+                <Node name="ShopManagement.Infrastructure.EFCore">
+                  <Node name="Dependencies" selected="True" />
+                  <Node name="Mapping" expanded="True" />
+                  <Node name="Repository" expanded="True" />
                 </Node>
-              </Node>
-              <Node name="Pages" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="AdminTheme" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -39,8 +32,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -81,3 +81,8 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceHost.genruntimeconfig.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ref/ServiceHost.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/scopedcss/Areas/Administration/Pages/Shared/_AdminLayout.cshtml.rz.scp.css
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/Humanizer.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/System.CodeDom.dll
