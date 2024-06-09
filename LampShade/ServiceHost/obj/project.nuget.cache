@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IsF8r+W5je8wbk67tviHNyVDchR6SvVJSlLsB1qELhUTFyHgZAwkCZJEQSwe2BdxvoWyWucxSE/k3Sa4HSayCQ==",
+  "dgSpecHash": "BAA0msB8GB8=",
   "success": true,
   "projectFilePath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/ServiceHost.csproj",
   "expectedPackageFiles": [
@@ -69,7 +69,10 @@
     "/Users/moh3enkhorrami/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/Users/moh3enkhorrami/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
+    "/Users/moh3enkhorrami/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512",
+    "/Users/moh3enkhorrami/.nuget/packages/microsoft.netcore.app.ref/7.0.16/microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "/Users/moh3enkhorrami/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.16/microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
+    "/Users/moh3enkhorrami/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.16/microsoft.netcore.app.host.osx-arm64.7.0.16.nupkg.sha512"
   ],
   "logs": []
 }
