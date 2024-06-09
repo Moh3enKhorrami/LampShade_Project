@@ -1,12 +1,10 @@
-﻿using System;
-using System.Linq.Expressions;
-using _0_Framework.Infrastructure;
+﻿using _0_Framework.Infrastructure;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
-	public class ProductCategoryRepository : RepositoryBase<long, ProductCategory>, IProductCategoryRepository
+    public class ProductCategoryRepository : RepositoryBase<long, ProductCategory>, IProductCategoryRepository
 	{
         private readonly ShopContext _Context;
 

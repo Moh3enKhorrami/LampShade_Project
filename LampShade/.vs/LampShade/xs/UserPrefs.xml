@@ -1,35 +1,22 @@
 ﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|https">
-  <MultiItemStartupConfigurations />
-  <DisabledProjects>
-    <String>ShopManagement.Application.Contracts/ShopManagement.Application/ShopManagement.Application.csproj</String>
-    <String>ShopManagement.Infrastructure.EFCore/ShopManagement.Configuration/ShopManagement.Configuration.csproj</String>
-  </DisabledProjects>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Program.cs">
-    <Files>
-      <File FileName="ServiceHost/Program.cs" Line="22" Column="2" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LampShade" expanded="True">
             <Node name="ShopManagement" expanded="True">
-              <Node name="SM.Infrastructure" expanded="True">
-                <Node name="ShopManagement.Infrastructure.EFCore">
-                  <Node name="Dependencies" selected="True" />
-                  <Node name="Mapping" expanded="True" />
-                  <Node name="Repository" expanded="True" />
-                </Node>
-              </Node>
+              <Node name="SM.Infrastructure" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

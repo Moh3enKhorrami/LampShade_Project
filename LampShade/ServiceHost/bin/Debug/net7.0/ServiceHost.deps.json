@@ -9,8 +9,7 @@
       "ServiceHost/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
-          "ShopManagement.Configuration": "1.0.0",
-          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+          "ShopManagement.Configuration": "1.0.0"
         },
         "runtime": {
           "ServiceHost.dll": {}
@@ -635,8 +634,6 @@
       },
       "ShopManagement.Configuration/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "ShopManagement.Application": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0",

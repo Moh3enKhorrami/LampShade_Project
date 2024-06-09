@@ -1,6 +1,7 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/bin/Debug/net7.0/0_Framework.deps.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/bin/Debug/net7.0/0_Framework.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/bin/Debug/net7.0/0_Framework.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.csproj.AssemblyReference.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.GeneratedMSBuildEditorConfig.editorconfig
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.AssemblyInfoInputs.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.AssemblyInfo.cs
@@ -9,5 +10,15 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/refint/0_Framework.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/ref/0_Framework.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.csproj.AssemblyReference.cache
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.sourcelink.json
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/bin/Debug/net7.0/0_Framework.deps.json
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/bin/Debug/net7.0/0_Framework.dll
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/bin/Debug/net7.0/0_Framework.pdb
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.csproj.AssemblyReference.cache
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.AssemblyInfoInputs.cache
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.AssemblyInfo.cs
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.csproj.CoreCompileInputs.cache
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.dll
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/refint/0_Framework.dll
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.pdb
+/Users/moh3enkhorrami/Projects/test/LampShade/0_Framework/obj/Debug/net7.0/ref/0_Framework.dll
