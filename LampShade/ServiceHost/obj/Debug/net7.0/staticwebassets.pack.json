@@ -5,14 +5,6 @@
       "PackagePath": "staticwebassets/ServiceHost.bundle.scp.css"
     },
     {
-      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/.DS_Store",
-      "PackagePath": "staticwebassets/.DS_Store"
-    },
-    {
-      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/.DS_Store",
-      "PackagePath": "staticwebassets/AdminTheme/.DS_Store"
-    },
-    {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/bootstrap-inputmask/bootstrap-inputmask.min.js",
       "PackagePath": "staticwebassets/AdminTheme/assets/bootstrap-inputmask/bootstrap-inputmask.min.js"
     },
@@ -823,6 +815,10 @@
     {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/js/npm.js",
       "PackagePath": "staticwebassets/AdminTheme/assets/js/npm.js"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/js/site.js",
+      "PackagePath": "staticwebassets/AdminTheme/assets/js/site.js"
     },
     {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/js/skycons.min.js",

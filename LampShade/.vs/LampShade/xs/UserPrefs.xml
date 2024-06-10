@@ -1,22 +1,46 @@
 ﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|https">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Areas/Administration/Pages/Shop/ProductCategory/Index.cshtml">
+    <Files>
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategory/Create.cshtml" Line="22" Column="61" />
+      <File FileName="ServiceHost/wwwroot/AdminTheme/assets/js/site.js" Line="16" Column="54" />
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategory/Index.cshtml" Line="49" Column="44" />
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategory/Index.cshtml.cs" Line="25" Column="10" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LampShade" expanded="True">
             <Node name="ShopManagement" expanded="True">
-              <Node name="SM.Infrastructure" expanded="True" />
+              <Node name="SM.Application" expanded="True">
+                <Node name="ShopManagement.Application.Contracts" expanded="True">
+                  <Node name="ProductCategory" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="ServiceHost">
+              <Node name="Areas">
+                <Node name="Administration">
+                  <Node name="Pages">
+                    <Node name="Shop">
+                      <Node name="ProductCategory">
+                        <Node name="Index.cshtml" expanded="True" selected="True" />
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
 </Properties>

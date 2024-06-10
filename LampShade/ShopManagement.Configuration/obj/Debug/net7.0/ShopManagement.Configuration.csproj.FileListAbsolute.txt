@@ -16,7 +16,6 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.AssemblyInfoInputs.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.AssemblyInfo.cs
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.csproj.CoreCompileInputs.cache
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.csproj.CopyComplete
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/refint/ShopManagement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.pdb
@@ -44,3 +43,5 @@
 /Users/moh3enkhorrami/Projects/test/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/refint/ShopManagement.Configuration.dll
 /Users/moh3enkhorrami/Projects/test/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.pdb
 /Users/moh3enkhorrami/Projects/test/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ref/ShopManagement.Configuration.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopMana.B8571BFE.Up2Date

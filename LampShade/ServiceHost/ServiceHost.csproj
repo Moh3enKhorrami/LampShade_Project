@@ -23,7 +23,6 @@
     <Folder Include="Areas\Administration\Pages\Shared\" />
     <Folder Include="wwwroot\AdminTheme\" />
     <Folder Include="Areas\Administration\Pages\Shop\" />
-    <Folder Include="Areas\Administration\Pages\Shop\ProductCategory\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\AdminTheme\" />

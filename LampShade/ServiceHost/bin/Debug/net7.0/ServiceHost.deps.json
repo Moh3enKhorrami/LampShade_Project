@@ -9,6 +9,7 @@
       "ServiceHost/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Configuration": "1.0.0"
         },
         "runtime": {

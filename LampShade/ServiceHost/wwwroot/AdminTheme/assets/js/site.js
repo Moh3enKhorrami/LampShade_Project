@@ -10,10 +10,10 @@ SinglePage.LoadModal = function () {
         null,
         function (htmlPage) {
             $("#ModalContent").html(htmlPage);
-            const container = document.getElementById("ModalContent");
-            const forms = container.getElementsByTagName("form");
-            const newForm = forms[forms.length - 1];
-            $.validator.unobtrusive.parse(newForm);
+            //const container = document.getElementById("ModalContent");
+            //const forms = container.getElementsByTagName("form");
+            //const newForm = forms[forms.length - 1];
+            //$.validator.unobtrusive.parse(newForm);
             showModal();
         }).fail(function (error) {
             alert("An error occurred, please contact the system administrator.");
