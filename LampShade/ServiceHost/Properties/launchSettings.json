@@ -20,7 +20,7 @@
     "https": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "administration/shop/productCategory",
+      "launchUrl": "administration/shop/productCategories",
       "applicationUrl": "https://localhost:7016;http://localhost:5110",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

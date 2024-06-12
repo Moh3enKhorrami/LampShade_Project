@@ -8,7 +8,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 	{
         private readonly ShopContext _Context;
 
-        public ProductCategoryRepository(ShopContext Context) : base(Context) // base ? 
+        public ProductCategoryRepository(ShopContext Context) : base(Context) 
         {
             _Context = Context;
         }
@@ -33,7 +33,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         }
 
 
-        public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel) //?
+        public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel) 
         {
             var query = _Context.ProductCategories.Select(x => new ProductCategoryViewModel()
             {

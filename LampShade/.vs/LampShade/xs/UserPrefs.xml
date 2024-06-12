@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Areas/Administration/Pages/Shop/ProductCategory/Index.cshtml">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Areas/Administration/Pages/Shared/_AdminLayout.cshtml">
     <Files>
-      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategory/Create.cshtml" Line="22" Column="61" />
-      <File FileName="ServiceHost/wwwroot/AdminTheme/assets/js/site.js" Line="16" Column="54" />
-      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategory/Index.cshtml" Line="49" Column="44" />
-      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategory/Index.cshtml.cs" Line="25" Column="10" />
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Index.cshtml" Line="15" Column="76" />
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Index.cshtml.cs" Line="19" Column="63" />
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shared/_AdminLayout.cshtml" Line="129" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,31 +16,44 @@
                   <Node name="ProductCategory" expanded="True" />
                 </Node>
               </Node>
+              <Node name="SM.Infrastructure" expanded="True">
+                <Node name="ShopManagement.Infrastructure.EFCore" expanded="True">
+                  <Node name="Repository" expanded="True" />
+                </Node>
+              </Node>
             </Node>
             <Node name="ServiceHost">
-              <Node name="Areas">
-                <Node name="Administration">
-                  <Node name="Pages">
-                    <Node name="Shop">
-                      <Node name="ProductCategory">
-                        <Node name="Index.cshtml" expanded="True" selected="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Administration" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="Shared" expanded="True">
+                      <Node name="_AdminLayout.cshtml" selected="True" />
+                    </Node>
+                    <Node name="Shop" expanded="True">
+                      <Node name="ProductCategories" expanded="True">
+                        <Node name="Create.cshtml" expanded="True" />
+                        <Node name="Index.cshtml" expanded="True" />
                       </Node>
                     </Node>
                   </Node>
                 </Node>
               </Node>
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="AdminTheme" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
 </Properties>
