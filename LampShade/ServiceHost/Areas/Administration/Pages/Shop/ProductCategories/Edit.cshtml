@@ -1,6 +1,5 @@
-@model ShopManagement.Application.Contracts.ProductCategory.EditProductCategory;
-
-
+@page
+@model  ServiceHost.Areas.Administration.Pages.Shop.ProductCategories.EditModel;
 @{
     
 }
@@ -9,44 +8,54 @@
 <html lang="en">
 <body>
 <div class="container">
-    <h3>Edit ProductCategory : @Model.Name</h3>
-    <form asp-page="./Edit" asp-page-handler="Edit" >
+    <h3>Edit Product Category</h3>
+    <form method="post" asp-page-handler="Edit">
         <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name" >
+            <label asp-for="Command.Name">Name</label>
+            <input type="text" class="form-control" asp-for="Command.Name">
+            <span asp-validation-for="Command.Name" class="error"></span>
+        </div>
+        <div class="form-group" >
+            <label asp-for="Command.Description">Description</label>
+            <input class="form-control" asp-for="Command.Description" rows="3" >
+            <span asp-validation-for="Command.Description" class="error"></span>
         </div>
         <div class="form-group">
-            <label for="description">Description</label>
-            <input class="form-control" id="description" name="description" rows="3" >
+            <label asp-for="Command.Picture">Picture</label>
+            <input type="text" class="form-control" asp-for="Command.Picture" >
+            <span asp-validation-for="Command.Picture" class="error"></span>
         </div>
         <div class="form-group">
-            <label for="picture">Picture</label>
-            <input type="text" class="form-control" id="picture" name="picture">
+            <label asp-for="Command.PictureAlt">PictureAlt</label>
+            <input type="text" class="form-control" asp-for="Command.PictureAlt" >
+            <span asp-validation-for="Command.PictureAlt" class="error"></span>
         </div>
         <div class="form-group">
-            <label for="pictureAlt">PictureAlt</label>
-            <input type="text" class="form-control" id="pictureAlt" name="pictureAlt" >
+            <label asp-for="Command.PictureTitle">PictureTitle</label>
+            <input type="text" class="form-control" asp-for="Command.PictureTitle" >
+            <span asp-validation-for="Command.PictureTitle" class="error"></span>
         </div>
         <div class="form-group">
-            <label for="pictureTitle">PictureTitle</label>
-            <input type="text" class="form-control" id="pictureTitle" name="pictureTitle" >
+            <label asp-for="Command.Keywords">Keywords</label>
+            <input type="text" class="form-control" asp-for="Command.Keywords">
+            <span asp-validation-for="Command.Keywords" class="error"></span>
         </div>
         <div class="form-group">
-            <label for="keywords">Keywords</label>
-            <input type="text" class="form-control" id="keywords" name="keywords" >
+            <label asp-for="Command.MetaDescription">MetaDescription</label>
+            <input class="form-control" asp-for="Command.MetaDescription" rows="3" >
+            <span asp-validation-for="Command.MetaDescription" class="error"></span>
         </div>
         <div class="form-group">
-            <label for="metaDescription">MetaDescription</label>
-            <input class="form-control" id="metaDescription" name="metaDescription" rows="3" >
+            <label asp-for="Command.Slug">Slug</label>
+            <input type="text" class="form-control" asp-for="Command.Slug">
+            <span asp-validation-for="Command.Slug" class="error"></span>
         </div>
-        <div class="form-group">
-            <label for="slug">Slug</label>
-            <input type="text" class="form-control" id="slug" name="slug" >
-        </div>
-        <input type="hidden" asp-for="Id" value="@Model.Id">
-        <button type="submit" class="btn btn-success">Create</button>
+
+        <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id">
+
+        <button type="submit" class="btn btn-success">Edit</button>
         <button type="reset" class="btn btn-danger">Reset</button>
-        <button type="back" class="btn btn-primary" >Back</button>
+        @*<button type="back" class="btn btn-primary" >Back</button>*@
     </form>
    
 </div>

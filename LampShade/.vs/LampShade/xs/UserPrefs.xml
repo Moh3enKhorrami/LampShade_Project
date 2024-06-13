@@ -1,10 +1,19 @@
-﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Areas/Administration/Pages/Shared/_AdminLayout.cshtml">
+﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|http">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/ProductCategoryApplication.cs" relfile="ShopManagement.Application/ProductCategoryApplication.cs" line="17" column="1" />
+      <Breakpoint file="/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Create.cshtml.cs" relfile="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Create.cshtml.cs" line="24" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Create.cshtml.cs">
     <Files>
-      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Index.cshtml" Line="15" Column="76" />
-      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Index.cshtml.cs" Line="19" Column="63" />
-      <File FileName="ServiceHost/Areas/Administration/Pages/Shared/_AdminLayout.cshtml" Line="129" Column="38" />
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Create.cshtml" Line="13" Column="49" />
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Create.cshtml.cs" Line="27" Column="17" />
+      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ShopManagement.Application/ProductCategoryApplication.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,37 +21,29 @@
           <Node name="LampShade" expanded="True">
             <Node name="ShopManagement" expanded="True">
               <Node name="SM.Application" expanded="True">
-                <Node name="ShopManagement.Application.Contracts" expanded="True">
+                <Node name="ShopManagement.Application" expanded="True" />
+                <Node name="ShopManagement.Application.Contracts">
                   <Node name="ProductCategory" expanded="True" />
                 </Node>
               </Node>
-              <Node name="SM.Infrastructure" expanded="True">
-                <Node name="ShopManagement.Infrastructure.EFCore" expanded="True">
-                  <Node name="Repository" expanded="True" />
-                </Node>
-              </Node>
+              <Node name="SM.Infrastructure" expanded="True" />
             </Node>
             <Node name="ServiceHost">
               <Node name="Areas" expanded="True">
                 <Node name="Administration" expanded="True">
                   <Node name="Pages" expanded="True">
-                    <Node name="Shared" expanded="True">
-                      <Node name="_AdminLayout.cshtml" selected="True" />
-                    </Node>
+                    <Node name="Shared" expanded="True" />
                     <Node name="Shop" expanded="True">
                       <Node name="ProductCategories" expanded="True">
-                        <Node name="Create.cshtml" expanded="True" />
+                        <Node name="Create.cshtml" expanded="True">
+                          <Node name="Create.cshtml.cs" selected="True" />
+                        </Node>
+                        <Node name="Edit.cshtml" expanded="True" />
                         <Node name="Index.cshtml" expanded="True" />
                       </Node>
                     </Node>
                   </Node>
                 </Node>
-              </Node>
-              <Node name="Pages" expanded="True">
-                <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="AdminTheme" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -50,10 +51,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MultiItemStartupConfigurations />
 </Properties>
