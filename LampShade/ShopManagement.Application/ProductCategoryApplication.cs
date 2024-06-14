@@ -18,7 +18,7 @@ public class ProductCategoryApplication : IProductCategoryApplication
     {
         var operation = new OperationResult();
         if (_productCategoryRepository.Exists(x => x.Name == command.Name))
-            return operation.Failed("It is not possible to register a duplicate record. Try again");
+            return operation.Failed(ApplicationMessages.Dulpicated);
         var slug = command.Slug.Slugify();
         var productCategory = new ProductCategory(command.Name, command.Description,
             command.Picture, command.PictureAlt, command.PictureTitle, command.Keywords,
@@ -33,10 +33,10 @@ public class ProductCategoryApplication : IProductCategoryApplication
         var operation = new OperationResult();
         var productCategory = _productCategoryRepository.Get(command.Id);
         if (productCategory == null)
-            return operation.Failed("The record with the requested information was not found. Please try again");
+            return operation.Failed(ApplicationMessages.RecordNotFound);
 
         if (_productCategoryRepository.Exists(x => x.Name == command.Name && x.Id != command.Id))
-            return operation.Failed("It is not possible to register a duplicate record. Try again");
+            return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
         var slug = command.Slug.Slugify();
 

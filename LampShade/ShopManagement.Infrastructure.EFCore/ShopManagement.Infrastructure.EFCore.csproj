@@ -23,10 +23,6 @@
     <None Remove="Repository\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mapping\" />
-    <Folder Include="Repository\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ShopManagement.Domain\ShopManagement.Domain.csproj" />
   </ItemGroup>
 </Project>
