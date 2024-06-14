@@ -36,14 +36,17 @@
         <div class="form-group">
             <label asp-for="Command.Keywords">Keywords</label>
             <input type="text" class="form-control" asp-for="Command.Keywords" >
+            
         </div>
         <div class="form-group">
             <label asp-for="Command.MetaDescription">MetaDescription</label>
             <input class="form-control" asp-for="Command.MetaDescription" rows="3" >
+            <span asp-validation-for="Command.MetaDescription" class="error"></span>
         </div>
         <div class="form-group">
             <label asp-for="Command.Slug">Slug</label>
             <input type="text" class="form-control" asp-for="Command.Slug" >
+            <span asp-validation-for="Command.Slug" class="error"></span>
         </div>
         
         <button type="submit" class="btn btn-success">Create</button>
