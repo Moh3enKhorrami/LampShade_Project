@@ -12,17 +12,15 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
         public IndexModel(IProductCategoryApplication productCategoryApplication)
         {
             _productCategoryApplication = productCategoryApplication;
+            SearchModel = new ProductCategorySearchModel();
+            ProductCategories = new List<ProductCategoryViewModel>();
         }
         public void OnGet(ProductCategorySearchModel searchModel)
         {
-            ProductCategories = _productCategoryApplication.Search(searchModel);    
+            ProductCategories = _productCategoryApplication.Search(searchModel);
         }
 
-        
-       
-        //public IActionResult OnGetCreate()
-        //{
-        //    return Partial("./Create", new CreateProductCategory());
-        //}
     }
+       
+        
 }

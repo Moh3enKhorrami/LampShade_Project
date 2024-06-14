@@ -35,13 +35,6 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
             }
             
         }
-
-        //public IActionResult OnPostShow(EditProductCategory command)
-        //{
-           // var result = _productCategoryApplication.Edit(command);
-         //   return RedirectToPage(result);
-        //}
-       
        
     }
 }

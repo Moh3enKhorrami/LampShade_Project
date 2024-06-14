@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/8EHh0+qhKs+e1cVNi8NZGl7pznXL3BfRRKxFu3nJQm0gGsvhdhkJfEgLqLWKXOxc4IMTiKo6PyHr2pIlzQa8A==",
+  "dgSpecHash": "dxUN5aQYF68=",
   "success": true,
   "projectFilePath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/ShopManagement.Domain.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,9 @@
     "/Users/moh3enkhorrami/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
-    "/Users/moh3enkhorrami/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+    "/Users/moh3enkhorrami/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/moh3enkhorrami/.nuget/packages/microsoft.netcore.app.ref/7.0.16/microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "/Users/moh3enkhorrami/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.16/microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
   ],
   "logs": []
 }
