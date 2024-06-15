@@ -1,50 +1,32 @@
 ﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|http">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Edit.cshtml.cs">
-    <Files>
-      <File FileName="ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Edit.cshtml.cs" Line="28" Column="64" />
-    </Files>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/ProductCategoryApplication.cs" relfile="ShopManagement.Application/ProductCategoryApplication.cs" line="17" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LampShade" expanded="True">
             <Node name="ShopManagement" expanded="True">
               <Node name="SM.Application" expanded="True">
-                <Node name="ShopManagement.Application" expanded="True" />
-              </Node>
-              <Node name="SM.Domain">
-                <Node name="ShopManagement.Domain">
-                  <Node name="ProductCategoryAgg" expanded="True" />
+                <Node name="ShopManagement.Application" expanded="True">
+                  <Node name="ProductApplication.cs" selected="True" />
+                </Node>
+                <Node name="ShopManagement.Application.Contracts" expanded="True">
+                  <Node name="Product" expanded="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="ServiceHost" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Administration" expanded="True">
-                  <Node name="Pages" expanded="True">
-                    <Node name="Shop" expanded="True">
-                      <Node name="ProductCategories" expanded="True">
-                        <Node name="Edit.cshtml" expanded="True">
-                          <Node name="Edit.cshtml.cs" selected="True" />
-                        </Node>
-                        <Node name="Index.cshtml" expanded="True" />
-                      </Node>
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
+            <Node name="ServiceHost" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/ProductCategoryApplication.cs" relfile="ShopManagement.Application/ProductCategoryApplication.cs" line="17" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
 </Properties>

@@ -14,7 +14,7 @@ public class Product : EntityBase
     public string Picture { get; private set; }
     public string PictureAlt { get; private set; }
     public string PictureTitle { get; private set; }
-    public long CategoryId { get; private set; }
+    public long CategoryId { get; private set; } //Moshakhas kardane Category
     public string Slug { get; private set; }
     public string Keyworks { get; private set; }
     public string MetaDescription { get; private set; }

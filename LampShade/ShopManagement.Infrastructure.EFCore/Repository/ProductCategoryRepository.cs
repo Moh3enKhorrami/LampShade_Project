@@ -13,7 +13,15 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             _Context = Context;
         }
 
-        
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+            return _Context.ProductCategories.Select(x => new ProductCategoryViewModel()
+            {
+                Id = x.Id,
+                Name = x.Name
+            }).ToList();
+        }
 
         public EditProductCategory GetDetails(long id)
         {

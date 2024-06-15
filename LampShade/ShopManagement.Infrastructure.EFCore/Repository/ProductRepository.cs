@@ -25,12 +25,14 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
             CategoryId = x.CategoryId,
             Code = x.Code,
             Picture = x.Picture,
-            UnitPrice = x.UnitPrice
+            UnitPrice = x.UnitPrice,
+            CreationDate = x.CreationDate.ToString()
+            
         });
-        if (string.IsNullOrWhiteSpace(searchModel.Name))
+        if (!string.IsNullOrWhiteSpace(searchModel.Name))
             query = query.Where(x => x.Name.Contains(searchModel.Name));
 
-        if (string.IsNullOrWhiteSpace(searchModel.Code))
+        if (!string.IsNullOrWhiteSpace(searchModel.Code))
             query = query.Where(x => x.Code.Contains(searchModel.Code));
 
         if (searchModel.CategoryId != 0)
@@ -55,6 +57,6 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
             PictureTitle = x.PictureTitle,
             ShortDescription = x.ShortDescription,
             UnitPrice = x.UnitPrice
-        }).FirstOrDefault(x => x.Id == id);
+        }).FirstOrDefault(x => x.Id == id) ?? throw new InvalidOperationException();
     }
 }

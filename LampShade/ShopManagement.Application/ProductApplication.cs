@@ -23,10 +23,10 @@ public class ProductApplication : IProductApplication
         else
         {
             var slug = command.Slug.Slugify();
-            var Product = new Product(command.Name, command.Code, command.UnitPrice, command.ShortDescription,
+            var product = new Product(command.Name, command.Code, command.UnitPrice, command.ShortDescription,
                 command.Description, command.Picture, command.PictureAlt, command.PictureTitle, command.CategoryId,slug
                 ,command.Keyworks, command.MetaDescription);
-            _productRepository.Create(Product);
+            _productRepository.Create(product);
             _productRepository.SaveChanges();
         }
 

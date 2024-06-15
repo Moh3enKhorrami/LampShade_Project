@@ -22,7 +22,6 @@
     <Folder Include="Areas\Administration\Pages\" />
     <Folder Include="Areas\Administration\Pages\Shared\" />
     <Folder Include="wwwroot\AdminTheme\" />
-    <Folder Include="Areas\Administration\Pages\Shop\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\AdminTheme\" />
@@ -40,5 +39,10 @@
     <ProjectReference Include="..\ShopManagement.Application.Contracts\ShopManagement.Application.Contracts.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Create.cshtml" />
+    <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Edit.cshtml" />
+    <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Index.cshtml" />
   </ItemGroup>
 </Project>
