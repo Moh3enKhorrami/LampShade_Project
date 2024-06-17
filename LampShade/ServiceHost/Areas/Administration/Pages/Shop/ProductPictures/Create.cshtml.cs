@@ -27,6 +27,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
 
         public IActionResult OnPostCreate(CreateProductPicture Command)
         {
+            
             var result = _productPictureApplication.Create(Command);
             if (result.IsSuccedded)
                 return RedirectToPage("./Index") ;
