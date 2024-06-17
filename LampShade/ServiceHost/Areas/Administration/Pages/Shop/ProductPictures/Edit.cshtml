@@ -1,0 +1,40 @@
+@page
+@model  ServiceHost.Areas.Administration.Pages.Shop.ProductPictures.EditModel;
+@{
+    ViewData["Title"] = "Edit Product Picture";
+}
+<!DOCTYPE html> 
+<html lang="en">
+<body>
+<div class="container">
+    <h3>@ViewData["Title"]</h3>
+    <form method="post" asp-page-handler="Edit">
+        <div class="form-group">
+            <label asp-for="_command.ProductId">UnitPrice</label>
+            <input type="text" class="form-control" asp-for="_command.ProductId">
+        </div>
+        <div class="form-group">
+            <label asp-for="_command.Picture">Picture</label>
+            <input type="text" class="form-control" asp-for="_command.Picture" >
+        </div>
+        <div class="form-group">
+            <label asp-for="_command.PictureAlt">PictureAlt</label>
+            <input type="text" class="form-control" asp-for="_command.PictureAlt" >
+        </div>
+        <div class="form-group">
+            <label asp-for="_command.PictureTitle">PictureTitle</label>
+            <input type="text" class="form-control" asp-for="_command.PictureTitle" >
+        </div>
+       
+
+        <input type="hidden" asp-for="_command.Id" value="@Model._command.Id">
+
+        <button type="submit" class="btn btn-success">Edit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <a asp-page="./Index" class="btn btn-primary">Back</a>
+    </form>
+   
+</div>
+
+</body>
+</html>

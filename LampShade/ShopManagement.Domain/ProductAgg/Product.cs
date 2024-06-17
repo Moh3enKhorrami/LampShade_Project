@@ -1,4 +1,5 @@
 using _0_Framework.Domain;
+using ShopManagement.Domain.PictureAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Domain.ProductAgg;
@@ -14,11 +15,12 @@ public class Product : EntityBase
     public string Picture { get; private set; }
     public string PictureAlt { get; private set; }
     public string PictureTitle { get; private set; }
-    public long CategoryId { get; private set; } //Moshakhas kardane Category
+    public long CategoryId { get; private set; } 
     public string Slug { get; private set; }
     public string Keyworks { get; private set; }
     public string MetaDescription { get; private set; }
     public ProductCategory Category { get; private set; }
+    public List<ProductPicture> ProductPictures { get; private set; }
     
 
     public Product(string name, string code, double unitPrice, string shortDescription,

@@ -1,4 +1,5 @@
 using _0_Framework.Application;
+using ShopManagement.Application.Contracts.ProductCategory;
 
 namespace ShopManagement.Application.Contracts.Product;
 
@@ -10,4 +11,5 @@ public interface IProductApplication
     OperationResult NotInStock(long id);
     EditProduct GetDetails(long id);
     List<ProductViewModel> Search(ProductSearchModel searchModel);
+    List<ProductViewModel> GetProducts();
 }

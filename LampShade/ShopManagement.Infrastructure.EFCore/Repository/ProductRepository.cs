@@ -26,6 +26,7 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
             Code = x.Code,
             Picture = x.Picture,
             UnitPrice = x.UnitPrice,
+            IsInStock = x.IsInStock,
             CreationDate = x.CreationDate.ToString()
             
         });
@@ -58,5 +59,14 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
             ShortDescription = x.ShortDescription,
             UnitPrice = x.UnitPrice
         }).FirstOrDefault(x => x.Id == id) ?? throw new InvalidOperationException();
+    }
+
+    public List<ProductViewModel> GetProducts()
+    {
+        return _context.Products.Select(x => new ProductViewModel()
+        {
+            Id = x.Id,
+            Name = x.Name
+        }).ToList();
     }
 }

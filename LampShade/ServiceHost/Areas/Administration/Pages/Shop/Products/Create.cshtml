@@ -2,14 +2,12 @@
 @model ServiceHost.Areas.Administration.Pages.Shop.Products.CreateModel
 @{
     ViewData["Title"] = "Create Product";
-
 }
-
 <!DOCTYPE html>
 <html lang="en">
 <body>
 <div class="container">
-    <h3>Create ProductCategory</h3>
+    <h3>@ViewData["Title"]</h3>
     <form method="post" asp-page-handler="Create">
         <div class="form-group">
             <label asp-for="Command.Name">Name</label>
@@ -17,13 +15,17 @@
             <span asp-validation-for="Command.Name" class="error"></span>
         </div>
         <div class="form-group">
-            <label asp-for="Command.Description">Description</label>
-            <input class="form-control" asp-for="Command.Description" rows="3">
-            <span asp-validation-for="Command.Description" class="error"></span>
+            <label asp-for="Command.Code">Code</label>
+            <input class="form-control" asp-for="Command.Code" rows="3">
+            <span asp-validation-for="Command.Code" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.UnitPrice">UnitPrice</label>
+            <input type="text" class="form-control" asp-for="Command.UnitPrice">
         </div>
         <div class="form-group">
             <label asp-for="Command.Picture">Picture</label>
-            <input type="text" class="form-control" asp-for="Command.Picture">
+            <input type="text" class="form-control" asp-for="Command.Picture" >
         </div>
         <div class="form-group">
             <label asp-for="Command.PictureAlt">PictureAlt</label>
@@ -36,13 +38,30 @@
         <div class="form-group">
             <label asp-for="Command.Keyworks">Keywords</label>
             <input type="text" class="form-control" asp-for="Command.Keyworks" >
+            <span asp-validation-for="Command.Keyworks" class="error"></span>
             
         </div>
         <div class="form-group">
-            <label asp-for="Command.MetaDescription">MetaDescription</label>
-            <input class="form-control" asp-for="Command.MetaDescription" rows="3" >
+            <label asp-for="Command.Description">Description</label>
+            <input type="text" class="form-control" asp-for="Command.Description" >
+            
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.MetaDescription">Meta Description</label>
+            <input type="text" class="form-control" asp-for="Command.MetaDescription" >
             <span asp-validation-for="Command.MetaDescription" class="error"></span>
         </div>
+        <div class="form-group">
+            <label asp-for="Command.ShortDescription">Short Description</label>
+            <input type="text" class="form-control" asp-for="Command.ShortDescription" >
+            <span asp-validation-for="Command.ShortDescription" class="error"></span>
+
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.CategoryId">Product Category</label>
+            <select type="form-control" asp-for="Command.CategoryId" rows="3" asp-items="Model.ProductCategories"></select>
+            <option value="0">Select Group</option>
+        </div> 
         <div class="form-group">
             <label asp-for="Command.Slug">Slug</label>
             <input type="text" class="form-control" asp-for="Command.Slug" >

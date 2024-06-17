@@ -62,10 +62,10 @@
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>
-                                            <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" alt=""/>
+                                            <img src="@item.Picture" style="width: 70px; height: 70px" alt=""/>
                                         </td>
                                         <td>@item.Name</td>
-                                        <td>@item.CreationDate</td>
+                                        <td>@item.CreationDate</td>   
                                         <td>
                                             <a class="btn btn-warning pull-right m-rl-5" 
                                                asp-page="./Edit" asp-route-id="@item.Id">

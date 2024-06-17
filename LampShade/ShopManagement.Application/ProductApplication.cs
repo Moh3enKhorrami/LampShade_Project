@@ -1,6 +1,8 @@
 using System.Xml.Linq;
 using _0_Framework.Application;
 using ShopManagement.Application.Contracts.Product;
+using ShopManagement.Application.Contracts.ProductCategory;
+using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Domain.ProductAgg;
 
 namespace ShopManagement.Application;
@@ -82,5 +84,10 @@ public class ProductApplication : IProductApplication
     public List<ProductViewModel> Search(ProductSearchModel searchModel)
     {
         return _productRepository.Search(searchModel);
+    }
+
+    public List<ProductViewModel> GetProducts()
+    {
+        return _productRepository.GetProducts();
     }
 }

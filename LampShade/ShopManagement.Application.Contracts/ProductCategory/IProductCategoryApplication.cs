@@ -1,5 +1,4 @@
-﻿using System;
-using _0_Framework.Application;
+﻿using _0_Framework.Application;
 
 namespace ShopManagement.Application.Contracts.ProductCategory
 {
@@ -10,7 +9,6 @@ namespace ShopManagement.Application.Contracts.ProductCategory
         EditProductCategory GetDetails(long id);
         List<ProductCategoryViewModel> GetProductCategories();
 		List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel);
-
 	}
 }
 

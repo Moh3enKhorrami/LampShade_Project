@@ -1,25 +1,35 @@
-﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|http">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|https">
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/ProductCategoryApplication.cs" relfile="ShopManagement.Application/ProductCategoryApplication.cs" line="17" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShopManagement.Infrastructure.EFCore/Repository/ProductRepository.cs">
+    <Files>
+      <File FileName="ShopManagement.Infrastructure.EFCore/Repository/ProductRepository.cs" Line="44" Column="6" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LampShade" expanded="True">
             <Node name="ShopManagement" expanded="True">
               <Node name="SM.Application" expanded="True">
-                <Node name="ShopManagement.Application" expanded="True">
-                  <Node name="ProductApplication.cs" selected="True" />
-                </Node>
                 <Node name="ShopManagement.Application.Contracts" expanded="True">
                   <Node name="Product" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="SM.Domain">
+                <Node name="ShopManagement.Domain" expanded="True">
+                  <Node name="ProductCategoryAgg" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="SM.Infrastructure" expanded="True">
+                <Node name="ShopManagement.Infrastructure.EFCore" expanded="True">
+                  <Node name="Mapping" expanded="True" />
+                  <Node name="Repository" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -29,4 +39,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
