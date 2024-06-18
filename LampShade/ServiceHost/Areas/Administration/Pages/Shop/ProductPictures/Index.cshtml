@@ -53,6 +53,7 @@
                                     <th>Id</th>
                                     <th>Picture</th>
                                     <th>Name Product</th>
+                                    <th>Inventory</th>
                                     <th>Create Date </th>
                                     <th>Operation</th>
                                 </tr>
@@ -67,7 +68,17 @@
                                         </td>
                                         
                                         
-                                            <td>@item.Product</td>
+                                        <td>@item.Product</td>
+                                        <th>
+                                            @if (!item.IsRemoved)
+                                            {
+                                            <i class="fa fa-check fa-2x text-success"></i>
+                                            }
+                                            else
+                                            {
+                                            <i class="fa fa-remove fa-2x text-danger"></i>
+                                            }
+                                        </th>
                                         
                                         <td>@item.CreationDate</td>
                                         <td>

@@ -1,16 +1,16 @@
-﻿@page
-@model ServiceHost.Areas.Administration.Pages.Shop.Products.IndexModel
+@page
+@model ServiceHost.Areas.Administration.Pages.Shop.Slide.IndexModel
 
 @{
     Layout = "Shared/_AdminLayout";
-    ViewData["title"] = "Products management";
+    ViewData["title"] = "Product Pictures Management";
 }
 <html lang="en"></html>
 <div class="row" >
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" asp-page="./Create">Create a new product</a>
+            <a class="btn btn-success btn-lg" asp-page="./Create">Create a new Slide</a>
         </p>
     </div>
 </div>
@@ -19,37 +19,7 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Search in the product</h3>
-            </div>
-            <div class="panel-body">
-                <form class="form-inline" role="form" method="get">
-                    <div class="form-group">
-                        <label class="sr-only" asp-for="SearchModel.Name"></label>
-                        <input class="form-control" asp-for="SearchModel.Name" placeholder="Product name">
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" asp-for="SearchModel.Code"></label>
-                        <input class="form-control" asp-for="SearchModel.Code" placeholder="Product Code">
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" asp-for="SearchModel.CategoryId"></label>
-                        <select class="form-control" asp-for="SearchModel.CategoryId" asp-items="Model.ProductCategories">
-                            <option value="0">Select Group</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">Search</button>
-                    <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">view all</a>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row" id="ProductCategoriesDiv">
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">List of product</h3>
+                <h3 class="panel-title">List of Slides</h3>
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -59,29 +29,27 @@
                                 <tr>
                                     <th>Id</th>
                                     <th>Picture</th>
-                                    <th>Name</th>
-                                    <th>Code</th>
-                                    <th>Category</th>
-                                    <th>Price</th>
+                                    <th>Heading</th>
+                                    <th>Title</th>
                                     <th>inventory</th>
                                     <th>Create Date </th>
                                     <th>Operation</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model.Products)
+                                @foreach (var item in Model.Sildes)
                                 {
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>
                                             <img src="@item.Picture" style="width: 70px; height: 70px" alt=""/>
                                         </td>
-                                        <td>@item.Name</td>
-                                        <td>@item.Code</td>
-                                        <td>@item.Category</td>
-                                        <td>@item.UnitPrice</td>
-                                        <th>
-                                            @if (item.IsInStock)
+                                        
+                                        
+                                        <td>@item.Heading</td>
+                                        <td>@item.Title</td>
+                                        <td>
+                                            @if (!item.IsRemove)
                                             {
                                                 <i class="fa fa-check fa-2x text-success"></i>
                                             }
@@ -89,30 +57,29 @@
                                             {
                                                 <i class="fa fa-remove fa-2x text-danger"></i>
                                             }
-                                        </th>
+
+
+                                        </td>
                                         <td>@item.CreationDate</td>
+                                        
                                         <td>
                                             <a class="btn btn-warning pull-right m-rl-5" 
                                                asp-page="./Edit" asp-route-id="@item.Id">
                                                 <i class="fa fa-edit"></i> Edit
                                             </a>
                                             
-                                            <a class="btn btn-primary waves-effect waves-light m-b-5" asp-page="/shop/ProductPictures/index" >Picture</a>
-                                            
-                                            
-                                            @if (item.IsInStock)
+                                            @if (!item.IsRemove)
                                             {
-                                                <a asp-page="./Index" asp-page-handler="NotInStock" asp-route-id="@item.Id" class="btn btn-danger">End of inventory</a>
+                                                <a asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id" class="btn btn-danger">Remove</a>
                                             }
                                             else
                                             {
-                                                <a asp-page="./Index" asp-page-handler="IsInStock" asp-route-id="@item.Id" class="btn btn-success">Available</a>
+                                                <a asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id" class="btn btn-success">Active</a>
                                             }
                                             
                                         </td>
                                     </tr>
                                 }
-                                
                             </tbody>
                         </table>
                     </div>

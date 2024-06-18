@@ -45,7 +45,7 @@ public class Slide : EntityBase
 
     public void Restore()
     {
-        IsRemoved = true;
+        IsRemoved = false;
     }
 }
     

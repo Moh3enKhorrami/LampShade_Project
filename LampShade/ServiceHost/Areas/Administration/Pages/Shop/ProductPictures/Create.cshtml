@@ -13,20 +13,20 @@
         <div class="form-group">
             <option value="0">Select Product</option>
             <label asp-for="_command.ProductId">Product</label>
-            <select type="form-control" asp-for="_command.ProductId" rows="3" asp-items="Model.Products"></select>
+            <select type="form-control" name="ProductId" asp-for="_command.ProductId" rows="3" asp-items="Model.Products"></select>
 
         </div> 
         <div class="form-group">
             <label asp-for="_command.Picture">Picture</label>
-            <input type="text" class="form-control" asp-for="_command.Picture" >
+            <input name="Picture" type="text" class="form-control" asp-for="_command.Picture" >
         </div>
         <div class="form-group">
             <label asp-for="_command.PictureAlt">PictureAlt</label>
-            <input type="text" class="form-control" asp-for="_command.PictureAlt" >
+            <input name="PictureAlt" type="text" class="form-control" asp-for="_command.PictureAlt" >
         </div>
         <div class="form-group">
             <label asp-for="_command.PictureTitle">PictureTitle</label>
-            <input type="text" class="form-control" asp-for="_command.PictureTitle" >
+            <input name="PictureTitle" type="text" class="form-control" asp-for="_command.PictureTitle" >
         </div>
         
         <button type="submit" class="btn btn-success">Create</button>

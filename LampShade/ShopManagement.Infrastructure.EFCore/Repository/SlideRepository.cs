@@ -35,7 +35,9 @@ public class SlideRepository : RepositoryBase<long, Slide>, ISlideRepository
             Id = x.Id,
             Picture = x.Picture,
             Heading = x.Heading,
-            Title = x.Title
+            Title = x.Title,
+            IsRemove = x.IsRemoved,
+            CreationDate = x.CreationDate.ToString()
         }).OrderByDescending(x => x.Id).ToList();
     }
 }
