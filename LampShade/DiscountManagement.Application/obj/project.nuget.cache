@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LerIeghyfHM=",
+  "success": true,
+  "projectFilePath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/DiscountManagement.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/moh3enkhorrami/.nuget/packages/microsoft.netcore.app.ref/7.0.16/microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "/Users/moh3enkhorrami/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.16/microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
