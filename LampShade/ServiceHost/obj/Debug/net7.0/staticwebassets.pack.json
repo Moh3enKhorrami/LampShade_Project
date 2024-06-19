@@ -1449,6 +1449,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/favicon1.ico",
+      "PackagePath": "staticwebassets/favicon1.ico"
+    },
+    {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
