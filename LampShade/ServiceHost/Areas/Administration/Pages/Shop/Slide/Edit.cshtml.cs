@@ -7,18 +7,18 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Slide;
 
 public class EditModel : PageModel
 {
-    public EditSlide _command;
+    public EditSlide Command;
     private readonly ISlideApplication _slideApplication;
 
     public EditModel(ISlideApplication slideApplication)
     {
         _slideApplication = slideApplication;
-        _command = new EditSlide();
+        Command = new EditSlide();
     }
 
     public void OnGet(long id)
     {
-        _command = _slideApplication.GetDetails(id);
+        Command = _slideApplication.GetDetails(id);
     }
 
     public IActionResult OnPostEdit(EditSlide command)

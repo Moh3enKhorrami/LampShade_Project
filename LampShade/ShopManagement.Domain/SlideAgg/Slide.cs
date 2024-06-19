@@ -5,7 +5,7 @@ namespace ShopManagement.Domain.SlideAgg;
 public class Slide : EntityBase
 {
     public Slide(string picture, string pictureTitle, string pictureAlt,
-        string heading, string title, string text, string btnText)
+        string heading, string title, string text, string btnText, string link)
     {
         Picture = picture;
         PictureTitle = pictureTitle;
@@ -14,6 +14,7 @@ public class Slide : EntityBase
         Title = title;
         Text = text;
         BtnText = btnText;
+        Link = link;
         IsRemoved = false;
     }
     public string Picture { get; private set; }
@@ -23,11 +24,12 @@ public class Slide : EntityBase
     public string Title { get; private set; }
     public string Text { get; private set; }
     public string BtnText { get; private set; }
+    public string Link { get; private set; }
     public bool IsRemoved { get; private set; }
 
     
     public void Edit(string picture, string pictureTitle, string pictureAlt,
-        string heading, string title, string text, string btnText)
+        string heading, string title, string text, string btnText, string link)
     {
         Picture = picture;
         PictureTitle = pictureTitle;
@@ -36,6 +38,7 @@ public class Slide : EntityBase
         Title = title;
         Text = text;
         BtnText = btnText;
+        Link = link;
     }
 
     public void Remove()

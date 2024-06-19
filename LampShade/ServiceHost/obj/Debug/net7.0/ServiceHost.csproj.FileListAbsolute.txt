@@ -175,3 +175,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ref/ServiceHost.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceHost.sourcelink.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceH.EB565EEF.Up2Date
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/_01_LampshadeQuery.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/_01_LampshadeQuery.pdb

@@ -45,3 +45,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ref/ShopManagement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopManagement.Configuration.sourcelink.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/obj/Debug/net7.0/ShopMana.B8571BFE.Up2Date
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/bin/Debug/net7.0/_01_LampshadeQuery.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Configuration/bin/Debug/net7.0/_01_LampshadeQuery.pdb

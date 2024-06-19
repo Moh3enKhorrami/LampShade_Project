@@ -22,6 +22,7 @@
     <Folder Include="Areas\Administration\Pages\" />
     <Folder Include="Areas\Administration\Pages\Shared\" />
     <Folder Include="wwwroot\AdminTheme\" />
+    <Folder Include="wwwroot\Theme\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\AdminTheme\" />

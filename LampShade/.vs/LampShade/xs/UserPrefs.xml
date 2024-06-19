@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{79DDF26A-0C8C-4986-8EB4-26850604EA3C}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShopManagement.Infrastructure.EFCore/Repository/ProductRepository.cs">
+  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServiceHost/Pages/Index.cshtml">
     <Files>
       <File FileName="ShopManagement.Infrastructure.EFCore/Repository/ProductRepository.cs" Line="44" Column="6" />
+      <File FileName="ServiceHost/Pages/Index.cshtml" Line="1784" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,8 +11,17 @@
           <Node name="LampShade" expanded="True">
             <Node name="ShopManagement" expanded="True">
               <Node name="SM.Application" expanded="True" />
+              <Node name="SM.Infrastructure" expanded="True">
+                <Node name="ShopManagement.Infrastructure.EFCore">
+                  <Node name="Repository" expanded="True" />
+                </Node>
+              </Node>
             </Node>
-            <Node name="ServiceHost" expanded="True" />
+            <Node name="ServiceHost">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -22,7 +32,7 @@
       <Breakpoint file="/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/ProductCategoryApplication.cs" relfile="ShopManagement.Application/ProductCategoryApplication.cs" line="17" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.ServiceHost PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -9,7 +9,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
 {
 	public class CreateModel : PageModel
     {
-        public CreateProductPicture _command;
+        public CreateProductPicture Command;
         private readonly IProductApplication _productApplication;
         private readonly IProductPictureApplication _productPictureApplication;
         public SelectList Products;

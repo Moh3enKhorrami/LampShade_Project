@@ -12,21 +12,21 @@
         
         <div class="form-group">
             <option value="0">Select Product</option>
-            <label asp-for="_command.ProductId">Product</label>
-            <select type="form-control" name="ProductId" asp-for="_command.ProductId" rows="3" asp-items="Model.Products"></select>
+            <label asp-for="Command.ProductId">Product</label>
+            <select type="form-control" asp-for="Command.ProductId" rows="3" asp-items="Model.Products"></select>
 
         </div> 
         <div class="form-group">
-            <label asp-for="_command.Picture">Picture</label>
-            <input name="Picture" type="text" class="form-control" asp-for="_command.Picture" >
+            <label asp-for="Command.Picture">Picture</label>
+            <input type="text" class="form-control" asp-for="Command.Picture" >
         </div>
         <div class="form-group">
-            <label asp-for="_command.PictureAlt">PictureAlt</label>
-            <input name="PictureAlt" type="text" class="form-control" asp-for="_command.PictureAlt" >
+            <label asp-for="Command.PictureAlt">PictureAlt</label>
+            <input type="text" class="form-control" asp-for="Command.PictureAlt" >
         </div>
         <div class="form-group">
-            <label asp-for="_command.PictureTitle">PictureTitle</label>
-            <input name="PictureTitle" type="text" class="form-control" asp-for="_command.PictureTitle" >
+            <label asp-for="Command.PictureTitle">PictureTitle</label>
+            <input type="text" class="form-control" asp-for="Command.PictureTitle" >
         </div>
         
         <button type="submit" class="btn btn-success">Create</button>

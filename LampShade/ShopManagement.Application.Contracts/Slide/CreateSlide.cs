@@ -26,4 +26,6 @@ public class CreateSlide
     [MaxLength(50), Required]
     public string BtnText { get; set; }
     
+    public string Link { get; set; }
+    
 }

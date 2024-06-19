@@ -2,51 +2,55 @@
 @model ServiceHost.Areas.Administration.Pages.Shop.Slide.EditModel
 
 @{
-    ViewData["Title"] = "Create Slide";
+    //ViewData["title"] = "Edit Slide";
 }
 <!DOCTYPE html>
 <html lang="en">
 <body>
 <div class="container">
-    <h3>@ViewData["Title"]</h3>
-    <form method="post" asp-page-handler="Edit">
+    <h3>@ViewData["title"]</h3>
+    <form asp-page="./Edit" method="post" asp-page-handler="Edit">
         <div class="form-group">
-            <label asp-for="_command.Picture">Picture</label>
-            <input name="Picture" type="text" class="form-control" asp-for="_command.Picture" >
-            <span asp-validation-for="_command.Picture" class="error"></span>
+            <label asp-for="Command.Picture">Picture</label>
+            <input type="text" class="form-control" asp-for="Command.Picture" >
+            <span asp-validation-for="Command.Picture" class="error"></span>
         </div>
         <div class="form-group">
-            <label asp-for="_command.PictureAlt">PictureAlt</label>
-            <input name="PictureAlt" class="form-control" asp-for="_command.PictureAlt" rows="3">
-            <span asp-validation-for="_command.PictureAlt" class="error"></span>
+            <label asp-for="Command.PictureAlt">PictureAlt</label>
+            <input class="form-control" asp-for="Command.PictureAlt" rows="3">
+            <span asp-validation-for="Command.PictureAlt" class="error"></span>
         </div>
         <div class="form-group">
-            <label asp-for="_command.PictureTitle">PictureTitle</label>
-            <input name="PictureTitle" type="text" class="form-control" asp-for="_command.PictureTitle">
-            <span asp-validation-for="_command.Title" class="error"></span>
+            <label asp-for="Command.PictureTitle">PictureTitle</label>
+            <input  type="text" class="form-control" asp-for="Command.PictureTitle">
+            <span asp-validation-for="Command.Title" class="error"></span>
         </div>
         <div class="form-group">
-            <label asp-for="_command.Heading">Heading</label>
-            <input name="Heading" type="text" class="form-control" asp-for="_command.Heading" >
-            <span asp-validation-for="_command.Heading" class="error"></span>
+            <label asp-for="Command.Heading">Heading</label>
+            <input  type="text" class="form-control" asp-for="Command.Heading" >
+            <span asp-validation-for="Command.Heading" class="error"></span>
         </div>
         <div class="form-group">
-            <label asp-for="_command.Title">Title</label>
-            <input name="Title" type="text" class="form-control" asp-for="_command.Title" >
+            <label asp-for="Command.Title">Title</label>
+            <input type="text" class="form-control" asp-for="Command.Title" >
         </div>
         <div class="form-group">
-            <label asp-for="_command.Text">Text</label>
-            <input name="Text" type="text" class="form-control" asp-for="_command.Text" >
+            <label asp-for="Command.Text">Text</label>
+            <input type="text" class="form-control" asp-for="Command.Text" >
         </div>
         <div class="form-group">
-            <label asp-for="_command.BtnText">BtnText</label>
-            <input name="BtnText" type="text" class="form-control"  asp-for="_command.BtnText" >
-            <span asp-validation-for="_command.BtnText" class="error"></span>
+            <label asp-for="Command.BtnText">BtnText</label>
+            <input type="text" class="form-control"  asp-for="Command.BtnText" >
+            <span asp-validation-for="Command.BtnText" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.Link">Link</label>
+            <input name="Link" type="text" class="form-control"  asp-for="Command.Link" >
         </div>
 
-        <input type="hidden" asp-for="_command.Id" value="@Model._command.Id">
+        <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id">
         
-        <button type="submit" class="btn btn-success">Create</button>
+        <button type="submit" class="btn btn-success">Edit</button>
         <button type="reset" class="btn btn-danger">Reset</button>
         <a asp-page="./Index" class="btn btn-primary" >Back</a>
 

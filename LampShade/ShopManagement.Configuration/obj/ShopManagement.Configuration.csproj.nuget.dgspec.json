@@ -258,6 +258,9 @@
               },
               "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/_01_LampshadeQuery.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/_01_LampshadeQuery.csproj"
               }
             }
           }
@@ -451,6 +454,78 @@
               "version": "[7.0.0, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/_01_LampshadeQuery.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/_01_LampshadeQuery.csproj",
+        "projectName": "_01_LampshadeQuery",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/_01_LampshadeQuery.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
