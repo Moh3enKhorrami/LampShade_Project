@@ -1,0 +1,726 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/DiscountManagement.Configuration.csproj": {}
+  },
+  "projects": {
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj",
+        "projectName": "0_Framework",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj",
+        "projectName": "DiscountManagement.Application.Contracts",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/DiscountManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/DiscountManagement.Application.csproj",
+        "projectName": "DiscountManagement.Application",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/DiscountManagement.Application.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/DiscountManagement.Domain.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/DiscountManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/DiscountManagement.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/DiscountManagement.Configuration.csproj",
+        "projectName": "DiscountManagement.Configuration",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/DiscountManagement.Configuration.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/DiscountManagement.Application.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/DiscountManagement.Application.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/DiscountManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/DiscountManagement.Domain.csproj",
+        "projectName": "DiscountManagement.Domain",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/DiscountManagement.Domain.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectName": "DiscountManagement.Infrastructure.EFCore",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Infrastructure.EFCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/DiscountManagement.Domain.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/DiscountManagement.Domain.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
+        "projectName": "ShopManagement.Application.Contracts",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/ShopManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/ShopManagement.Domain.csproj",
+        "projectName": "ShopManagement.Domain",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/ShopManagement.Domain.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj",
+        "projectName": "ShopManagement.Infrastructure.EFCore",
+        "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "/Users/moh3enkhorrami/.nuget/packages/",
+        "outputPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moh3enkhorrami/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/ShopManagement.Domain.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Domain/ShopManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

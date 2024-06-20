@@ -2,4 +2,7 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=51460AAA_002D6CBF_002D417A_002DA356_002D429D9409A78B_002Ff_003AProductPictureApplication_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=79DDF26A_002D0C8C_002D4986_002D8EB4_002D26850604EA3C_002Fd_003AAreas_002Fd_003AAdministration_002Fd_003APages_002Fd_003AShop_002Fd_003AProductCategories_002Ff_003AEdit_002Ecshtml_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/AnalysisEnabled/@EntryValue">VISIBLE_FILES</s:String>
-	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">ERROR</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">ERROR</s:String>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;
+  &lt;Assembly Path="/Users/moh3enkhorrami/.nuget/packages/microsoft.entityframeworkcore/7.0.0/lib/net6.0/Microsoft.EntityFrameworkCore.dll" /&gt;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

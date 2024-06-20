@@ -6,7 +6,7 @@ public interface ICustomerDiscountApplication
 {
     OperationResult Define(DefineCustomerDiscount command);
     OperationResult Edit(EditCustomerDiscount command);
-    List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel command);
+    List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel searchModel);
     EditCustomerDiscount GetDetails(long id);
     
 }

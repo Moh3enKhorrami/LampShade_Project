@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using DiscountManagement.Configuration;
+using Microsoft.Extensions.Configuration;
 using ShopManagement.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("LampshadeDb");
 
 ShopManagementBoostrapper.Configure(builder.Services, connectionString);
+DiscountManagementBoostrapper.Configure(builder.Services, connectionString);
 
 builder.Services.AddRazorPages();
 
