@@ -62,8 +62,8 @@ public class CustomerDiscountRepository : RepositoryBase<long, CustomerDiscount>
             DiscountRate = x.DiscountRate,
             ProductId = x.ProductId,
             Reason = x.Reason,
-            StartDate = x.StartDate.ToString(),
-            EndDate = x.EndDate.ToString()
+            StartDate = x.StartDate,
+            EndDate = x.EndDate
         }).FirstOrDefault(x => x.Id == id);
     }
 }

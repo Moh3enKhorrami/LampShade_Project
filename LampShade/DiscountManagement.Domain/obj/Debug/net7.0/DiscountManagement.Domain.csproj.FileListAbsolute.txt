@@ -16,3 +16,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/obj/Debug/net7.0/refint/DiscountManagement.Domain.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/obj/Debug/net7.0/DiscountManagement.Domain.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/obj/Debug/net7.0/ref/DiscountManagement.Domain.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/bin/Debug/net7.0/ShopManagement.Application.Contracts.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Domain/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb

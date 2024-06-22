@@ -8,6 +8,13 @@
 
     <ItemGroup>
       <ProjectReference Include="..\0_Framework\0_Framework.csproj" />
+      <ProjectReference Include="..\ShopManagement.Application.Contracts\ShopManagement.Application.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures">
+        <HintPath>..\..\..\..\..\..\..\usr\local\share\dotnet\shared\Microsoft.AspNetCore.App\7.0.18\Microsoft.AspNetCore.Mvc.ViewFeatures.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

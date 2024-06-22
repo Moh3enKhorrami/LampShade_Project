@@ -1,0 +1,65 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Discounts.CoustomerDiscounts.CreateModel
+@{
+    ViewData["Title"] = "Create Product";
+}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div class="container">
+    <h3>@ViewData["Title"]</h3>
+    <form method="post" asp-page-handler="Create">
+        <div class="form-group">
+            <div class="form-group">
+                <label asp-for="Command.ProductId">Product Category</label>
+                <select type="form-control" asp-for="Command.ProductId" rows="3" asp-items="Model.Products"></select>
+                <option value="0">Select Group</option>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.DiscountRate">DiscountRate</label>
+            <input class="form-control" asp-for="Command.DiscountRate" rows="3">
+            <span asp-validation-for="Command.DiscountRate" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.StartDate">StartDate</label>
+            <input type="text" id="dateInput" placeholder="Select a date" asp-for="Command.StartDate">
+            <div class="calendar" id="calendar">
+                <div class="header">
+                    <button id="prevBtn">&lt;</button>
+                    <h2 id="monthYear">Month Year</h2>
+                    <button id="nextBtn">&gt;</button>
+                </div>
+                <div class="days" id="daysContainer"></div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label asp-for="Command.EndDate">EndDate</label>
+            <input type="text" id="dateInput" placeholder="Select a date" asp-for="Command.EndDate">
+            <div class="calendar" id="calendar">
+                <div class="header">
+                    <button id="prevBtn">&lt;</button>
+                    <h2 id="monthYear">Month Year</h2>
+                    <button id="nextBtn">&gt;</button>
+                </div>
+                <div class="days" id="daysContainer"></div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label asp-for="Command.Reason">Reason</label>
+            <input type="text" class="form-control" asp-for="Command.Reason" >
+        </div>
+        
+        
+        <button type="submit" class="btn btn-success">Create</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <a asp-page="./Index" class="btn btn-primary" >Back</a>
+
+        
+    </form>
+</div>
+
+</body>
+</html>

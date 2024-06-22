@@ -1,0 +1,46 @@
+@page
+@model  ServiceHost.Areas.Administration.Pages.Discounts.CoustomerDiscounts.EditModel;
+@{
+    ViewData["Title"] = "Edit Product";
+}
+<!DOCTYPE html> 
+<html lang="en">
+<body>
+<div class="container">
+    <h3>@ViewData["Title"]</h3>
+    <form method="post" asp-page-handler="Edit">
+        <div class="form-group">
+            <label asp-for="Command.ProductId">Name</label>
+            <input type="text" class="form-control" asp-for="Command.ProductId" >
+            <span asp-validation-for="Command.ProductId" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.DiscountRate">Code</label>
+            <input class="form-control" asp-for="Command.DiscountRate" rows="3">
+            <span asp-validation-for="Command.DiscountRate" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.StartDate">UnitPrice</label>
+            <input type="text" class="form-control" asp-for="Command.StartDate">
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.EndDate">Picture</label>
+            <input type="text" class="form-control" asp-for="Command.EndDate" >
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.Reason">PictureAlt</label>
+            <input type="text" class="form-control" asp-for="Command.Reason" >
+        </div>
+        
+
+        <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id">
+
+        <button type="submit" class="btn btn-success">Edit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <a asp-page="./Index" class="btn btn-primary">Back</a>
+    </form>
+   
+</div>
+
+</body>
+</html>

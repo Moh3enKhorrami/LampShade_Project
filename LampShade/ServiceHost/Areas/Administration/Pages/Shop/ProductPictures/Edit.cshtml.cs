@@ -10,7 +10,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
 {
     public class EditModel : PageModel
     {
-        public EditProductPicture _command;
+        public EditProductPicture Command;
         private readonly IProductApplication _productApplication;
         private readonly IProductPictureApplication _productPictureApplication;
         public SelectList Products;
@@ -19,20 +19,19 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
         {
             _productPictureApplication = productPictureApplication;
             _productApplication = productApplication;
-            _command = new EditProductPicture();
+            Command = new EditProductPicture();
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
         }
 
         public void OnGet(long id)
         {
-            _command = _productPictureApplication.GetDetails(id);
+            Command = _productPictureApplication.GetDetails(id);
 
         }
 
         public IActionResult OnPostEdit(EditProductPicture Command)
         {
-            var result = new OperationResult();
-            result = _productPictureApplication.Edit(Command);
+            var result = _productPictureApplication.Edit(Command);
             if (result.IsSuccedded)
                 return RedirectToPage("./Index");
             else

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b8InhClhZ6XKwydbVRcUILxYuoERXHAvgVxhpjBbwwo=",
+  "Hash": "EBLaFDQ2TAVuWzatZYp62Kzuv2b7DD6nV/r7DdCirvE=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -775,6 +775,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/AdminTheme/assets/css/bootstrap.min.css"
+    },
+    {
+      "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/css/Calenda.css",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "AdminTheme/assets/css/Calenda.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/AdminTheme/assets/css/Calenda.css"
     },
     {
       "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/css/helper.css",
@@ -3720,6 +3739,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/AdminTheme/assets/js/bootstrap.min.js"
+    },
+    {
+      "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/js/Calendar.js",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "AdminTheme/assets/js/Calendar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/AdminTheme/assets/js/Calendar.js"
     },
     {
       "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/js/jquery-ui-1.10.1.custom.min.js",

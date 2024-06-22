@@ -5,7 +5,11 @@
     Layout = "Shared/_AdminLayout";
     ViewData["title"] = "Product Pictures Management";
 }
-<html lang="en"></html>
+@section style
+{
+<link href="~/AdminTheme/assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+}
+
 <div class="row" >
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>

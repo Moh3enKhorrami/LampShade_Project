@@ -37,6 +37,18 @@ build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5pc3RyYXRpb24vUGFnZXMv
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Areas/Administration/Pages/Discounts/CoustomerDiscounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5pc3RyYXRpb24vUGFnZXMvRGlzY291bnRzL0NvdXN0b21lckRpc2NvdW50cy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Areas/Administration/Pages/Discounts/CoustomerDiscounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5pc3RyYXRpb24vUGFnZXMvRGlzY291bnRzL0NvdXN0b21lckRpc2NvdW50cy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Areas/Administration/Pages/Discounts/CoustomerDiscounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5pc3RyYXRpb24vUGFnZXMvRGlzY291bnRzL0NvdXN0b21lckRpc2NvdW50cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Areas/Administration/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5pc3RyYXRpb24vUGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -102,6 +102,9 @@
             "projectReferences": {
               "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj": {
                 "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/0_Framework.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj"
               }
             }
           }

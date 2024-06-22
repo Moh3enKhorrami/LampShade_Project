@@ -21,7 +21,7 @@ public class CustomerDiscountApplication : ICustomerDiscountApplication
             return operation.Failed(ApplicationMessages.Dulpicated);
         
         var customerDiscount = new CustomerDiscount(command.ProductId, command.DiscountRate, 
-            Convert.ToDateTime(command.StartDate) , Convert.ToDateTime(command.EndDate), command.Reason);
+            command.StartDate , command.EndDate, command.Reason);
         _customerDiscountRepository.Create(customerDiscount);
         _customerDiscountRepository.SaveChanges();
         return operation.Succedded();
@@ -36,8 +36,8 @@ public class CustomerDiscountApplication : ICustomerDiscountApplication
         if (_customerDiscountRepository.Exists(x =>
                 x.Id == command.Id && x.ProductId == command.ProductId && x.DiscountRate == command.DiscountRate))
             return operation.Failed(ApplicationMessages.DuplicatedRecord);
-        customerDiscount.Edit(command.ProductId, command.DiscountRate, Convert.ToDateTime(command.StartDate),
-            Convert.ToDateTime(command.EndDate), command.Reason);
+        customerDiscount.Edit(command.ProductId, command.DiscountRate,command.StartDate,
+            command.EndDate, command.Reason);
         _customerDiscountRepository.SaveChanges();
         return operation.Succedded();
     }

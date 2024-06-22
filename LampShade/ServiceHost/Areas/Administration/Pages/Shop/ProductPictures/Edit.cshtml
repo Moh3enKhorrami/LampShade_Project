@@ -7,27 +7,26 @@
 <html lang="en">
 <body>
 <div class="container">
-    <h3>@ViewData["Title"]</h3>
     <form method="post" asp-page-handler="Edit">
         <div class="form-group">
-            <label asp-for="_command.ProductId">UnitPrice</label>
-            <input type="text" class="form-control" asp-for="_command.ProductId">
+            <label asp-for="Command.ProductId">UnitPrice</label>
+            <input type="text" class="form-control" asp-for="Command.ProductId">
         </div>
         <div class="form-group">
-            <label asp-for="_command.Picture">Picture</label>
-            <input type="text" class="form-control" asp-for="_command.Picture" >
+            <label asp-for="Command.Picture">Picture</label>
+            <input type="text" class="form-control" asp-for="Command.Picture" >
         </div>
         <div class="form-group">
-            <label asp-for="_command.PictureAlt">PictureAlt</label>
-            <input type="text" class="form-control" asp-for="_command.PictureAlt" >
+            <label asp-for="Command.PictureAlt">PictureAlt</label>
+            <input type="text" class="form-control" asp-for="Command.PictureAlt" >
         </div>
         <div class="form-group">
-            <label asp-for="_command.PictureTitle">PictureTitle</label>
-            <input type="text" class="form-control" asp-for="_command.PictureTitle" >
+            <label asp-for="Command.PictureTitle">PictureTitle</label>
+            <input type="text" class="form-control" asp-for="Command.PictureTitle" >
         </div>
        
 
-        <input type="hidden" asp-for="_command.Id" value="@Model._command.Id">
+        <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id">
 
         <button type="submit" class="btn btn-success">Edit</button>
         <button type="reset" class="btn btn-danger">Reset</button>

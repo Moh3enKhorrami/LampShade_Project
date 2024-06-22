@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets/AdminTheme/assets/counterup/waypoints.min.js"
     },
     {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/css/Calenda.css",
+      "PackagePath": "staticwebassets/AdminTheme/assets/css/Calenda.css"
+    },
+    {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/css/animate.css",
       "PackagePath": "staticwebassets/AdminTheme/assets/css/animate.css"
     },
@@ -767,6 +771,10 @@
     {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/jquery.validate/jquery.validate.min.js",
       "PackagePath": "staticwebassets/AdminTheme/assets/jquery.validate/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/js/Calendar.js",
+      "PackagePath": "staticwebassets/AdminTheme/assets/js/Calendar.js"
     },
     {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/AdminTheme/assets/js/bootstrap.js",
