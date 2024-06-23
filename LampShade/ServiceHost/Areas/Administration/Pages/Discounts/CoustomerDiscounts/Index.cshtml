@@ -26,17 +26,34 @@
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.ProductId"></label>
                         <select class="form-control" asp-for="SearchModel.ProductId" asp-items="Model.Products">
-                        <option value="0">Select Product</option>
+                            <option value="0">Select Product</option>
                         </select>
                     </div>
+
                     <div class="form-group">
-                        <label class="sr-only" asp-for="SearchModel.StartDate"></label>
-                        <input class="form-control" asp-for="SearchModel.StartDate" placeholder="Product StartDate">
+                        <label asp-for="SearchModel.StartDate">StartDate</label>
+                        <input type="text" id="dateInput" placeholder="Select a date" asp-for="SearchModel.StartDate">
+                        <div class="calendar" id="calendar">
+                            <div class="header">
+                                <button id="prevBtn">&lt;</button>
+                                <h2 id="monthYear">Month Year</h2>
+                                <button id="nextBtn">&gt;</button>
+                            </div>
+                            <div class="days" id="daysContainer"></div>
+                        </div>
                     </div>
+
                     <div class="form-group">
-                        <label class="sr-only" asp-for="SearchModel.EndDate"></label>
-                        <input class="form-control" asp-for="SearchModel.EndDate">
-                        </input>
+                        <label asp-for="SearchModel.EndDate">EndDate</label>
+                        <input type="text" id="dateInput" placeholder="Select a date" asp-for="SearchModel.EndDate">
+                        <div class="calendar" id="calendar">
+                            <div class="header">
+                                <button id="prevBtn">&lt;</button>
+                                <h2 id="monthYear">Month Year</h2>
+                                <button id="nextBtn">&gt;</button>
+                            </div>
+                            <div class="days" id="daysContainer"></div>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">Search</button>
                     <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">view all</a>
