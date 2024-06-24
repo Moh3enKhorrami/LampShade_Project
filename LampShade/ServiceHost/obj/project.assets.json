@@ -1208,6 +1208,78 @@
           "bin/placeholder/DiscountManagement.Infrastructure.EFCore.dll": {}
         }
       },
+      "InventoryManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "InventoryManagement.Application.Contract": "1.0.0",
+          "InventoryManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Application.dll": {}
+        }
+      },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        }
+      },
+      "InventoryMangement.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "InventoryManagement.Application": "1.0.0",
+          "InventoryMangement.Infrastructure.EFCorel": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryMangement.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryMangement.Configuration.dll": {}
+        }
+      },
+      "InventoryMangement.Infrastructure.EFCorel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryMangement.Infrastructure.EFCorel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryMangement.Infrastructure.EFCorel.dll": {}
+        }
+      },
       "ShopManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3620,6 +3692,31 @@
       "path": "../DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj"
     },
+    "InventoryManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Application/InventoryManagement.Application.csproj",
+      "msbuildProject": "../InventoryManagement.Application/InventoryManagement.Application.csproj"
+    },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
+      "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj"
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj",
+      "msbuildProject": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj"
+    },
+    "InventoryMangement.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../InventoryMangement.Configuration/InventoryMangement.Configuration.csproj",
+      "msbuildProject": "../InventoryMangement.Configuration/InventoryMangement.Configuration.csproj"
+    },
+    "InventoryMangement.Infrastructure.EFCorel/1.0.0": {
+      "type": "project",
+      "path": "../InventoryMangement.Infrastructure.EFCorel/InventoryMangement.Infrastructure.EFCorel.csproj",
+      "msbuildProject": "../InventoryMangement.Infrastructure.EFCorel/InventoryMangement.Infrastructure.EFCorel.csproj"
+    },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Application/ShopManagement.Application.csproj",
@@ -3654,6 +3751,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "DiscountManagement.Configuration >= 1.0.0",
+      "InventoryMangement.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "ShopManagement.Application.Contracts >= 1.0.0",
       "ShopManagement.Configuration >= 1.0.0"
@@ -3686,6 +3784,9 @@
           "projectReferences": {
             "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/DiscountManagement.Configuration.csproj": {
               "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/DiscountManagement.Configuration.csproj"
+            },
+            "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/InventoryMangement.Configuration.csproj": {
+              "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/InventoryMangement.Configuration.csproj"
             },
             "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj": {
               "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj"

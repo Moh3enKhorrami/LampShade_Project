@@ -187,3 +187,13 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/DiscountManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/DiscountManagement.Domain.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/DiscountManagement.Infrastructure.EFCore.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryManagement.Application.Contract.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryManagement.Domain.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryMangement.Configuration.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryMangement.Configuration.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryManagement.Application.Contract.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryManagement.Domain.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryManagement.Application.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryManagement.Application.pdb
