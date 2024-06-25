@@ -12,10 +12,6 @@ public class CreateProduct
     [MaxLength(15), Required]
     public string Code { get;  set; }
     
-    public double UnitPrice { get;  set; }
-    
-    public bool   IsInStock { get;  set; }
-    
     [MaxLength(550), Required]
     public string ShortDescription { get;  set; }
     

@@ -5,7 +5,7 @@
     Layout = "Shared/_AdminLayout";
     ViewData["title"] = "Products management";
 }
-<html lang="en"></html>
+
 <div class="row" >
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
@@ -62,8 +62,6 @@
                                     <th>Name</th>
                                     <th>Code</th>
                                     <th>Category</th>
-                                    <th>Price</th>
-                                    <th>inventory</th>
                                     <th>Create Date </th>
                                     <th>Operation</th>
                                 </tr>
@@ -79,17 +77,6 @@
                                         <td>@item.Name</td>
                                         <td>@item.Code</td>
                                         <td>@item.Category</td>
-                                        <td>@item.UnitPrice</td>
-                                        <th>
-                                            @if (item.IsInStock)
-                                            {
-                                                <i class="fa fa-check fa-2x text-success"></i>
-                                            }
-                                            else
-                                            {
-                                                <i class="fa fa-remove fa-2x text-danger"></i>
-                                            }
-                                        </th>
                                         <td>@item.CreationDate</td>
                                         <td>
                                             <a class="btn btn-warning pull-right m-rl-5" 
@@ -98,16 +85,6 @@
                                             </a>
                                             
                                             <a class="btn btn-primary waves-effect waves-light m-b-5" asp-page="/shop/ProductPictures/index" >Picture</a>
-                                            
-                                            
-                                            @if (item.IsInStock)
-                                            {
-                                                <a asp-page="./Index" asp-page-handler="NotInStock" asp-route-id="@item.Id" class="btn btn-danger">End of inventory</a>
-                                            }
-                                            else
-                                            {
-                                                <a asp-page="./Index" asp-page-handler="IsInStock" asp-route-id="@item.Id" class="btn btn-success">Available</a>
-                                            }
                                             
                                         </td>
                                     </tr>

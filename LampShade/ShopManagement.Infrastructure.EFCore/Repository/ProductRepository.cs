@@ -25,8 +25,6 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
             CategoryId = x.CategoryId,
             Code = x.Code,
             Picture = x.Picture,
-            UnitPrice = x.UnitPrice,
-            IsInStock = x.IsInStock,
             CreationDate = x.CreationDate.ToString()
             
         });
@@ -56,8 +54,7 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
             Picture = x.Picture,
             PictureAlt = x.PictureAlt,
             PictureTitle = x.PictureTitle,
-            ShortDescription = x.ShortDescription,
-            UnitPrice = x.UnitPrice
+            ShortDescription = x.ShortDescription
         }).FirstOrDefault(x => x.Id == id) ?? throw new InvalidOperationException();
     }
 

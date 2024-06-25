@@ -11,4 +11,5 @@ public interface IInventoryApplication
      OperationResult Reduce(ReduceInventory command);
      EditInventory Getdetails(long id);
      List<InventoryViewModel> Search(InventorySearchmodel searchmodel);
+     List<InventoryOperationViewModel> GetOperationLog(long inventoryid);
 }

@@ -40,12 +40,13 @@ public class InventoryRepository : RepositoryBase<long, Inventory> , IInventoryR
             ProductId = x.ProductId,
             UnitPrice = x.UnitPrice,
             InStock = x.InStock,
-            CurrentCount = x.CalculateCurrentCount()
+            CurrentCount = x.CalculateCurrentCount(),
+            CreationDate = x.CreationDate.ToString()
         });
         if (searchModel.ProductId > 0)
             query = query.Where(x => x.ProductId == searchModel.ProductId);
         
-        if (!searchModel.InStock)
+        if (searchModel.InStock)
             query = query.Where(x => !x.InStock);
         var inventory = query.OrderByDescending(x => x.Id).ToList();
 
@@ -54,5 +55,22 @@ public class InventoryRepository : RepositoryBase<long, Inventory> , IInventoryR
 
         return inventory;
 
+    }
+
+    public List<InventoryOperationViewModel> GetOperationLog(long inventoryid)
+    {
+        var inventory = _inventoryContext.Inventories.FirstOrDefault(x => x.Id == inventoryid);
+        return inventory.Operations.Select(x => new InventoryOperationViewModel()
+        {
+            Id = x.Id,
+            Count = x.Count,
+            CurrentCount = x.CurrentCount,
+            Description = x.Description,
+            Operation = x.Operation,
+            OperationDate = x.OperationDate.ToString(),
+            Operatior = "Manager",
+            OperatorId = x.OperatorId,
+            OrderId = x.OrderId
+        }).OrderByDescending(x => x.Id).ToList();
     }
 }

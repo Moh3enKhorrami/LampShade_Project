@@ -14,3 +14,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/refint/InventoryManagement.Application.Contract.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/InventoryManagement.Application.Contract.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/ref/InventoryManagement.Application.Contract.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/bin/Debug/net7.0/ShopManagement.Application.Contracts.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb

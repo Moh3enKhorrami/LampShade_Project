@@ -3,9 +3,7 @@
 @{
     ViewData["Title"] = "Edit Product";
 }
-<!DOCTYPE html> 
-<html lang="en">
-<body>
+
 <div class="container">
     <h3>@ViewData["Title"]</h3>
     <form method="post" asp-page-handler="Edit">
@@ -18,10 +16,6 @@
             <label asp-for="Command.Code">Code</label>
             <input class="form-control" asp-for="Command.Code" rows="3">
             <span asp-validation-for="Command.Code" class="error"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="Command.UnitPrice">UnitPrice</label>
-            <input type="text" class="form-control" asp-for="Command.UnitPrice">
         </div>
         <div class="form-group">
             <label asp-for="Command.Picture">Picture</label>
@@ -76,6 +70,3 @@
     </form>
    
 </div>
-
-</body>
-</html>

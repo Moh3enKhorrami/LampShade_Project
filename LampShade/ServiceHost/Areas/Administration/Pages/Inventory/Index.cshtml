@@ -1,0 +1,117 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Inventory.IndexModel
+
+@{
+    Layout = "Shared/_AdminLayout";
+    ViewData["title"] = "Inventory";
+}
+
+<div class="row" >
+    <div class="col-sm-12">
+        <p class="pull-left">
+            <a class="btn btn-success btn-lg" asp-page="./Create">Create a new Inventory</a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Search in the Inventory</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-inline" role="form" method="get">
+                    <div class="form-group">
+                        <label class="sr-only" asp-for="SearchModel.ProductId"></label>
+                        <select class="form-control" asp-for="SearchModel.ProductId" asp-items="Model.Products">
+                            <option value="0">Select Product</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group m-r-10">
+                        <div class="checkbox checkbox-primary">
+                        <input asp-for="SearchModel.InStock">
+                        <label asp-for="SearchModel.InStock">Search in the InStock</label>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">Search</button>
+                    <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">view all</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="ProductCategoriesDiv">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">List of Inventory (@Model.Inventory.Count())</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <table id="datatable" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th>CreationDate</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Inventory)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Product</td>
+                                        <td>@item.UnitPrice</td>
+                                        <td>@item.CurrentCount</td>
+                                        <td>@item.CreationDate</td>
+                                        <td>
+                                            <a class="btn btn-warning pull-right m-rl-5" 
+                                               asp-page="./Edit" asp-route-id="@item.Id">
+                                                <i class="fa fa-edit"></i> Edit
+                                            </a>
+                                            <a class="btn btn-success pull-right m-rl-5"
+                                               asp-page="./Increase" asp-page-handler="Increase" asp-route-id="@item.Id">
+                                                <i class="fa fa-Plus"></i> Plus
+                                            </a>
+                                            <a class="btn btn-danger pull-right m-rl-5"
+                                               asp-page="./Reduce" asp-page-handler="Reduce" asp-route-id="@item.Id">
+                                                <i class="fa fa-minus"></i> Reduce
+                                            </a>
+                                            <a class="btn btn-primary pull-right m-rl-5"
+                                               asp-page="./OperationLog" asp-page-handler="Log" asp-route-id="@item.Id">
+                                                <i class="fa fa-recycle"></i> Log
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#datatable').dataTable();
+        });
+    </script>
+}

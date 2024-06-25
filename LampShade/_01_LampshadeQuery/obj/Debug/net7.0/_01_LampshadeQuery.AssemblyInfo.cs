@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("_01_LampshadeQuery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87aaea9032ad948149958ec1f4ec2427396ecc46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6feebdf501410a82593b233fe57d459b471f8d7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("_01_LampshadeQuery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("_01_LampshadeQuery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

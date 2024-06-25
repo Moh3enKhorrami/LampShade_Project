@@ -1,0 +1,47 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.OperationLog.OperationLogModel
+@{
+    ViewData["Title"] = "Log Inventory";
+}
+<div class="container">
+
+    <div class="modal-body">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Count</th>
+                <th>Date</th>
+                <th>operation</th>
+                <th>stock</th>
+                <th>operator</th>
+                <th>Discription</th>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Command)
+            {
+            <tr class="text-white @(item.Operation ? "bg-success" : "bg-danger")">
+                <td>@item.Id</td>
+                <td>@item.Count</td>
+                <td>@item.OperationDate</td>
+                <td>
+                    @if (item.Operation)
+                    {
+                    <span>Increase</span>
+                    }
+                    else
+                    {
+                    <span>Decrease</span>
+                    }
+                </td>
+                <td>@item.CurrentCount</td>
+                <td>@item.Operatior</td>
+                <td>@item.Description</td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>    
+    
+    <a asp-page="./Index" class="btn btn-primary" >Back</a>
+</div>

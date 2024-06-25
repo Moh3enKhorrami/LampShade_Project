@@ -1,0 +1,26 @@
+@page
+@model ServiceHost.Areas.Administration.Pages.Inventory.Increase
+@{
+    ViewData["Title"] = "Increase Inventory";
+}
+<div class="container">
+    <form method="post" asp-page-handler="Increase">
+        <div class="form-group">
+            <label asp-for="Command.Count">Count</label>
+            <input type="text" class="form-control" asp-for="Command.Count" >
+            <span asp-validation-for="Command.Count" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.Description">Description</label>
+            <textarea class="form-control" asp-for="Command.Description" rows="3"></textarea>
+            <span asp-validation-for="Command.Description" class="error"></span>
+        </div>
+        
+        <input type="hidden" asp-for="Command.InventoryId" value="@Model.Command.InventoryId">
+
+        <button type="submit" class="btn btn-success">Add</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <a asp-page="./Index" class="btn btn-primary">Back</a>
+    </form>
+   
+</div>

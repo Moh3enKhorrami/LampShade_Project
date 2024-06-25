@@ -1,0 +1,28 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Inventory.CreateModel
+@{
+    ViewData["Title"] = "Create Inventory";
+}
+<div class="container">
+    <form method="post" asp-page-handler="Create">
+        <div class="form-group">
+            <div class="form-group">
+                <label asp-for="Command.ProductId">Product</label>
+                <select type="form-control" asp-for="Command.ProductId" rows="3" asp-items="Model.Products"></select>
+                <option value="0">Select Group</option>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.UnitPrice">Price</label>
+            <input class="form-control" asp-for="Command.UnitPrice" rows="3">
+            <span asp-validation-for="Command.UnitPrice" class="error"></span>
+        </div>
+        
+        
+        <button type="submit" class="btn btn-success">Create</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <a asp-page="./Index" class="btn btn-primary" >Back</a>
+
+        
+    </form>
+</div>

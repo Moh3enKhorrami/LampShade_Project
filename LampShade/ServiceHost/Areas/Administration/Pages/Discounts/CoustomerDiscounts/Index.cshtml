@@ -5,7 +5,7 @@
     Layout = "Shared/_AdminLayout";
     ViewData["title"] = "Customers Discount";
 }
-<html lang="en"></html>
+
 <div class="row" >
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
@@ -31,30 +31,19 @@
                     </div>
 
                     <div class="form-group">
-                        <label asp-for="SearchModel.StartDate">StartDate</label>
-                        <input type="text" id="dateInput" placeholder="Select a date" asp-for="SearchModel.StartDate">
-                        <div class="calendar" id="calendar">
-                            <div class="header">
-                                <button id="prevBtn">&lt;</button>
-                                <h2 id="monthYear">Month Year</h2>
-                                <button id="nextBtn">&gt;</button>
-                            </div>
-                            <div class="days" id="daysContainer"></div>
+                        <input type="text" class="form-control" asp-for="SearchModel.StartDate" data-provide="datepicker" placeholder="mm/dd/yyyy" data-date-format="mm/dd/yyyy" data-date-autoclose="true" autocomplete="off">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="ri-calendar-event-fill"></i></span>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label asp-for="SearchModel.EndDate">EndDate</label>
-                        <input type="text" id="dateInput" placeholder="Select a date" asp-for="SearchModel.EndDate">
-                        <div class="calendar" id="calendar">
-                            <div class="header">
-                                <button id="prevBtn">&lt;</button>
-                                <h2 id="monthYear">Month Year</h2>
-                                <button id="nextBtn">&gt;</button>
-                            </div>
-                            <div class="days" id="daysContainer"></div>
+                        <input type="text" class="form-control" asp-for="SearchModel.EndDate" data-provide="datepicker" placeholder="mm/dd/yyyy" data-date-format="mm/dd/yyyy" data-date-autoclose="true" autocomplete="off">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="ri-calendar-event-fill"></i></span>
                         </div>
                     </div>
+                    
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">Search</button>
                     <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">view all</a>
                 </form>

@@ -83,4 +83,9 @@ public class InventoryApplication : IInventoryApplication
     {
         return _inventoryRepository.Search(searchmodel); 
     }
+
+    public List<InventoryOperationViewModel> GetOperationLog(long inventoryid)
+    {
+        return _inventoryRepository.GetOperationLog(inventoryid);
+    }
 }

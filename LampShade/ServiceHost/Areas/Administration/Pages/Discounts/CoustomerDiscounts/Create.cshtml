@@ -3,9 +3,6 @@
 @{
     ViewData["Title"] = "Create Product";
 }
-<!DOCTYPE html>
-<html lang="en">
-<body>
 <div class="container">
     <h3>@ViewData["Title"]</h3>
     <form method="post" asp-page-handler="Create">
@@ -21,31 +18,22 @@
             <input class="form-control" asp-for="Command.DiscountRate" rows="3">
             <span asp-validation-for="Command.DiscountRate" class="error"></span>
         </div>
+
         <div class="form-group">
-            <label asp-for="Command.StartDate">StartDate</label>
-            <input type="text" id="dateInput" placeholder="Select a date" asp-for="Command.StartDate">
-            <div class="calendar" id="calendar">
-                <div class="header">
-                    <button id="prevBtn">&lt;</button>
-                    <h2 id="monthYear">Month Year</h2>
-                    <button id="nextBtn">&gt;</button>
-                </div>
-                <div class="days" id="daysContainer"></div>
+            <input type="text" class="form-control" asp-for="Command.StartDate" data-provide="datepicker" placeholder="mm/dd/yyyy" data-date-format="mm/dd/yyyy" data-date-autoclose="true" autocomplete="off">
+            <div class="input-group-append">
+                <span class="input-group-text"><i class="ri-calendar-event-fill"></i></span>
             </div>
         </div>
         
         <div class="form-group">
-            <label asp-for="Command.EndDate">EndDate</label>
-            <input type="text" id="dateInput" placeholder="Select a date" asp-for="Command.EndDate">
-            <div class="calendar" id="calendar">
-                <div class="header">
-                    <button id="prevBtn">&lt;</button>
-                    <h2 id="monthYear">Month Year</h2>
-                    <button id="nextBtn">&gt;</button>
-                </div>
-                <div class="days" id="daysContainer"></div>
+            <input type="text" class="form-control" asp-for="Command.EndDate" data-provide="datepicker" placeholder="mm/dd/yyyy" data-date-format="mm/dd/yyyy" data-date-autoclose="true" autocomplete="off">
+            <div class="input-group-append">
+                <span class="input-group-text"><i class="ri-calendar-event-fill"></i></span>
             </div>
         </div>
+        
+        
         
         <div class="form-group">
             <label asp-for="Command.Reason">Reason</label>
@@ -60,6 +48,3 @@
         
     </form>
 </div>
-
-</body>
-</html>

@@ -1,0 +1,26 @@
+@page
+@model  ServiceHost.Areas.Administration.Pages.Inventory.EditModel;
+@{
+    ViewData["Title"] = "Edit Inventory";
+}
+<div class="container">
+    <form method="post" asp-page-handler="Edit">
+        <div class="form-group">
+            <label asp-for="Command.ProductId">Product</label>
+            <input type="text" class="form-control" asp-for="Command.ProductId" >
+            <span asp-validation-for="Command.ProductId" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.UnitPrice">Price</label>
+            <input class="form-control" asp-for="Command.UnitPrice" rows="3">
+            <span asp-validation-for="Command.UnitPrice" class="error"></span>
+        </div>
+        
+        <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id">
+
+        <button type="submit" class="btn btn-success">Edit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <a asp-page="./Index" class="btn btn-primary">Back</a>
+    </form>
+   
+</div>
