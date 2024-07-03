@@ -1041,6 +1041,54 @@
       "PackagePath": "staticwebassets/AdminTheme/assets/toggles/toggles.min.js"
     },
     {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Decoration/1.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Decoration/1.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Decoration/2.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Decoration/2.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Decoration/3.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Decoration/3.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Lighting/1.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Lighting/1.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Lighting/2.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Lighting/2.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Lighting/3.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Lighting/3.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Living_Room/1.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Living_Room/1.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Living_Room/2.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Living_Room/2.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Living_Room/3.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Living_Room/3.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Storage/1.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Storage/1.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Storage/2.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Storage/2.webp"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Storage/3.webp",
+      "PackagePath": "staticwebassets/ProductPictures/Storage/3.webp"
+    },
+    {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/Theme/assets/css/Custom.css",
       "PackagePath": "staticwebassets/Theme/assets/css/Custom.css"
     },

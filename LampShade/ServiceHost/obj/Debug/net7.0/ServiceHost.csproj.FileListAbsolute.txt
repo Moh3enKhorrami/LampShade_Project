@@ -173,8 +173,6 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceHost.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceHost.genruntimeconfig.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ref/ServiceHost.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceHost.sourcelink.json
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceH.EB565EEF.Up2Date
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/_01_LampshadeQuery.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/_01_LampshadeQuery.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/DiscountManagement.Application.Contracts.dll
@@ -197,3 +195,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryManagement.Application.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/InventoryManagement.Application.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceHost.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/obj/Debug/net7.0/ServiceH.EB565EEF.Up2Date

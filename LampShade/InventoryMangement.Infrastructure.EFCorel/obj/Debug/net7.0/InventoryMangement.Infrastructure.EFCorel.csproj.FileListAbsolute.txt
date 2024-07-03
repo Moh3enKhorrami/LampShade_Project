@@ -19,10 +19,10 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.AssemblyInfoInputs.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.AssemblyInfo.cs
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.csproj.CoreCompileInputs.cache
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.sourcelink.json
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/Inventor.FAAFA942.Up2Date
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/refint/InventoryMangement.Infrastructure.EFCorel.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.genruntimeconfig.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/ref/InventoryMangement.Infrastructure.EFCorel.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/Inventor.FAAFA942.Up2Date

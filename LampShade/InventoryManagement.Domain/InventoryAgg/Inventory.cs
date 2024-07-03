@@ -5,6 +5,12 @@ namespace InventoryManagement.Domain.InventoryAgg;
 
 public class Inventory : EntityBase
 {
+    public long ProductId { get; private set; }
+    public double UnitPrice { get; private set; }
+    public bool InStock { get; private set; }
+    public List<InventoryOperation> Operations { get; private set; } // Log Inventory
+    
+    
     public Inventory(long productId, double unitPrice)
     {
         ProductId = productId;
@@ -16,10 +22,7 @@ public class Inventory : EntityBase
         ProductId = productId;
         UnitPrice = unitPrice; 
     }
-    public long ProductId { get; private set; }
-    public double UnitPrice { get; private set; }
-    public bool InStock { get; private set; }
-    public List<InventoryOperation> Operations { get; private set; }
+    
 
     public long CalculateCurrentCount()
     {
@@ -40,8 +43,8 @@ public class Inventory : EntityBase
     public void Reduce(long count, long operatorId, string description, long orderId)
     {
         var currentcount = CalculateCurrentCount() - count;
-        var operation = new InventoryOperation(false, count, operatorId,
-            currentcount, description, orderId, Id);
+        var operation = new InventoryOperation(false, count, operatorId, currentcount,
+            description, orderId, Id);
         Operations.Add(operation);
         InStock = currentcount > 0;
     }

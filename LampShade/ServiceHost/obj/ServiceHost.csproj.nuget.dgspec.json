@@ -1417,6 +1417,12 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/InventoryMangement.Infrastructure.EFCorel.csproj": {
+                "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/InventoryMangement.Infrastructure.EFCorel.csproj"
+              },
               "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj"
               }

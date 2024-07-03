@@ -34,7 +34,7 @@ public class CustomerDiscountApplication : ICustomerDiscountApplication
         if (customerDiscount == null)
             return operation.Failed(ApplicationMessages.RecordNotFound);
         if (_customerDiscountRepository.Exists(x =>
-                x.Id == command.Id && x.ProductId == command.ProductId && x.DiscountRate == command.DiscountRate))
+                x.Id != command.Id && x.ProductId == command.ProductId && x.DiscountRate == command.DiscountRate))
             return operation.Failed(ApplicationMessages.DuplicatedRecord);
         customerDiscount.Edit(command.ProductId, command.DiscountRate,command.StartDate,
             command.EndDate, command.Reason);

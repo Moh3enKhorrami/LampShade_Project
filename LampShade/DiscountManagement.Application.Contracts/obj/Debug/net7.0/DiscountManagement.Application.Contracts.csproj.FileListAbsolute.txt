@@ -8,8 +8,6 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/DiscountManagement.Application.Contracts.AssemblyInfoInputs.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/DiscountManagement.Application.Contracts.AssemblyInfo.cs
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/DiscountManagement.Application.Contracts.csproj.CoreCompileInputs.cache
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/DiscountManagement.Application.Contracts.sourcelink.json
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/Discount.929289B0.Up2Date
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/DiscountManagement.Application.Contracts.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/refint/DiscountManagement.Application.Contracts.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/DiscountManagement.Application.Contracts.pdb
@@ -61,3 +59,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/ShopManagement.Application.Contracts.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/DiscountManagement.Application.Contracts.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/obj/Debug/net7.0/Discount.929289B0.Up2Date

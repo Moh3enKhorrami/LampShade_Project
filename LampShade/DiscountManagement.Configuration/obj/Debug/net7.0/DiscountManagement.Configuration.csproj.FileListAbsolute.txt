@@ -22,9 +22,9 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/DiscountManagement.Configuration.AssemblyInfoInputs.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/DiscountManagement.Configuration.AssemblyInfo.cs
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/DiscountManagement.Configuration.csproj.CoreCompileInputs.cache
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/DiscountManagement.Configuration.sourcelink.json
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/Discount.07A2EDEC.Up2Date
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/DiscountManagement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/refint/DiscountManagement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/DiscountManagement.Configuration.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/ref/DiscountManagement.Configuration.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/DiscountManagement.Configuration.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Configuration/obj/Debug/net7.0/Discount.07A2EDEC.Up2Date

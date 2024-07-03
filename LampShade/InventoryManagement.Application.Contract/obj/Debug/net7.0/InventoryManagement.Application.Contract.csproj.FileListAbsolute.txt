@@ -8,11 +8,11 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/InventoryManagement.Application.Contract.AssemblyInfoInputs.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/InventoryManagement.Application.Contract.AssemblyInfo.cs
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/InventoryManagement.Application.Contract.csproj.CoreCompileInputs.cache
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/InventoryManagement.Application.Contract.sourcelink.json
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/Inventor.26D109AC.Up2Date
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/InventoryManagement.Application.Contract.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/refint/InventoryManagement.Application.Contract.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/InventoryManagement.Application.Contract.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/ref/InventoryManagement.Application.Contract.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/bin/Debug/net7.0/ShopManagement.Application.Contracts.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/InventoryManagement.Application.Contract.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application.Contract/obj/Debug/net7.0/Inventor.26D109AC.Up2Date

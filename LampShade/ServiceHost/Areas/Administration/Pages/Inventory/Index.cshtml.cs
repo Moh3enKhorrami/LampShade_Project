@@ -11,7 +11,7 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
 {
     public class IndexModel : PageModel
     {
-        public InventorySearchmodel SearchModel; //?
+        public InventorySearchmodel SearchModel;
         public List<InventoryViewModel> Inventory; 
         public SelectList Products;
         
@@ -25,7 +25,7 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             Inventory = new List<InventoryViewModel>();
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
         }
-        public void OnGet(InventorySearchmodel searchModel) //?
+        public void OnGet(InventorySearchmodel searchModel)
         {
             Inventory = _inventoryApplication.Search(searchModel);
         }

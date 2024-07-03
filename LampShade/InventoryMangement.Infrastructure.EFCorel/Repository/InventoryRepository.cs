@@ -9,7 +9,7 @@ namespace InventoryMangement.Infrastructure.EFCorel.Repository;
 public class InventoryRepository : RepositoryBase<long, Inventory> , IInventoryRepository
 {
     private readonly ShopContext _shopContext;
-    private readonly InventoryContext _inventoryContext; 
+    private readonly InventoryContext _inventoryContext;
     public InventoryRepository(InventoryContext inventoryContext, ShopContext shopContext) : base(inventoryContext)
     {
         _inventoryContext = inventoryContext;

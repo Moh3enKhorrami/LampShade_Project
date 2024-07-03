@@ -21,6 +21,10 @@
     <Folder Include="Areas\Administration\" />
     <Folder Include="Areas\Administration\Pages\Shared\" />
     <Folder Include="wwwroot\AdminTheme\" />
+    <Folder Include="wwwroot\ProductPictures\Decoration\" />
+    <Folder Include="wwwroot\ProductPictures\Lighting\" />
+    <Folder Include="wwwroot\ProductPictures\Living_Room\" />
+    <Folder Include="wwwroot\ProductPictures\Storage\" />
     <Folder Include="wwwroot\Theme\" />
   </ItemGroup>
   <ItemGroup>

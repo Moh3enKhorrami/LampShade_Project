@@ -30,9 +30,8 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CoustomerDiscounts
 
         public IActionResult OnPostEdit( EditCustomerDiscount Command)
         {
-            var result = new OperationResult();
-            result = _customerDiscountApplication.Edit(Command);
-            if (result.IsSuccedded)
+            var result = _customerDiscountApplication.Edit(Command);
+            if (result != null)
                 return RedirectToPage("./Index");
             else
             {

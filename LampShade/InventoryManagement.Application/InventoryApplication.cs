@@ -29,7 +29,8 @@ public class InventoryApplication : IInventoryApplication
         var inventory = _inventoryRepository.Get(command.Id);
         if (inventory == null)
             return operation.Failed(ApplicationMessages.RecordNotFound);
-        if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId && x.Id == command.Id))
+        if (_inventoryRepository.Exists(x => 
+                x.ProductId == command.ProductId && x.Id == command.Id))
             return operation.Failed(ApplicationMessages.DuplicatedRecord);
         inventory.Edit(command.ProductId, command.UnitPrice);
         _inventoryRepository.SaveChanges();

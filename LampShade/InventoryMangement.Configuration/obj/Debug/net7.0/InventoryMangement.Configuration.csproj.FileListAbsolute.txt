@@ -21,8 +21,6 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/InventoryMangement.Configuration.AssemblyInfoInputs.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/InventoryMangement.Configuration.AssemblyInfo.cs
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/InventoryMangement.Configuration.csproj.CoreCompileInputs.cache
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/InventoryMangement.Configuration.sourcelink.json
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/Inventor.9FE69597.Up2Date
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/InventoryMangement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/refint/InventoryMangement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/InventoryMangement.Configuration.pdb
@@ -30,3 +28,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/ref/InventoryMangement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/InventoryManagement.Application.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/InventoryManagement.Application.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/InventoryMangement.Configuration.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/obj/Debug/net7.0/Inventor.9FE69597.Up2Date
