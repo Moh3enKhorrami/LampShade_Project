@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InventoryMangement.Infrastructure.EFCorel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5eefa37ef00ad812cd5fa6a678092bcd1d93ff5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ce47bfa4a2e55bec74b7abe16aad6884c6693ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventoryMangement.Infrastructure.EFCorel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventoryMangement.Infrastructure.EFCorel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -137,12 +137,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/ProductCategoryModel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdENhdGVnb3J5TW9kZWwuY3NodG1s
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/ProductCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/Shared/Components/Foother/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL0NvbXBvbmVudHMvRm9vdGhlci9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/Shared/Components/LatestArrivals/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL0NvbXBvbmVudHMvTGF0ZXN0QXJyaXZhbHMvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/Shared/Components/Menu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL0NvbXBvbmVudHMvTWVudS9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/Shared/Components/ProductCategory/Default.cshtml]
