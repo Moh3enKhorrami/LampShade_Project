@@ -58,6 +58,11 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
         }).FirstOrDefault(x => x.Id == id) ?? throw new InvalidOperationException();
     }
 
+    public Product GetProductWithCategory(long id)
+    {
+        return _context.Products.Include(x => x.Category).FirstOrDefault(x => x.Id == id);
+    }
+
     public List<ProductViewModel> GetProducts()
     {
         return _context.Products.Select(x => new ProductViewModel()

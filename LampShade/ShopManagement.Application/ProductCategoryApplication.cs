@@ -22,9 +22,9 @@ public class ProductCategoryApplication : IProductCategoryApplication
             return operation.Failed(ApplicationMessages.Dulpicated);
         var slug = command.Slug.Slugify();
         var picturePath = $"{command.Slug}";
-        var fileName = _fileUpLoader.UpLoad(command.Picture, picturePath);
+        var pictureName = _fileUpLoader.UpLoad(command.Picture, picturePath);
         var productCategory = new ProductCategory(command.Name, command.Description,
-            fileName, command.PictureAlt, command.PictureTitle, command.Keywords,
+            pictureName, command.PictureAlt, command.PictureTitle, command.Keywords,
             command.MetaDescription, slug);
         _productCategoryRepository.Create(productCategory);
         _productCategoryRepository.SaveChanges();
@@ -43,8 +43,8 @@ public class ProductCategoryApplication : IProductCategoryApplication
 
         var slug = command.Slug.Slugify();
         var picturePath = $"{command.Slug}";
-        var fileName = _fileUpLoader.UpLoad(command.Picture, picturePath);
-        productCategory.Edit(command.Name, command.Description, fileName,
+        var pictureName = _fileUpLoader.UpLoad(command.Picture, picturePath);
+        productCategory.Edit(command.Name, command.Description, pictureName,
             command.PictureAlt, command.PictureTitle, command.Keywords,
             command.MetaDescription, slug);
         _productCategoryRepository.SaveChanges();

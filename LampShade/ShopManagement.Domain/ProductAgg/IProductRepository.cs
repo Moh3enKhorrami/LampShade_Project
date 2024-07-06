@@ -8,6 +8,7 @@ public interface IProductRepository : IRepository<long, Product>
 {
     List<ProductViewModel> Search(ProductSearchModel searchModel);
     EditProduct GetDetails(long id);
+    Product GetProductWithCategory(long id);
     List<ProductViewModel> GetProducts();
 
 

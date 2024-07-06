@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "++b00qjVK1QwuKTXdY0j+U/rSeMJMhkbEbdTtXvPZZI=",
+  "Hash": "VgYyheHCaRUsT0xGwhctnXUGEov7FyQ2QRtYdWcGXXU=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -6211,6 +6211,25 @@
       "OriginalItemSpec": "wwwroot/ProductPictures/Decoration/nordic-boho-style/1.webp"
     },
     {
+      "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Decoration/nordic-boho-style/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "ProductPictures/Decoration/nordic-boho-style/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductPictures/Decoration/nordic-boho-style/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png"
+    },
+    {
       "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Lighting/img2-top-eposi1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -6361,6 +6380,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/ProductPictures/living-room/rustic-metal-deer-head-wall-sculpture/2.webp"
+    },
+    {
+      "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/slides/slider1-1820x785.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "ProductPictures/slides/slider1-1820x785.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductPictures/slides/slider1-1820x785.jpg"
     },
     {
       "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Storage/img1-top-eposi1.jpg",

@@ -1,12 +1,13 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection.Metadata.Ecma335;
+using Microsoft.AspNetCore.Http;
 
 namespace ShopManagement.Application.Contracts.Slide;
 
 public class CreateSlide
 {
-    [MaxLength(1000), Required]
-    public string Picture { get; set; }
+    
+    public IFormFile Picture { get; set; }
     
     [MaxLength(500), Required]
     public string PictureTitle { get; set; }

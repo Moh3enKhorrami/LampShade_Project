@@ -7,15 +7,15 @@
 
 <div class="container">
     <h3>@ViewData["title"]</h3>
-    <form asp-page="./Edit" method="post" asp-page-handler="Edit">
+    <form asp-page="./Edit" method="post" asp-page-handler="Edit" enctype="multipart/form-data">
         <div class="form-group">
             <label asp-for="Command.Picture">Picture</label>
-            <input type="text" class="form-control" asp-for="Command.Picture" >
+            <input type="file" class="form-control" asp-for="Command.Picture" accept="image/*">
             <span asp-validation-for="Command.Picture" class="error"></span>
         </div>
         <div class="form-group">
             <label asp-for="Command.PictureAlt">PictureAlt</label>
-            <input class="form-control" asp-for="Command.PictureAlt" rows="3">
+            <input type="text" class="form-control" asp-for="Command.PictureAlt" rows="3">
             <span asp-validation-for="Command.PictureAlt" class="error"></span>
         </div>
         <div class="form-group">
@@ -43,7 +43,8 @@
         </div>
         <div class="form-group">
             <label asp-for="Command.Link">Link</label>
-            <input name="Link" type="text" class="form-control"  asp-for="Command.Link" >
+            <input type="text" class="form-control"  asp-for="Command.Link" >
+            <span asp-validation-for="Command.Link" class="error"></span>
         </div>
 
         <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id">

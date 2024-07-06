@@ -24,8 +24,6 @@
     <Folder Include="wwwroot\ProductPictures\Decoration\" />
     <Folder Include="wwwroot\ProductPictures\Lighting\" />
     <Folder Include="wwwroot\ProductPictures\Storage\" />
-    <Folder Include="wwwroot\Product\" />
-    <Folder Include="wwwroot\Product\Storage\" />
     <Folder Include="wwwroot\Theme\" />
   </ItemGroup>
   <ItemGroup>
