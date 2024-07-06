@@ -6,7 +6,7 @@
 
 <div class="container">
     <h3>@ViewData["Title"]</h3>
-    <form method="post" asp-page-handler="Edit">
+    <form method="post" asp-page-handler="Edit" enctype="multipart/form-data">
         <div class="form-group">
             <label asp-for="Command.Name">Name</label>
             <input type="text" class="form-control" asp-for="Command.Name" >
@@ -19,7 +19,7 @@
         </div>
         <div class="form-group">
             <label asp-for="Command.Picture">Picture</label>
-            <input type="text" class="form-control" asp-for="Command.Picture" >
+            <input type="file" class="form-control" asp-for="Command.Picture" accept="image/*">
         </div>
         <div class="form-group">
             <label asp-for="Command.PictureAlt">PictureAlt</label>

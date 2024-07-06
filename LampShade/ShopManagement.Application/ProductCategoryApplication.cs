@@ -7,10 +7,11 @@ namespace ShopManagement.Application;
 public class ProductCategoryApplication : IProductCategoryApplication
 {
     private readonly IProductCategoryRepository _productCategoryRepository;
-
-    public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository)
+    private readonly IFileUpLoader _fileUpLoader;
+    public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository, IFileUpLoader fileUpLoader)
     {
         _productCategoryRepository = productCategoryRepository;
+        _fileUpLoader = fileUpLoader;
     }
 
 
@@ -20,8 +21,10 @@ public class ProductCategoryApplication : IProductCategoryApplication
         if (_productCategoryRepository.Exists(x => x.Name == command.Name))
             return operation.Failed(ApplicationMessages.Dulpicated);
         var slug = command.Slug.Slugify();
+        var picturePath = $"{command.Slug}";
+        var fileName = _fileUpLoader.UpLoad(command.Picture, picturePath);
         var productCategory = new ProductCategory(command.Name, command.Description,
-            command.Picture, command.PictureAlt, command.PictureTitle, command.Keywords,
+            fileName, command.PictureAlt, command.PictureTitle, command.Keywords,
             command.MetaDescription, slug);
         _productCategoryRepository.Create(productCategory);
         _productCategoryRepository.SaveChanges();
@@ -39,8 +42,9 @@ public class ProductCategoryApplication : IProductCategoryApplication
             return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
         var slug = command.Slug.Slugify();
-
-        productCategory.Edit(command.Name, command.Description, command.Picture,
+        var picturePath = $"{command.Slug}";
+        var fileName = _fileUpLoader.UpLoad(command.Picture, picturePath);
+        productCategory.Edit(command.Name, command.Description, fileName,
             command.PictureAlt, command.PictureTitle, command.Keywords,
             command.MetaDescription, slug);
         _productCategoryRepository.SaveChanges();

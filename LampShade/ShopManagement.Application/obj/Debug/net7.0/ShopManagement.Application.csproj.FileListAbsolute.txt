@@ -37,3 +37,8 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/obj/Debug/net7.0/ref/ShopManagement.Application.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/obj/Debug/net7.0/ShopManagement.Application.sourcelink.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/obj/Debug/net7.0/ShopMana.FD901593.Up2Date
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/bin/Debug/net7.0/System.IO.Pipelines.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ShopManagement.Application/bin/Debug/net7.0/Microsoft.Extensions.Features.dll

@@ -51,7 +51,7 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
             Description = x.Description,
             Keyworks = x.Keyworks,
             MetaDescription = x.MetaDescription,
-            Picture = x.Picture,
+            
             PictureAlt = x.PictureAlt,
             PictureTitle = x.PictureTitle,
             ShortDescription = x.ShortDescription

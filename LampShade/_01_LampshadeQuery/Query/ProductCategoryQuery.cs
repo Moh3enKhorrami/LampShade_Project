@@ -44,7 +44,7 @@ public class ProductCategoryQuery : IProductCategoryQuery
                 MetaDescription = x.MetaDescription,
                 Slug = x.Slug,
                 Products = MapProducts(x.Products)
-            }).FirstOrDefault(x => x.Slug == slug);
+            }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
         foreach (var product in category.Products)
         {
@@ -90,7 +90,7 @@ public class ProductCategoryQuery : IProductCategoryQuery
             PictureAlt = x.PictureAlt,
             PictureTitle = x.PictureTitle,
             Slug = x.Slug
-        }).ToList();
+        }).AsNoTracking().ToList();
         
     }
     
@@ -113,7 +113,7 @@ public class ProductCategoryQuery : IProductCategoryQuery
                 Id = x.Id,
                 Name = x.Name,
                 Products = MapProducts(x.Products)
-            }).ToList();
+            }).AsNoTracking().ToList();
 
         
         foreach (var category in categories)

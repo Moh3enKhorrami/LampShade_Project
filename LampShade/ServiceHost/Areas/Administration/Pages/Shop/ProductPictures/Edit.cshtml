@@ -5,14 +5,14 @@
 }
 
 <div class="container">
-    <form method="post" asp-page-handler="Edit">
+    <form method="post" asp-page-handler="Edit" enctype="multipart/form-data">
         <div class="form-group">
             <label asp-for="Command.ProductId">UnitPrice</label>
             <input type="text" class="form-control" asp-for="Command.ProductId">
         </div>
         <div class="form-group">
             <label asp-for="Command.Picture">Picture</label>
-            <input type="text" class="form-control" asp-for="Command.Picture" >
+            <input type="file" class="form-control" asp-for="Command.Picture" accept="image/*">
         </div>
         <div class="form-group">
             <label asp-for="Command.PictureAlt">PictureAlt</label>

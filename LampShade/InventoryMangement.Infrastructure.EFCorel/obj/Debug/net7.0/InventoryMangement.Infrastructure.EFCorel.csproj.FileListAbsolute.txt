@@ -26,3 +26,8 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/ref/InventoryMangement.Infrastructure.EFCorel.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/InventoryMangement.Infrastructure.EFCorel.sourcelink.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/obj/Debug/net7.0/Inventor.FAAFA942.Up2Date
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/bin/Debug/net7.0/System.IO.Pipelines.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Infrastructure.EFCorel/bin/Debug/net7.0/Microsoft.Extensions.Features.dll

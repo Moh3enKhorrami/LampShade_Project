@@ -2,6 +2,7 @@ using _01_LampshadeQuery.Contracts.Product;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryMangement.Infrastructure.EFCorel;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Infrastructure.EFCore;
 
 namespace _01_LampshadeQuery.Query;
@@ -33,12 +34,13 @@ public class ProductQuery : IProductQuery
             {
                 Id = product.Id,
                 Category = product.Category.Name,
+                categorySlug = product.Category.Slug,
                 Name = product.Name,
                 Picture = product.Picture,
                 PictureAlt = product.PictureAlt,
                 PictureTitle = product.PictureTitle,
                 Slug = product.Slug
-            }).OrderByDescending(x => x.Id).Take(6).ToList();
+            }).AsNoTracking().OrderByDescending(x => x.Id).Take(6).ToList();
         foreach (var product in products)
         {
             var productInventory = inventory.FirstOrDefault(x 
@@ -65,6 +67,61 @@ public class ProductQuery : IProductQuery
                 }
             }
         }
+        return products;
+    }
+
+    public List<ProductQueryModel> Search(string value)
+    {
+        var inventory = _inventoryContext.Inventories.Select(x 
+            => new { x.ProductId, x.UnitPrice }).ToList();
+        var discounts = _discountContext.CustomerDiscounts
+            .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
+            .Select(x => new { x.DiscountRate, x.ProductId, x.EndDate }).ToList();
+        var products = _context.Products
+            .Include(x => x.Category)
+            .Select(x => new ProductQueryModel()
+        {
+            Id = x.Id,
+            Name = x.Name,
+            Category = x.Category.Name,
+            Picture = x.Picture,
+            PictureTitle = x.PictureTitle,
+            PictureAlt = x.PictureAlt,
+            ShortDescription = x.ShortDescription,
+            Slug = x.Slug
+            
+        }).AsNoTracking().ToList();
+
+        if (!string.IsNullOrWhiteSpace(value))
+        {
+            products = (List<ProductQueryModel>)products.Where(x 
+                => x.Name.Contains(value) || x.ShortDescription.Contains(value));
+            
+        }
+        var product = products.OrderByDescending(x => x.Id).ToList();
+        
+        foreach (var item in products)
+        {
+            var productInventory = inventory
+                .FirstOrDefault(x => x.ProductId == item.Id);
+            if (productInventory != null)
+            {
+                var price = productInventory.UnitPrice;
+                item.Price = price;
+                var discount = discounts
+                    .FirstOrDefault(x => x.ProductId == item.Id);
+                if (discount != null)
+                {
+                    var discountRate = discount.DiscountRate;
+                    item.DiscountExpireDate = discount.EndDate.ToString(); 
+                    item.DiscountRate = discountRate;
+                    item.HasDiscount = true;
+                    var discountAmount = Math.Round((price * discountRate) / 100);
+                    item.PriceWithDiscount = (price - discountAmount).ToString();
+                }
+            }
+        }
+
         return products;
     }
 }

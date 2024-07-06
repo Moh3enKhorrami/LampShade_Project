@@ -32,3 +32,8 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/DiscountManagement.Domain.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/obj/Debug/net7.0/_01_LampshadeQuery.sourcelink.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/obj/Debug/net7.0/_01_Lamp.E7252B26.Up2Date
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/System.IO.Pipelines.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/Microsoft.Extensions.Features.dll

@@ -30,7 +30,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
-                Picture = x.Picture,
+                //Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Keywords = x.Keywords,
@@ -39,6 +39,13 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
 
             }).FirstOrDefault(x => x.Id == id);
+        }
+
+        public string GetSlugById(long id)
+        {
+            return _Context.ProductCategories
+                .Select(x => new {x.Id, x.Slug})
+                .FirstOrDefault(x => x.Id == id).Slug;
         }
 
 
