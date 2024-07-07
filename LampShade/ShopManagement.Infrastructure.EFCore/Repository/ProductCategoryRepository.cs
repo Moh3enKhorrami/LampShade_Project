@@ -1,4 +1,5 @@
 ﻿using _0_Framework.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 
@@ -6,17 +7,16 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 {
     public class ProductCategoryRepository : RepositoryBase<long, ProductCategory>, IProductCategoryRepository
 	{
-        private readonly ShopContext _Context;
+        private readonly ShopContext _context;
 
-        public ProductCategoryRepository(ShopContext Context) : base(Context) 
+        public ProductCategoryRepository(ShopContext context) : base(context) 
         {
-            _Context = Context;
+            _context = context;
         }
-
-
+        
         public List<ProductCategoryViewModel> GetProductCategories()
         {
-            return _Context.ProductCategories.Select(x => new ProductCategoryViewModel()
+            return _context.ProductCategories.Select(x => new ProductCategoryViewModel()
             {
                 Id = x.Id,
                 Name = x.Name
@@ -25,7 +25,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
         public EditProductCategory GetDetails(long id)
         {
-            return _Context.ProductCategories.Select(x => new EditProductCategory()
+            return _context.ProductCategories.Select(x => new EditProductCategory()
             {
                 Id = x.Id,
                 Name = x.Name,
@@ -43,7 +43,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
         public string GetSlugById(long id)
         {
-            return _Context.ProductCategories
+            return _context.ProductCategories
                 .Select(x => new {x.Id, x.Slug})
                 .FirstOrDefault(x => x.Id == id).Slug;
         }
@@ -51,13 +51,13 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel) 
         {
-            var query = _Context.ProductCategories.Select(x => new ProductCategoryViewModel()
+            var query = _context.ProductCategories.Select(x => new ProductCategoryViewModel()
             {
                 Id = x.Id,
                 Name = x.Name,
                 Picture = x.Picture,
                 CreationDate = x.CreationDate.ToString()
-            });
+            }).AsNoTracking();
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
                 query = query.Where(x => x.Name.Contains(searchModel.Name));

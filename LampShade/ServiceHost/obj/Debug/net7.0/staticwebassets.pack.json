@@ -1113,6 +1113,14 @@
       "PackagePath": "staticwebassets/ProductPictures/slides/slider1-1820x785.jpg"
     },
     {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/slides/slider2-1820x785.jpg",
+      "PackagePath": "staticwebassets/ProductPictures/slides/slider2-1820x785.jpg"
+    },
+    {
+      "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/slides/slider3-1820x785.jpg",
+      "PackagePath": "staticwebassets/ProductPictures/slides/slider3-1820x785.jpg"
+    },
+    {
       "Id": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/Theme/assets/css/Custom.css",
       "PackagePath": "staticwebassets/Theme/assets/css/Custom.css"
     },

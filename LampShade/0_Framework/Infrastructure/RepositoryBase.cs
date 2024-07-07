@@ -20,7 +20,9 @@ namespace _0_Framework.Infrastructure
 
         public bool Exists(Expression<Func<T, bool>> expression)
         {
-            return _context.Set<T>().Any(expression);
+            return _context.Set<T>().Any(expression); // ||
+            //return _context.Set<T>().All(expression); &&
+
         }
 
         public T Get(TKey id)
@@ -31,6 +33,9 @@ namespace _0_Framework.Infrastructure
         public List<T> Get()
         {
             return _context.Set<T>().ToList();  // .Set??
+            
+            // _context.Products.Tolist();
+            // _context.ProductCategories.Tolist();
         }
 
         public void SaveChanges()

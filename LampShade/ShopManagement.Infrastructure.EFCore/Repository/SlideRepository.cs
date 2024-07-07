@@ -25,7 +25,7 @@ public class SlideRepository : RepositoryBase<long, Slide>, ISlideRepository
             Text = x.Text,
             Link = x.Link,
             Title = x.Title
-        }).FirstOrDefault(x => x.Id == id);
+        }).AsNoTracking().FirstOrDefault(x => x.Id == id);
     }
 
     public List<SlideViewModel> GetList()

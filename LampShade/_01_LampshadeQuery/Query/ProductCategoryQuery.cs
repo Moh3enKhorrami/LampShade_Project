@@ -161,5 +161,6 @@ public class ProductCategoryQuery : IProductCategoryQuery
             Slug = product.Slug,
         }).ToList();
         
+        
     }
 }

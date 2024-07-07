@@ -26,7 +26,7 @@ public class ProductPictureRepository : RepositoryBase<long, ProductPicture> , I
             Picture = x.Picture,
             ProductId = x.ProductId,
             IsRemoved = x.IsRemoved
-        });
+        }).AsNoTracking();
         if (searchModel.ProductId != 0)
             query = query.Where(x => x.ProductId == searchModel.ProductId);
 

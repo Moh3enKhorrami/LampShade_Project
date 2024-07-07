@@ -42,7 +42,7 @@ public class InventoryRepository : RepositoryBase<long, Inventory> , IInventoryR
             InStock = x.InStock,
             CurrentCount = x.CalculateCurrentCount(),
             CreationDate = x.CreationDate.ToString()
-        });
+        }).AsNoTracking();
         if (searchModel.ProductId > 0)
             query = query.Where(x => x.ProductId == searchModel.ProductId);
         

@@ -3,6 +3,7 @@ using _0_Framework.Infrastructure;
 using Azure.Core;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using DiscountManagement.Domain.CustomerDiscountAgg;
+using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore;
 
 namespace DiscountManagement.Infrastructure.EFCore.Repository;
@@ -31,7 +32,7 @@ public class CustomerDiscountRepository : RepositoryBase<long, CustomerDiscount>
             EndDate = x.EndDate.ToString(),
             EndDateR = x.EndDate,
             Reason = x.Reason
-        });
+        }).AsNoTracking();
         if (searchModel.ProductId > 0)
             query = query.Where(x => x.ProductId == searchModel.ProductId);
         
