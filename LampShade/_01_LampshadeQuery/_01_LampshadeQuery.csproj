@@ -12,4 +12,8 @@
       <ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Contracts\Comment\" />
+    </ItemGroup>
+
 </Project>

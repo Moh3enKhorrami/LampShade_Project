@@ -103,8 +103,6 @@ public class ProductCategoryQuery : IProductCategoryQuery
             .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
             .Select(x => new { x.DiscountRate, x.ProductId }).ToList();
         
-        
-        
         var categories = _context.ProductCategories
             .Include(x => x.Products)
             .ThenInclude(x => x.Category)
@@ -144,7 +142,6 @@ public class ProductCategoryQuery : IProductCategoryQuery
                 }
             }
         }
-
         return categories;
     }
 

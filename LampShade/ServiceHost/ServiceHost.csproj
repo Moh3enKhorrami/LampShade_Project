@@ -46,6 +46,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <AdditionalFiles Include="Areas\Administration\Pages\Shop\Comment\Index.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Create.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Edit.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Index.cshtml" />

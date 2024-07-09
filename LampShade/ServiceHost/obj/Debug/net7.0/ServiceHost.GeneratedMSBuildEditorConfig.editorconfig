@@ -19,6 +19,12 @@ build_property.MSBuildProjectDirectory = /Users/moh3enkhorrami/Projects/Atriya/P
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 7.0
 
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Areas/Administration/Pages/Shop/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5pc3RyYXRpb24vUGFnZXMvU2hvcC9Db21tZW50L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Areas/Administration/Pages/Shop/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5pc3RyYXRpb24vUGFnZXMvU2hvcC9Qcm9kdWN0cy9DcmVhdGUuY3NodG1s
@@ -135,6 +141,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/ProductCategory.cshtml]

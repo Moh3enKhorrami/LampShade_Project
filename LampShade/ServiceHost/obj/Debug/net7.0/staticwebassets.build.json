@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gTvPXLNvYibebeh4s8RTES86pKzSRaCdndiqrL+xgPc=",
+  "Hash": "rRzmGwoO1KSiE081sJOKVlmrwdLjD0DgbRbRWZkZi0E=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -6154,6 +6154,25 @@
       "OriginalItemSpec": "wwwroot/ProductPictures/Decoration/corner-floating-shelves/2.webp"
     },
     {
+      "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Decoration/corner-floating-shelves/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "ProductPictures/Decoration/corner-floating-shelves/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductPictures/Decoration/corner-floating-shelves/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png"
+    },
+    {
       "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Decoration/floating-shelves-wall-decor/3.webp",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -6171,6 +6190,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/ProductPictures/Decoration/floating-shelves-wall-decor/3.webp"
+    },
+    {
+      "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Decoration/floating-shelves-wall-decor/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "ProductPictures/Decoration/floating-shelves-wall-decor/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductPictures/Decoration/floating-shelves-wall-decor/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png"
     },
     {
       "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/Decoration/img3-top-eposi1.jpg",
