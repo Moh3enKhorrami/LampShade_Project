@@ -36,6 +36,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommentManagement.Configuration\CommentManagement.Configuration.csproj" />
     <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
     <ProjectReference Include="..\InventoryMangement.Configuration\InventoryMangement.Configuration.csproj" />
     <ProjectReference Include="..\ShopManagement.Configuration\ShopManagement.Configuration.csproj">
@@ -46,7 +47,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="Areas\Administration\Pages\Shop\Comment\Index.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Create.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Edit.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Index.cshtml" />
@@ -57,5 +57,6 @@
     <_ContentIncludedByDefault Remove="wwwroot\Product\Lighting\3.webp" />
     <_ContentIncludedByDefault Remove="wwwroot\ProductPictures\sdf\12.jpg" />
     <_ContentIncludedByDefault Remove="wwwroot\ProductPictures\Decoration\ljkb\2.webp" />
+    <_ContentIncludedByDefault Remove="Areas\Administration\Pages\Shop\Comment\Index.cshtml" />
   </ItemGroup>
 </Project>

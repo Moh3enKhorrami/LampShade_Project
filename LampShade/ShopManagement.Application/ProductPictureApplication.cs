@@ -21,8 +21,6 @@ public class ProductPictureApplication : IProductPictureApplication
     public OperationResult Create(CreateProductPicture command)
     {
         var operation = new OperationResult();
-        // if (_productPictureRepository.Exists(x => x.Picture == command.Picture && x.ProductId == command.ProductId))
-        //     return operation.Failed(ApplicationMessages.Dulpicated);
         var product = _productRepository.GetProductWithCategory(command.ProductId);
         var path = $"{product.Category.Slug}//{product.Slug}";
         var picturePath = _fileUpLoader.UpLoad(command.Picture, path);
@@ -40,11 +38,6 @@ public class ProductPictureApplication : IProductPictureApplication
         var productPicture = _productPictureRepository.GetWithProductAndCategory(command.Id);
         if (productPicture == null)
             operation.Failed(ApplicationMessages.RecordNotFound);
-        
-        // if (_productPictureRepository.Exists(x =>
-        //         x.Picture == command.Picture && x.ProductId == command.ProductId && x.Id == command.Id))
-        //     operation.Failed(ApplicationMessages.DuplicatedRecord);
-        
         var path = $"{productPicture.Product.Category.Slug}//{productPicture.Product.Slug}";
         var picturePath = _fileUpLoader.UpLoad(command.Picture, path);
         
@@ -67,6 +60,7 @@ public class ProductPictureApplication : IProductPictureApplication
         productPicture.Remove();
         _productPictureRepository.SaveChanges();
         return operation.Succedded();
+        
     }
 
     public OperationResult Restore(long id)

@@ -1,5 +1,5 @@
 using _0_Framework.Domain;
-using ShopManagement.Domain.CommentAgg;
+using CommentManagement.Domain.CommentAgg;
 using ShopManagement.Domain.PictureAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 
@@ -20,7 +20,6 @@ public class Product : EntityBase
     public string MetaDescription { get; private set; }
     public ProductCategory Category { get; private set; }
     public List<ProductPicture> ProductPictures { get; private set; }
-    public List<Comment> Comments { get; set; }
     
 
     public Product(string name, string code, string shortDescription,

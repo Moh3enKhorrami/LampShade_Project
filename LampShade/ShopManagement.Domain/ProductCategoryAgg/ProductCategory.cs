@@ -18,7 +18,8 @@ namespace ShopManagement.Domain.ProductCategoryAgg
 
 
 
-        public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug)
+        public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle,
+	        string keywords, string metaDescription, string slug)
         {
             Name = name;
             Description = description;
@@ -32,7 +33,8 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         }
 
        
-        public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug)
+        public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle,
+	        string keywords, string metaDescription, string slug)
         {
             Name = name;
             Description = description;

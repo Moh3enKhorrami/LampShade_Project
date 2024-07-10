@@ -1,4 +1,5 @@
 ﻿using _0_Framework.Application;
+using CommentManagement.Configuration;
 using DiscountManagement.Configuration;
 using InventoryMangement.Configuration;
 using Microsoft.Extensions.Configuration;
@@ -14,6 +15,7 @@ var connectionString = builder.Configuration.GetConnectionString("LampshadeDb");
 ShopManagementBoostrapper.Configure(builder.Services, connectionString);
 DiscountManagementBoostrapper.Configure(builder.Services, connectionString);
 InventoryManagementBootstrapper.Configure(builder.Services, connectionString);
+CommentManagementBoostrapper.Configure(builder.Services, connectionString);
 
 builder.Services.AddTransient<IFileUpLoader, FileUpLoader > ();
 builder.Services.AddRazorPages();

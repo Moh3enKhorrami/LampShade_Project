@@ -1,8 +1,8 @@
 using _01_LampshadeQuery.Contracts.Product;
+using CommentManagement.Infrastructure.EFCore;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryMangement.Infrastructure.EFCorel;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.PictureAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Infrastructure.EFCore;
@@ -14,11 +14,13 @@ public class ProductQuery : IProductQuery
     private readonly ShopContext _context;
     private readonly InventoryContext _inventoryContext;
     private readonly DiscountContext _discountContext;
-    public ProductQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext)
+    private readonly CommentContext _commentContext;
+    public ProductQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext)
     {
         _context = context;
         _inventoryContext = inventoryContext;
         _discountContext = discountContext;
+        _commentContext = commentContext;
     }
     
     public List<ProductQueryModel> GetLatestArrivals()
@@ -131,6 +133,7 @@ public class ProductQuery : IProductQuery
         var inventory = _inventoryContext.Inventories
             .Select(x => new {x.ProductId, x.UnitPrice, x.InStock }).ToList();
 
+        
         var discounts = _discountContext.CustomerDiscounts
             .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
             .Select(x => new { x.DiscountRate, x.ProductId, x.EndDate }).ToList();
@@ -138,7 +141,6 @@ public class ProductQuery : IProductQuery
         var product = _context.Products
             .Include(x => x.Category)
             .Include(x => x.ProductPictures)
-            .Include(x => x.Comments)
             .Select(product => new ProductQueryModel
             {
                 Id = product.Id,
@@ -154,7 +156,6 @@ public class ProductQuery : IProductQuery
                 Keywords = product.Keyworks,
                 MetaDescription = product.MetaDescription,
                 ShortDescription = product.ShortDescription,
-                Commands = MapComments(product.Comments),
                 Pictures = MapProductPictures(product.ProductPictures)
             }).AsNoTracking().FirstOrDefault(x=> x.Slug == slug);
 
@@ -185,24 +186,22 @@ public class ProductQuery : IProductQuery
             else
             {
                 product.HasDiscount = false; 
-                product.PriceWithDiscount = price.ToString(); 
+                product.PriceWithDiscount = price.ToString();
             }
         }
+        product.Commands = _commentContext.Comments
+            .Where(x => x.Type == CommentTypes.Product)
+            .Where(x => x.OwnerRecordId == product.Id)
+            .Select(x => new CommentQueryModel()
+            {
+                Id = x.Id,
+                Message = x.Message,
+                Name = x.Name
+            }).AsNoTracking().OrderByDescending(x => x.Id).ToList();
         
         return product;
     }
-
-    private static List<CommentQueryModel> MapComments(List<Comment> comments)
-    {
-        return comments.Where(x => !x.IsCanceled)
-            .Where(x => x.IsConfirmed)
-            .Select(x => new CommentQueryModel()
-            { 
-                Id = x.Id,
-                Name = x.Name,
-                Message = x.Message
-            }).OrderByDescending(x => x.Id).ToList();
-    }
+    
 
     private static List<ProductPictureQueryModel> MapProductPictures(List<ProductPicture> picture)
     {
@@ -214,7 +213,6 @@ public class ProductQuery : IProductQuery
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 ProductId = x.ProductId
-            })
-            .Where(x => !x.IsRemoved).ToList();
+            }).Where(x => !x.IsRemoved).ToList();
     }
 }
