@@ -145,8 +145,8 @@
                                             <p class="single-grid-product__price">
                                                 @if (Model.ProductQueryModel.HasDiscount)
                                                 {
-                                                    <span class="discounted-price">@Model.ProductQueryModel.Price €</span>
-                                                    <span class="main-price discounted">@Model.ProductQueryModel.PriceWithDiscount €</span>
+                                                    <span class="discounted-price">@Model.ProductQueryModel.PriceWithDiscount €</span>
+                                                    <span class="main-price discounted">@Model.ProductQueryModel.Price €</span>
                                                 }
                                                 else
                                                 {
@@ -177,11 +177,11 @@
                                             <div class="product-actions">
                                                 <div class="quantity-selection">
                                                     <label>Qty</label>
-                                                    <input type="number" value="1" min="1">
+                                                    <input type="number" value="1" min="1" id="productCount">
                                                 </div>
 
                                                 <div class="product-buttons">
-                                                    <a class="cart-btn" href="#"> <i class="ion-bag"></i> ADD TO
+                                                    <a class="cart-btn" onclick="addToCart('@Model.ProductQueryModel.Id','@Model.ProductQueryModel.Name','@Model.ProductQueryModel.Price', '@Model.ProductQueryModel.Picture')"> <i class="ion-bag"></i> ADD TO
                                                         CART</a>
                                                 </div>
 
