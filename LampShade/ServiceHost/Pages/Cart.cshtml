@@ -1,5 +1,5 @@
 @page
-@model ServiceHost.Pages.Cart
+@model ServiceHost.Pages.CartModel
 @{
     ViewData["Title"] = "Cart";
 }
@@ -31,8 +31,12 @@
             <div class="col-lg-12">
                 <!--=======  page wrapper  =======-->
                 <div class="page-wrapper">
+                    @foreach (var item in Model.CartItems.Where(x => !x.IsInStock))
+                    {
+                        <div class="alert alert-warning"><i class="fa fa-warning">Not available in stock with this quantity @item.Name</i></div> 
+                    }
                     <div class="page-content-wrapper">
-                        <form action="#">
+                        
                             <div class="cart-table table-responsive">
                                 <table class="table">
                                     <thead>
@@ -48,44 +52,43 @@
                                     <tbody>
                                     @foreach (var item in Model.CartItems)
                                     {
-                                    <tr>
-                                        <td class="pro-thumbnail">
-                                            <a href="single-product.html">
-                                                <img src="~/ProductPictures/@item.Picture" class="img-fluid">
-                                            </a>
-                                        </td>
-                                        <td class="pro-title">
-                                            <a href="single-product.html">@item.Name</a>
-                                        </td>
-                                        <td class="pro-price">
-                                            <span>@item.UnitPrice €</span>
-                                        </td>
-                                        <td class="pro-quantity">
-                                            <div class="quantity-selection">
-                                                <input type="number" value="@item.Count" min="1">
-                                            </div>
-                                        </td>
-                                        <td class="pro-subtotal">
-                                            <span>@item.TotalPrice</span>
-                                        </td>
-                                        <td class="pro-remove">
-                                            <a asp-page-handler="RemoveFromCart" asp-route-id="@item.Id">
-                                                <i class="fa fa-trash-o"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <td class="pro-thumbnail">
+                                                <a href="single-product.html">
+                                                    <img src="~/ProductPictures/@item.Picture" class="img-fluid">
+                                                </a>
+                                            </td>
+                                            <td class="pro-title">
+                                                <a href="single-product.html">@item.Name</a>
+                                            </td>
+                                            <td class="pro-price">
+                                                <span>@item.UnitPrice €</span>
+                                            </td>
+                                            <td class="pro-quantity">
+                                                <div class="quantity-selection">
+                                                    <input type="number" value="@item.Count" min="1" onchange="changeCartItemCount('@item.Id', 'totalPrice-@item.Id', this.value)">
+                                                </div>
+                                            </td>
+                                            <td class="pro-subtotal">
+                                                <span id="totalPrice-@item.Id">@item.TotalPrice €</span>
+                                            </td>
+                                            <td class="pro-remove">
+                                                <a asp-page-handler="RemoveFromCart" asp-route-id="@item.Id">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
                                     }
-                                   
+
                                     </tbody>
                                 </table>
                             </div>
-                        </form>
 
                         <div class="row">
                             <div class="col-lg-6 col-12 d-flex">
                                 <div class="cart-summary">
                                     <div class="cart-summary-button">
-                                        <button class="checkout-btn">Checkout</button>
+                                        <a class="checkout-btn" asp-page-handler="GoToCheckOut">Checkout</a>
                                     </div>
                                 </div>
                             </div>

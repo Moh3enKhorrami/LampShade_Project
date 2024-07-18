@@ -133,6 +133,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/ChechOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hlY2hPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

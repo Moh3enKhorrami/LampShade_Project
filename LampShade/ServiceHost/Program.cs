@@ -1,4 +1,5 @@
 ﻿using _0_Framework.Application;
+using _01_LampshadeQuery.Contracts;
 using CommentManagement.Configuration;
 using DiscountManagement.Configuration;
 using InventoryMangement.Configuration;
