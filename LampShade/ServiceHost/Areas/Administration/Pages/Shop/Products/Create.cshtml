@@ -53,8 +53,9 @@
         </div>
         <div class="form-group">
             <label asp-for="Command.CategoryId">Product Category</label>
-            <select type="form-control" asp-for="Command.CategoryId" rows="3" asp-items="Model.ProductCategories"></select>
+            <select type="form-control" asp-for="Command.CategoryId" rows="3" asp-items="Model.ProductCategories">
             <option value="0">Select Group</option>
+            </select>
         </div> 
         <div class="form-group">
             <label asp-for="Command.Slug">Slug</label>

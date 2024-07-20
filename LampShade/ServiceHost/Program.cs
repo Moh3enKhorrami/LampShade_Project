@@ -1,5 +1,6 @@
 ﻿using _0_Framework.Application;
 using _01_LampshadeQuery.Contracts;
+using AccountManagement.Configuration;
 using CommentManagement.Configuration;
 using DiscountManagement.Configuration;
 using InventoryMangement.Configuration;
@@ -17,8 +18,10 @@ ShopManagementBoostrapper.Configure(builder.Services, connectionString);
 DiscountManagementBoostrapper.Configure(builder.Services, connectionString);
 InventoryManagementBootstrapper.Configure(builder.Services, connectionString);
 CommentManagementBoostrapper.Configure(builder.Services, connectionString);
+AccountManagementBootStrapper.Configure(builder.Services, connectionString);
 
-builder.Services.AddTransient<IFileUpLoader, FileUpLoader > ();
+builder.Services.AddTransient<IFileUpLoader, FileUpLoader>();
+builder.Services.AddSingleton<IPasswordHasher, PasswordHasher>();
 builder.Services.AddRazorPages();
 
 var app = builder.Build();

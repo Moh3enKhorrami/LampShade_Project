@@ -1,0 +1,24 @@
+@page
+@model ServiceHost.Areas.Administration.Pages.Accounts.Role.EditModel;
+@{
+    ViewData["Title"] = "Edit Account";
+}
+
+<div class="container">
+    <h3>@ViewData["Title"]</h3>
+    <form method="post" asp-page-handler="Edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Command.Name">Name</label>
+            <input type="text" class="form-control" asp-for="Command.Name" >
+            <span asp-validation-for="Command.Name" class="error"></span>
+        </div>
+        
+
+        <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id">
+
+        <button type="submit" class="btn btn-success">Edit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <a asp-page="./Index" class="btn btn-primary">Back</a>
+    </form>
+   
+</div>

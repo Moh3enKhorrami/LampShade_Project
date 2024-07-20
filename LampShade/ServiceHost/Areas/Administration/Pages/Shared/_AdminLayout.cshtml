@@ -207,9 +207,15 @@
                         </ul>
                     </li>
 
-                    @* <li> *@
-                    @*     <a asp-page="/calendar" class="waves-effect"><i class="md md-event"></i><span> Calendar </span></a> *@
-                    @* </li> *@
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="fa  fa-shopping-cart"></i><span> Account Management </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/Accounts/Account/index">Accounts</a></li>
+                            <li><a asp-page="/Accounts/Role/index">Roles</a></li>
+                        </ul>
+                    </li>
+
+                    
 
 
 

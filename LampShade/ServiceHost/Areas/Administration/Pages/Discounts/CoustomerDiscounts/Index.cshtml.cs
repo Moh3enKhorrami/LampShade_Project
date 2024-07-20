@@ -9,7 +9,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CoustomerDiscounts
 {
     public class IndexModel : PageModel
     {
-        public CustomerDiscountSearchModel SearchModel; //?
+        public CustomerDiscountSearchModel SearchModel;
         public List<CustomerDiscountViewModel> CustomerDiscount; 
         public SelectList Products;
         private readonly IProductApplication _productApplication;
@@ -22,7 +22,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CoustomerDiscounts
             CustomerDiscount = new List<CustomerDiscountViewModel>();
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
         }
-        public void OnGet(CustomerDiscountSearchModel searchModel) //?
+        public void OnGet(CustomerDiscountSearchModel searchModel)
         {
             CustomerDiscount = _customerDiscountApplication.Search(searchModel);
         }

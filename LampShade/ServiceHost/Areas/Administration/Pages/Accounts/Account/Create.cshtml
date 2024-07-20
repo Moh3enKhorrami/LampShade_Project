@@ -1,0 +1,51 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Accounts.Account.CreateModel
+@{
+    ViewData["Title"] = "Create Account";
+}
+
+<div class="container">
+    <h3>@ViewData["Title"]</h3>
+    <form method="post" asp-page-handler="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Command.FullName">FullName</label>
+            <input type="text" class="form-control" asp-for="Command.FullName" >
+            <span asp-validation-for="Command.FullName" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.UserName">UserName</label>
+            <input class="form-control" asp-for="Command.UserName" rows="3">
+            <span asp-validation-for="Command.UserName" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.Mobile">Mobile</label>
+            <input class="form-control" asp-for="Command.Mobile" rows="3">
+            <span asp-validation-for="Command.Mobile" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Command.Password">Password</label>
+            <input class="form-control" asp-for="Command.Password" rows="3">
+            <span asp-validation-for="Command.Password" class="error"></span>
+        </div>
+        <div class="form-group">
+        <label class="sr-only" asp-for="Command.RoleId"></label>
+        <select class="form-control" asp-for="Command.RoleId" asp-items="Model.Roles">
+            <option value="0">Select Role</option>
+        </select>
+            <span asp-validation-for="Command.RoleId" class="error"></span>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Command.ProfilePhoto">Picture</label>
+            <input type="file" class="form-control" asp-for="Command.ProfilePhoto" accept="image/*">
+        </div>
+        
+        <button type="submit" class="btn btn-success">Create</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <a asp-page="./Index" class="btn btn-primary" >Back</a>
+
+        
+    </form>
+</div>
+

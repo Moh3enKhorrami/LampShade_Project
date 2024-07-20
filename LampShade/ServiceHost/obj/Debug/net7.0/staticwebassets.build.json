@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VXl8W7cL3MIC0b/NQm5pS5Jnlp1lfgHUW+KwbllgLjo=",
+  "Hash": "7khkuoQ0rDqJfZEntNg0Xsz1L14UAkYVCE3Ktg6VQIs=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -6418,6 +6418,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/ProductPictures/living-room/rustic-metal-deer-head-wall-sculpture/2.webp"
+    },
+    {
+      "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/profilePhotos/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "ProductPictures/profilePhotos/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductPictures/profilePhotos/deogtjt-f63660ce-ee06-4d76-8166-f7553c229050.png"
     },
     {
       "Identity": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/wwwroot/ProductPictures/slides/slider1-1820x785.jpg",

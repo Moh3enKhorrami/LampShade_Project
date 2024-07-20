@@ -37,6 +37,7 @@
     <PackageReference Include="Nancy" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccountManagement.Configuration\AccountManagement.Configuration.csproj" />
     <ProjectReference Include="..\CommentManagement.Configuration\CommentManagement.Configuration.csproj" />
     <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
     <ProjectReference Include="..\InventoryMangement.Configuration\InventoryMangement.Configuration.csproj" />
@@ -48,6 +49,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <AdditionalFiles Include="Areas\Administration\Pages\Accounts\Role\ChangePassword.cshtml" />
+    <AdditionalFiles Include="Areas\Administration\Pages\Accounts\Role\Create.cshtml" />
+    <AdditionalFiles Include="Areas\Administration\Pages\Accounts\Role\Edit.cshtml" />
+    <AdditionalFiles Include="Areas\Administration\Pages\Accounts\Role\Index.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Create.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Edit.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Shop\Products\Index.cshtml" />
