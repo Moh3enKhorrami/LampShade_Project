@@ -20,8 +20,3 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application/obj/Debug/net7.0/InventoryManagement.Application.sourcelink.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application/obj/Debug/net7.0/Inventor.0D5EB3FB.Up2Date
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application/bin/Debug/net7.0/System.IO.Pipelines.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Application/bin/Debug/net7.0/Microsoft.Extensions.Features.dll

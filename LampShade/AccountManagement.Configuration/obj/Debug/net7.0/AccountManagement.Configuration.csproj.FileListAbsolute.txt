@@ -6,11 +6,6 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/AccountManagement.Application.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/AccountManagement.Domain.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/AccountMangement.Infrastructure.EFCore.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/System.IO.Pipelines.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/AccountManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/AccountManagement.Application.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/AccountMangement.Infrastructure.EFCore.pdb

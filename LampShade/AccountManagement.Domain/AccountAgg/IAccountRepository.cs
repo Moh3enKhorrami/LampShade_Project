@@ -9,4 +9,5 @@ public interface IAccountRepository : IRepository<long, Account>
     EditAccount GetDetails(long id);
     ChangePassword GetChange(long id);
     List<AccountViewModel> Search(AccountSearchModel searchModel);
+    Account GetBy(string username);
 }

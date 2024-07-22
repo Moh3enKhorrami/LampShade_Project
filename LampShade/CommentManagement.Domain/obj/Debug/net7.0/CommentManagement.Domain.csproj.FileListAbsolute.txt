@@ -3,11 +3,6 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/CommentManagement.Domain.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/0_Framework.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/CommentManagement.Application.Contracts.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/System.IO.Pipelines.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/0_Framework.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/bin/Debug/net7.0/CommentManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Domain/obj/Debug/net7.0/CommentManagement.Domain.csproj.AssemblyReference.cache

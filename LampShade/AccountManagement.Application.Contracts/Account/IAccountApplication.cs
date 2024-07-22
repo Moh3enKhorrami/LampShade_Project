@@ -10,4 +10,6 @@ public interface IAccountApplication
     EditAccount GetDetails(long id);
     ChangePassword GetChange(long id);
     List<AccountViewModel> Search(AccountSearchModel searchModel);
+    OperationResult Login(Login command);
+    void LogOut();
 }

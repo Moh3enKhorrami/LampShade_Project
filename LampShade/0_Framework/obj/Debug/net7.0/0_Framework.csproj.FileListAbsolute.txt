@@ -23,9 +23,3 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/ref/0_Framework.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framework.sourcelink.json
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/bin/Debug/net7.0/System.IO.Pipelines.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/0_Framework/obj/Debug/net7.0/0_Framew.F2C4DF6B.Up2Date

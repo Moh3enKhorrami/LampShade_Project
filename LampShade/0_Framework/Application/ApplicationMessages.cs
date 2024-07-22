@@ -6,4 +6,5 @@ public class ApplicationMessages
     public const string RecordNotFound = "The record with the requested information was not found. Please try again";
     public const string Dulpicated = "It is not possible to register a duplicate record. Try again";
     public const string PasswordsNotMatch = "Passwords do not match. Try again";
+    public static string UserOrPassNotExists = "The entered user or password is incorrect";
 }

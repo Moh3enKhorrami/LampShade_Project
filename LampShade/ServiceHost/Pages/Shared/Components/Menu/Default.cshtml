@@ -1,3 +1,5 @@
+@using _0_Framework.Application
+@inject IAuthHelper AuthHelper;
 @{
     
 }
@@ -109,9 +111,18 @@
                                 <li>
                                     <a href="contact.html">CONTACT</a>
                                 </li>
-                                <li>
-                                    <a asp-page="/Account">Login & Sign up</a>
-                                </li>
+                                @if (!AuthHelper.IsAuthenticated())
+                                {
+                                    <li>
+                                        <a asp-page="/Account">Login & Sign up</a>
+                                    </li>
+                                }else
+                                {
+                                    <li>
+                                        <a asp-page="/Account" asp-page-handler="LogOut">Log Out</a>
+                                    </li>
+                                }
+                                
                             </ul>
                         </nav>
                     </div>
@@ -157,10 +168,10 @@
                                             <h4 class="title">MY ACCOUNT </h4>
                                             <ul>
                                                 <li>
-                                                    <a href="login-register.html">Register</a>
+                                                    <a asp-page="/Account">Register</a>
                                                 </li>
                                                 <li>
-                                                    <a href="login-register.html">Login</a>
+                                                    <a asp-page="/Account">Login</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -284,10 +295,10 @@
                             <a href="#">MY ACCOUNT </a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="login-register.html">Register</a>
+                                    <a asp-page="/Account">Register</a>
                                 </li>
                                 <li>
-                                    <a href="login-register.html">Login</a>
+                                    <a asp-page="/Account">Login</a>
                                 </li>
                             </ul>
                         </li>

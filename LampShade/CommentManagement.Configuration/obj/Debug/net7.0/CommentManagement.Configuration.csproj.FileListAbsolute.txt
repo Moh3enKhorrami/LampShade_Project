@@ -6,11 +6,6 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/CommentManagement.Application.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/CommentManagement.Domain.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/CommentManagement.Infrastructure.EFCore.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/System.IO.Pipelines.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/CommentManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/CommentManagement.Application.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Configuration/bin/Debug/net7.0/CommentManagement.Domain.pdb
