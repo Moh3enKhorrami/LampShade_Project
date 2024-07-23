@@ -1,7 +1,9 @@
 using _0_Framework.Application;
+using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,6 +12,7 @@ using ShopManagement.Application.Contracts.ProductCategory;
 
 namespace ServiceHost.Areas.Administration.Pages.Inventory
 {
+    
     public class EditModel : PageModel
     {
         public EditInventory Command;

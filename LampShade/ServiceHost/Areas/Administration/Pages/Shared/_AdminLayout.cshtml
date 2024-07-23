@@ -141,7 +141,7 @@
                                 <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile</a></li>
                                 <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
                                 <li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
-                                <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+                                <li><a asp-page="/Account" asp-page-handler="LogOut"><i class="md md-settings-power"></i> Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -150,85 +150,7 @@
             </div>
         </div>
     </div>
-    <!-- Top Bar End -->
-    <!-- ========== Left Sidebar Start ========== -->
-    <div class="left side-menu">
-        <div class="sidebar-inner slimscrollleft">
-            <div class="user-details">
-                <div class="pull-left">
-                    <img src="/AdminTheme/assets/images/users/avatar-1.jpg" alt="" class="thumb-md img-circle">
-                </div>
-                <div class="user-info">
-                    <div class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Moh3en Khorrami <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile<div class="ripple-wrapper"></div></a></li>
-                            <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
-                            <li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
-                            <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
-                        </ul>
-                    </div>
-
-                    <p class="text-muted m-0">Administrator</p>
-                </div>
-            </div>
-            <!--- Divider -->
-            <div id="sidebar-menu">
-                <ul>
-                    <li>
-                        <a asp-page="/index" class="waves-effect active"><i class="md md-home"></i><span> Dashboard </span></a>
-                    </li>
-                    <li>
-                        <a asp-page="/Inventory/index" class="waves-effect"><i class="fa fa-book"></i><span> Inventory </span></a>
-                    </li>
-                    <li class="has_sub">
-                        <a class="waves-effect"><i class="fa  fa-shopping-cart"></i><span> Shop </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                        <ul class="list-unstyled">
-                            <li><a asp-page="/Shop/Slide/index">Slider</a></li>
-                            <li><a asp-page="/Shop/ProductCategories/index">Product Categories</a></li>
-                            <li><a asp-page="/Shop/Products/index">Products</a></li>
-                            <li><a  asp-page="/Shop/ProductPictures/index">Product Photos</a></li>
-                        </ul>
-                    </li>
-
-
-                    <li class="has_sub">
-                        <a href="#" class="waves-effect"><i class="md md-now-widgets"></i><span> Comment </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                        <ul class="list-unstyled">
-                            <li><a asp-page="/Comment/index">Comment</a></li>
-                        </ul>
-                    
-                    <li class="has_sub">
-                        <a class="waves-effect"><i class="md md-mail"></i><span> Discount </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                        <ul class="list-unstyled">
-                                
-                            <li><a asp-page="/Discounts/CoustomerDiscounts/index">Coustomer</a></li>
-                            @*<li><a asp-page="/Discounts/ColleagueDiscounts/index">Colleague</a></li>*@
-                        </ul>
-                    </li>
-
-                    <li class="has_sub">
-                        <a class="waves-effect"><i class="fa  fa-shopping-cart"></i><span> Account Management </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                        <ul class="list-unstyled">
-                            <li><a asp-page="/Accounts/Account/index">Accounts</a></li>
-                            <li><a asp-page="/Accounts/Role/index">Roles</a></li>
-                        </ul>
-                    </li>
-
-                    
-
-
-
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!-- Left Sidebar End -->
-    <!-- ============================================================== -->
-    <!-- Start right Content here -->
-    <!-- ============================================================== -->
+    <partial name="_Menu"/>
     <div class="content-page">
         <!-- Start content -->
         <div class="content">

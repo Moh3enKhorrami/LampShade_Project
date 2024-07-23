@@ -18,7 +18,7 @@ public class CreateAccount
     [Required]
     public string Mobile { get; set; }
     
-    [Range(1, int.MaxValue), Required]
+    
     public long RoleId { get; set; }
     
     public IFormFile ProfilePhoto { get; set; }

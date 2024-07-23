@@ -6,7 +6,8 @@ namespace ServiceHost.Pages;
 
 public class AccountModel : PageModel
 {
-    [TempData] public string Message { get; set; }
+    [TempData] public string RegisterMessage { get; set; }
+    [TempData] public string LoginMessage { get; set; }
     private readonly IAccountApplication _accountApplication;
 
     public AccountModel(IAccountApplication accountApplication)
@@ -25,13 +26,23 @@ public class AccountModel : PageModel
         if (result.IsSuccedded)
             return RedirectToPage("/Index");
 
-        Message = result.Message;
-        return RedirectToPage("/Login");
+        LoginMessage = result.Message;
+        return RedirectToPage("/Account");
     }
 
     public IActionResult OnGetLogOut()
     {
          _accountApplication.LogOut();
          return RedirectToPage("/Index");
+    }
+
+    public IActionResult OnPostRegister(CreateAccount command)
+    {
+        var result = _accountApplication.Create(command);
+        if (result.IsSuccedded)
+            return RedirectToPage("/Account");
+        RegisterMessage = result.Message;
+        return RedirectToPage("/Account");
+
     }
 }
