@@ -49,7 +49,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="Areas\Administration\Pages\Accounts\Role\ChangePassword.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Accounts\Role\Create.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Accounts\Role\Edit.cshtml" />
     <AdditionalFiles Include="Areas\Administration\Pages\Accounts\Role\Index.cshtml" />

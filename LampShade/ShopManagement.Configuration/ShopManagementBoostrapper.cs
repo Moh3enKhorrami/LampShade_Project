@@ -1,4 +1,5 @@
-﻿using _01_LampshadeQuery.Contracts;
+﻿using _0_Framework.Infrastructure;
+using _01_LampshadeQuery.Contracts;
 using _01_LampshadeQuery.Contracts.Product;
 using _01_LampshadeQuery.Contracts.ProductCategory;
 using _01_LampshadeQuery.Contracts.Slide;
@@ -10,6 +11,7 @@ using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Configuration.Permissions;
 using ShopManagement.Domain.PictureAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
@@ -39,6 +41,8 @@ public class ShopManagementBoostrapper
         services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
         services.AddTransient<IProductQuery, ProductQuery>();
         services.AddTransient<ICartCalculatorService, CartCalculatorService>();
+
+        services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
 
         
         services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
