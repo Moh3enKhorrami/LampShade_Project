@@ -1,5 +1,6 @@
 using _0_Framework.Infrastructure;
 using InventoryManagement.Application.Contract.Inventory;
+using InventoryMangement.Configuration.Permissions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -15,7 +16,6 @@ public class Increase : PageModel
     {
         _inventoryApplication = inventoryApplication;
     }
-    
     public void OnGet(long id)
     {
         Command = new IncreaseInventory()
@@ -23,7 +23,8 @@ public class Increase : PageModel
             InventoryId = id
         };
     }
-
+    
+    [NeedsPermission(InventoryPermission.IncreaseInventory)]
     public IActionResult OnPostIncrease(IncreaseInventory command)
     {
         var result = _inventoryApplication.Increase(command);

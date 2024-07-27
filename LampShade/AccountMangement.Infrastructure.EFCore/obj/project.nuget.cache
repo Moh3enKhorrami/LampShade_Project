@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a2SD+Yc5tVg=",
+  "dgSpecHash": "SVCa+v2WD8E=",
   "success": true,
   "projectFilePath": "/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountMangement.Infrastructure.EFCore/AccountMangement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,7 @@
     "/Users/moh3enkhorrami/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/moh3enkhorrami/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/moh3enkhorrami/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",

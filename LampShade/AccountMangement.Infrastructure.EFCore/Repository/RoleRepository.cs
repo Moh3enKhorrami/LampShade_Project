@@ -31,7 +31,7 @@ public class RoleRepository : RepositoryBase<long, Role>, IRoleRepository
             Name = x.Name,
             MappedPermissions = MapPermissions(x.Permissions)
         }).AsNoTracking().FirstOrDefault(x => x.Id == id);
-        role.Permissions = role.MappedPermissions.Select(x => x.Code).ToList();
+        role.Permissions = role.MappedPermissions.Select(x => x.Code).ToList(); //?
         return role;
     }
     private static List<PermissionDto> MapPermissions(IEnumerable<Permission> permissions)

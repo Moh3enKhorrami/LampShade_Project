@@ -4,12 +4,12 @@ namespace AccountManagement.Application.Contracts.Account;
 
 public interface IAccountApplication
 {
-    OperationResult Create(CreateAccount command);
-    OperationResult Edit(EditAccount command);
-    OperationResult ChangePassword(ChangePassword command);
+    void LogOut();
     EditAccount GetDetails(long id);
     ChangePassword GetChange(long id);
-    List<AccountViewModel> Search(AccountSearchModel searchModel);
     OperationResult Login(Login command);
-    void LogOut();
+    OperationResult Edit(EditAccount command);
+    OperationResult Create(CreateAccount command);
+    OperationResult ChangePassword(ChangePassword command);
+    List<AccountViewModel> Search(AccountSearchModel searchModel);
 }

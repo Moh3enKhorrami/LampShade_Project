@@ -15,6 +15,11 @@ public class InventoryPermissionExposer : IPermissionExposer
                     new(InventoryPermission.SearchInventory,"SearchInventory"),
                     new(InventoryPermission.CreateInventory,"CreateInventory"),
                     new(InventoryPermission.EditInventory,"EditInventory"),
+                    new(InventoryPermission.IncreaseInventory,"IncreaseInventory"),
+                    new(InventoryPermission.ReduceInventory,"ReduceInventory"),
+                    new(InventoryPermission.OperationLog,"GetOperationLog"),
+
+
                 }
             }
         };

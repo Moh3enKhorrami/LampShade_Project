@@ -1,6 +1,7 @@
 ﻿using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using InventoryManagement.Application.Contract.Inventory;
+using InventoryMangement.Configuration.Permissions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -10,7 +11,6 @@ using ShopManagement.Application.Contracts.ProductCategory;
 
 namespace ServiceHost.Areas.Administration.Pages.Inventory
 {
-    
 	public class CreateModel : PageModel
     {
         public CreateInventory Command;
@@ -28,7 +28,8 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
         {
             
         }
-
+        
+        [NeedsPermission(InventoryPermission.CreateInventory)]
         public IActionResult OnPostCreate(CreateInventory Command)
         {
             var result = _inventoryApplication.Create(Command);

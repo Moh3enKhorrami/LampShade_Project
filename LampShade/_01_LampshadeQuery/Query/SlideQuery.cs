@@ -18,7 +18,7 @@ public class SlideQuery : ISlideQuery
                               .Select(x => new SlideQueryModel()
         {
             Picture = x.Picture,
-            PictureTitle = x.PictureTitle,
+            PictureTitle = x.PictureTitle, 
             PictureAlt = x.PictureAlt,
             Heading = x.Heading,
             BtnText = x.BtnText,

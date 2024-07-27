@@ -1,25 +1,51 @@
+using System.Net.Http.Json;
 using System.Security.Claims;
 using _0_Framework.Infrastructure;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace _0_Framework.Application;
 
 public class AuthHelper : IAuthHelper
 {
-    private readonly IHttpContextAccessor _contextAccessor;
+    private readonly IHttpContextAccessor _contextAccessor; //Register Program.cs 
 
-        public AuthHelper(IHttpContextAccessor contextAccessor)
+        public AuthHelper(IHttpContextAccessor contextAccessor) 
         {
             _contextAccessor = contextAccessor;
         }
-        
-        public bool IsAuthenticated()
+
+        public void Signin(AuthViewModel account) // Set Cookies in Response
         {
-            //return _contextAccessor.HttpContext.User.Identity.IsAuthenticated;
-            var claims = _contextAccessor.HttpContext.User.Claims.ToList();
-            return claims.Count > 0;
+            var permissions = JsonConvert.SerializeObject(account.Permissions); // NewtonSoft.json
+            var claims = new List<Claim>
+            {
+                new Claim("AccountId", account.Id.ToString()),
+                new Claim(ClaimTypes.Name, account.FullName),
+                new Claim(ClaimTypes.Role, account.RoleId.ToString()),
+                new Claim("Username", account.UserName), // Or Use ClaimTypes.NameIdentifier
+                new Claim("permissions", permissions)
+                
+            };
+
+            var claimsIdentity = new ClaimsIdentity(
+                claims, CookieAuthenticationDefaults.AuthenticationScheme); // Installpackage 'Microsoft.AspNetCore.Authentication.Cookies'
+
+            var authProperties = new AuthenticationProperties
+            {
+                ExpiresUtc = DateTimeOffset.UtcNow.AddDays(10),
+            };
+
+            _contextAccessor.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
+        }
+
+        public void SignOut()
+        {
+            _contextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         }
 
         public string CurrentAccountRole()
@@ -28,29 +54,6 @@ public class AuthHelper : IAuthHelper
                 return _contextAccessor.HttpContext.User.Claims
                     .FirstOrDefault(x => x.Type == ClaimTypes.Role).Value;
             return null;
-        }
-
-        public void Signin(AuthViewModel account)
-        {
-            var claims = new List<Claim>
-            {
-                new Claim("AccountId", account.Id.ToString()),
-                new Claim(ClaimTypes.Name, account.FullName),
-                new Claim(ClaimTypes.Role, account.RoleId.ToString()),
-                new Claim("Username", account.UserName), // Or Use ClaimTypes.NameIdentifier
-                // new Claim("Mobile", account.Mobile)
-            };
-
-            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
-            var authProperties = new AuthenticationProperties
-            {
-                ExpiresUtc = DateTimeOffset.UtcNow.AddDays(1)
-            };
-
-            _contextAccessor.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
-                new ClaimsPrincipal(claimsIdentity),
-                authProperties);
         }
 
         public AuthViewModel CurrentAccountInfo()
@@ -67,8 +70,21 @@ public class AuthHelper : IAuthHelper
             return result;
         }
 
-        public void SignOut()
+        public bool IsAuthenticated()
         {
-            _contextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return _contextAccessor.HttpContext.User.Identity.IsAuthenticated;
+            // var claims = _contextAccessor.HttpContext.User.Claims.ToList();
+            // return claims.Count > 0;
+        }
+
+        public List<int> GetPermissions()
+        {
+            if (!IsAuthenticated())
+            {
+                return new List<int>();
+            }
+            var permissions = _contextAccessor.HttpContext.User.Claims
+                .FirstOrDefault(x => x.Type == "permissions")?.Value;
+            return JsonConvert.DeserializeObject<List<int>>(permissions);
         }
 }

@@ -7,5 +7,4 @@ public interface IRoleRepository : IRepository<long, Role>
 {
     List<RoleViewModel> List();
     EditRole GetDetails(long id);
-
 }

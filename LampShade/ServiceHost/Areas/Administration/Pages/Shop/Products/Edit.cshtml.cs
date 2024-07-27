@@ -1,9 +1,11 @@
 using _0_Framework.Application;
+using _0_Framework.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
+using ShopManagement.Configuration.Permissions;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.Products
 {
@@ -27,7 +29,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             Command = _productApplication.GetDetails(id);
 
         }
-
+        
         public IActionResult OnPostEdit(EditProduct Command)
         {
             var result = new OperationResult();

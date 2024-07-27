@@ -60,6 +60,7 @@ public class AccountRepository : RepositoryBase<long, Account>, IAccountReposito
 
         if (!string.IsNullOrWhiteSpace(searchModel.Mobile))
             query = query.Where(x => x.Mobile.Contains(searchModel.Mobile));
+        
         if (searchModel.RoleId > 0)
             query = query.Where(x => x.RoleId == searchModel.RoleId);
 

@@ -43,14 +43,13 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         o.AccessDeniedPath = new PathString("/AccessDenied");
     });
 // End CookiePolicyOptions
-builder.Services.AddAuthorization(options =>
+// Start Policy Authorization for Access
+builder.Services.AddAuthorization(options => 
     {
         options.AddPolicy("AdminArea", builder =>
-            builder.RequireRole(new List<string> { Roles.Administrator, Roles.Creator }));
+            builder.RequireRole(new List<string> { Roles.Administrator, Roles.Creator}));
         options.AddPolicy("Shop", builder =>
-            builder.RequireRole(new List<string> { Roles.Administrator}));
-        options.AddPolicy("Inventory", builder =>
-            builder.RequireRole(new List<string> { Roles.Administrator}));
+            builder.RequireRole(new List<string> { Roles.Administrator, Roles.Creator}));
         options.AddPolicy("Account", builder =>
             builder.RequireRole(new List<string> { Roles.Administrator}));
         options.AddPolicy("Discount", builder =>
@@ -58,16 +57,15 @@ builder.Services.AddAuthorization(options =>
     });
     
 builder.Services.AddRazorPages()
+    .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>())
     .AddRazorPagesOptions(options =>
     {
         options.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
         options.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
-        options.Conventions.AuthorizeAreaFolder("Administration", "/Inventory", "Inventory");
         options.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
         options.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
-
     });
-
+// End Policy Authorization for Access
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -78,16 +76,15 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseAuthentication();
+app.UseAuthentication(); // Add
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseCookiePolicy();
+app.UseCookiePolicy(); // Add
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthorization(); // Add
 
 app.MapRazorPages();
-//app.MapDefaultControllerRoute();
 
 app.Run();
 

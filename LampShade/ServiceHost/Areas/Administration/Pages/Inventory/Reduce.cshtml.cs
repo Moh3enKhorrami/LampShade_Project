@@ -1,5 +1,6 @@
 using _0_Framework.Infrastructure;
 using InventoryManagement.Application.Contract.Inventory;
+using InventoryMangement.Configuration.Permissions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -15,7 +16,6 @@ public class Reduce : PageModel
     {
         _inventoryApplication = inventoryApplication;
     }
-
     public void OnGet(long id)
     {
         Command = new ReduceInventory()
@@ -24,6 +24,7 @@ public class Reduce : PageModel
         };
     }
     
+    [NeedsPermission(InventoryPermission.ReduceInventory)]
     public IActionResult OnPostReduce(ReduceInventory command)
     {
         var result = _inventoryApplication.Reduce(command);

@@ -3,6 +3,7 @@ using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
+using InventoryMangement.Configuration.Permissions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -11,8 +12,7 @@ using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 
 namespace ServiceHost.Areas.Administration.Pages.Inventory
-{
-    
+{ 
     public class EditModel : PageModel
     {
         public EditInventory Command;
@@ -26,12 +26,13 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             Command = new EditInventory();
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
         }
-
+        [NeedsPermission(InventoryPermission.EditInventory)]
         public void OnGet(long id)
         {
             Command = _inventoryApplication.Getdetails(id);
         }
-
+        
+        // [NeedsPermission(InventoryPermission.EditInventory)]
         public IActionResult OnPostEdit(EditInventory Command)
         {
             var result = new OperationResult();

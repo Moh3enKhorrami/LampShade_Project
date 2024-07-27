@@ -1,6 +1,7 @@
 using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using InventoryManagement.Application.Contract.Inventory;
+using InventoryMangement.Configuration.Permissions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -11,7 +12,6 @@ using ShopManagement.Application.Contracts.ProductCategory;
 
 namespace ServiceHost.Areas.Administration.Pages.Inventory
 {
-    
     public class IndexModel : PageModel
     {
         public InventorySearchmodel SearchModel;
@@ -28,6 +28,8 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             Inventory = new List<InventoryViewModel>();
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
         }
+        
+        // [NeedsPermission(InventoryPermission.ListInventory)]
         public void OnGet(InventorySearchmodel searchModel)
         {
             Inventory = _inventoryApplication.Search(searchModel);

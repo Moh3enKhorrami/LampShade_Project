@@ -6,7 +6,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Slide;
 
 public class CreateModel : PageModel
 {
-    public CreateSlide _command;
+    public CreateSlide Command;
     private readonly ISlideApplication _slideApplication;
 
     public CreateModel(ISlideApplication slideApplication)
