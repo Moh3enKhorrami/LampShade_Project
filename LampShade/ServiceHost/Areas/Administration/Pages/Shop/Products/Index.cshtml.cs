@@ -24,6 +24,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             Products = new List<ProductViewModel>();
             ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories(), "Id", "Name");
         }
+        [NeedsPermission(ShopPermissions.ListProducts)]
         public void OnGet(ProductSearchModel searchModel)
         {
             Products = _productApplication.Search(searchModel);

@@ -93,9 +93,7 @@ public class AccountApplication : IAccountApplication
         if (!result.Verified)
             return operation.Failed(ApplicationMessages.UserOrPassNotExists);
         var permissions = _roleRepository.Get(account.RoleId)
-            .Permissions
-            .Select(x => x.Code)
-            .ToList(); //?
+            .Permissions.Select(x => x.Code).ToList(); //?
         
         var authViewModel = new AuthViewModel(
             account.Id, account.RoleId, account.FullName,account.UserName, permissions);

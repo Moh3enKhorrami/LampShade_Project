@@ -29,7 +29,7 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
         }
         
-        // [NeedsPermission(InventoryPermission.ListInventory)]
+        [NeedsPermission(InventoryPermission.ListInventory)]
         public void OnGet(InventorySearchmodel searchModel)
         {
             Inventory = _inventoryApplication.Search(searchModel);

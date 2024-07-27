@@ -14,7 +14,7 @@ public class SecurityPageFilter : IPageFilter
         _authHelper = authHelper;
     }
 
-    public void OnPageHandlerSelected(PageHandlerSelectedContext context)
+    public void OnPageHandlerExecuted(PageHandlerExecutedContext context)
     {
     }
 
@@ -25,11 +25,11 @@ public class SecurityPageFilter : IPageFilter
         if (handlerpermission == null)
             return;
         var accountPermissions = _authHelper.GetPermissions();
-        if (!accountPermissions.Any(x => x == handlerpermission.Permission))
-            context.HttpContext.Response.Redirect("/account");
+        if (accountPermissions.All(x => x != handlerpermission.Permission))
+            context.HttpContext.Response.Redirect("/Account");
     }
 
-    public void OnPageHandlerExecuted(PageHandlerExecutedContext context)
+    public void OnPageHandlerSelected(PageHandlerSelectedContext context)
     {
     }
 }

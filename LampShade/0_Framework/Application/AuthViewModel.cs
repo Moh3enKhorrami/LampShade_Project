@@ -21,6 +21,6 @@ public class AuthViewModel
     public string Role { get; set; } 
     public string FullName { get; set; }
     public string UserName { get; set; }
-    public List<int> Permissions { get; set; }
+    public List<int> Permissions { get; set; } // Aupdate Tocken
     
 }

@@ -23,12 +23,7 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Role
         public IActionResult OnPostCreate(CreateRole Command)
         {
             var result = _roleApplication.Create(Command);
-            if (result.IsSuccedded)
-                return RedirectToPage("./Index") ;
-            else
-            {
-                return Page();
-            }
+            return RedirectToPage("Index");
         }
     }
 }

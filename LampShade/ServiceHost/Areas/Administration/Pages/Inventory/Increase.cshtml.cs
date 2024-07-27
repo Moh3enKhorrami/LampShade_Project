@@ -16,6 +16,7 @@ public class Increase : PageModel
     {
         _inventoryApplication = inventoryApplication;
     }
+    [NeedsPermission(InventoryPermission.IncreaseInventory)]
     public void OnGet(long id)
     {
         Command = new IncreaseInventory()

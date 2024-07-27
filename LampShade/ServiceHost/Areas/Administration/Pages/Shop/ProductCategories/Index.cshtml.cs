@@ -20,6 +20,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
             ProductCategories = new List<ProductCategoryViewModel>();
         }
         
+        [NeedsPermission(ShopPermissions.ListProductCategories)]
         public void OnGet(ProductCategorySearchModel searchModel)
         {
             ProductCategories = _productCategoryApplication.Search(searchModel);

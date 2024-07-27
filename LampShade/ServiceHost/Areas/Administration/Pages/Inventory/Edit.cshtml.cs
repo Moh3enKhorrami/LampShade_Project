@@ -32,7 +32,7 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             Command = _inventoryApplication.Getdetails(id);
         }
         
-        // [NeedsPermission(InventoryPermission.EditInventory)]
+        [NeedsPermission(InventoryPermission.EditInventory)]
         public IActionResult OnPostEdit(EditInventory Command)
         {
             var result = new OperationResult();

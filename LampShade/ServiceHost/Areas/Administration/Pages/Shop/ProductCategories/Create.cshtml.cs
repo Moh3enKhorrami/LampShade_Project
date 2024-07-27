@@ -18,10 +18,12 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
             Command = new CreateProductCategory();
         }
         
+        [NeedsPermission(ShopPermissions.CreateProductCategory)]
         public void OnGet()
         {
         }
         
+        [NeedsPermission(ShopPermissions.CreateProductCategory)]
         public IActionResult OnPostCreate(CreateProductCategory Command)
         {
             var result = _productCategoryApplication.Create(Command);

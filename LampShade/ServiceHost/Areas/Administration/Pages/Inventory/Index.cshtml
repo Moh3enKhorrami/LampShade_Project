@@ -10,7 +10,8 @@
 <div class="row" >
     <div class="col-sm-12">
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" asp-page="./Create">Create a new Inventory</a>
+            
+            <a permission="@InventoryPermission.CreateInventory" class="btn btn-success btn-lg" asp-page="./Create">Create a new Inventory</a>
         </p>
     </div>
 </div>
@@ -77,19 +78,19 @@
                                         <td>@item.CurrentCount</td>
                                         <td>@item.CreationDate</td>
                                         <td>
-                                            <a class="btn btn-warning pull-right m-rl-5"
+                                            <a permission="@InventoryPermission.EditInventory" class="btn btn-warning pull-right m-rl-5"
                                                asp-page="./Edit" asp-route-id="@item.Id">
                                                 <i class="fa fa-edit"></i> Edit
                                             </a>
-                                            <a class="btn btn-success pull-right m-rl-5"
+                                            <a permission="@InventoryPermission.IncreaseInventory" class="btn btn-success pull-right m-rl-5"
                                                asp-page="./Increase" asp-page-handler="Increase" asp-route-id="@item.Id">
                                                 <i class="fa fa-Plus"></i>+ Plus
                                             </a>
-                                            <a class="btn btn-danger pull-right m-rl-5"
+                                            <a permission="@InventoryPermission.ReduceInventory" class="btn btn-danger pull-right m-rl-5"
                                                asp-page="./Reduce" asp-page-handler="Reduce" asp-route-id="@item.Id">
                                                 <i class="fa fa-minus"></i> Reduce
                                             </a>
-                                            <a class="btn btn-primary pull-right m-rl-5"
+                                            <a permission="@InventoryPermission.OperationLog" class="btn btn-primary pull-right m-rl-5"
                                                asp-page="./OperationLog" asp-page-handler="Log" asp-route-id="@item.Id">
                                                 <i class="fa fa-recycle"></i> Log
                                             </a>

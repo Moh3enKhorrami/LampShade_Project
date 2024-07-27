@@ -9,21 +9,21 @@ public class ShopPermissionExposer : IPermissionExposer
         return new Dictionary<string, List<PermissionDto>>
         {
             {
-                "Product" , new List<PermissionDto>
+                "Product" , new List<PermissionDto> //IProductApplication
                 {
-                    new(ShopPermissions.ListProducts, "ListProducts"),
-                    new(ShopPermissions.SearchProducts,"SearchProducts"),
-                    new(ShopPermissions.CreateProduct,"CreateProducts"),
-                    new(ShopPermissions.EditProduct,"EditProducts"),
+                    new PermissionDto(ShopPermissions.ListProducts, "ListProducts"),
+                    new PermissionDto(ShopPermissions.SearchProducts,"SearchProducts"),
+                    new PermissionDto(ShopPermissions.CreateProduct,"CreateProducts"),
+                    new PermissionDto(ShopPermissions.EditProduct,"EditProducts"),
                 }
             },
             {
-                "ProductCategory", new List<PermissionDto>
+                "ProductCategory", new List<PermissionDto> //IProductCategoryApplication
                 {
-                    new (ShopPermissions.SearchProductCategories,"SearchProductCategories"),
-                    new (ShopPermissions.ListProductCategories,"ListProductCategories"),
-                    new (ShopPermissions.CreateProductCategory,"CreateProductCategory"),
-                    new (ShopPermissions.EditProductCategory,"EditProductCategory"),
+                    new PermissionDto(ShopPermissions.SearchProductCategories,"SearchProductCategories"),
+                    new PermissionDto(ShopPermissions.ListProductCategories,"ListProductCategories"),
+                    new PermissionDto(ShopPermissions.CreateProductCategory,"CreateProductCategory"),
+                    new PermissionDto(ShopPermissions.EditProductCategory,"EditProductCategory"),
                 }
             },
         };

@@ -16,6 +16,7 @@ public class Reduce : PageModel
     {
         _inventoryApplication = inventoryApplication;
     }
+    [NeedsPermission(InventoryPermission.ReduceInventory)]
     public void OnGet(long id)
     {
         Command = new ReduceInventory()

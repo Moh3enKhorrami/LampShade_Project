@@ -18,13 +18,13 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
             _productCategoryApplication = productCategoryApplication;
             Command = new EditProductCategory();
         }
-
+        [NeedsPermission(ShopPermissions.EditProductCategory)]
         public void OnGet(long id)
         {
             Command = _productCategoryApplication.GetDetails(id);
 
         }
-
+        [NeedsPermission(ShopPermissions.EditProductCategory)]
         public IActionResult OnPostEdit(EditProductCategory Command)
         {
             var result = new OperationResult();

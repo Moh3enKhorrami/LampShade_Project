@@ -22,12 +22,13 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories(),"Id","Name");
         }
         
+        [NeedsPermission(ShopPermissions.CreateProduct)]
         public void OnGet()
         {
             
         }
         
-        
+        [NeedsPermission(ShopPermissions.CreateProduct)]
         public IActionResult OnPostCreate(CreateProduct Command)
         {
             //ProductCategories.GetEnumerator();

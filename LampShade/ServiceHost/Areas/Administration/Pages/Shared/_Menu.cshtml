@@ -35,7 +35,7 @@
                     </li>
                     
                     
-                    @if (AuthHelper.CurrentAccountRole() == Roles.Administrator)
+                    @if (AuthHelper.CurrentAccountRole() == Roles.Administrator || AuthHelper.CurrentAccountRole() == Roles.Creator)
                     {
                         <li class="has_sub">
                             <a class="waves-effect"><i class="fa  fa-shopping-cart"></i><span> Shop </span><span class="pull-right"><i class="md md-add"></i></span></a>

@@ -23,13 +23,14 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             Command = new EditProduct();
             ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories(), "Id", "Name");
         }
-
+        
+        [NeedsPermission(ShopPermissions.EditProduct)]
         public void OnGet(long id)
         {
             Command = _productApplication.GetDetails(id);
 
         }
-        
+        [NeedsPermission(ShopPermissions.EditProduct)]
         public IActionResult OnPostEdit(EditProduct Command)
         {
             var result = new OperationResult();

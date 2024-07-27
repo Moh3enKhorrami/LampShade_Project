@@ -24,6 +24,7 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             Products = new SelectList(_productApplication.GetProducts(),"Id","Name");
         }
         
+        [NeedsPermission(InventoryPermission.CreateInventory)]
         public void OnGet()
         {
             
