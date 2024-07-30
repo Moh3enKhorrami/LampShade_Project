@@ -1,3 +1,4 @@
+using _01_LampshadeQuery;
 using _01_LampshadeQuery.Contracts.ProductCategory;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,10 @@ public class MenuViewComponent: ViewComponent
 
     public IViewComponentResult Invoke()
     {
-        return View();
+        var result = new MenuModel
+        {
+            ProductCategories = _productCategoryQuery.GetProductCategories(),
+        };
+        return View(result);
     }
 }

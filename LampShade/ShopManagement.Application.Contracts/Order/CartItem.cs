@@ -13,7 +13,10 @@ public class CartItem
     public double DiscountAmount { get; set; }
     public double ItemPayAmount { get; set; }
 
-
+    public CartItem()
+    {
+        TotalPrice = UnitPrice * Count;
+    }
     public void CalculateTotalItemprice()
     {
         TotalPrice = UnitPrice * Count;

@@ -41,4 +41,5 @@ public class Account : EntityBase
     {
         Password = password;
     }
+    
 }

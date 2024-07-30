@@ -1,3 +1,4 @@
+using _0_Framework.Application;
 using _01_LampshadeQuery.Contracts;
 using DiscountManagement.Domain.CustomerDiscountAgg;
 using DiscountManagement.Infrastructure.EFCore;

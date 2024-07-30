@@ -70,6 +70,14 @@ public class AuthHelper : IAuthHelper
             return result;
         }
 
+        public long CurrentAccountId()
+        {
+            if (IsAuthenticated())
+                return long.Parse(_contextAccessor.HttpContext.User.Claims
+                    .First(x => x.Type == "AccountId")?.Value);
+            return 0;
+        }
+
         public bool IsAuthenticated()
         {
             return _contextAccessor.HttpContext.User.Identity.IsAuthenticated;

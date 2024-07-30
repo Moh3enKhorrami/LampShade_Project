@@ -10,4 +10,6 @@ public interface IAuthHelper
     string CurrentAccountRole();
     void Signin(AuthViewModel account);
     AuthViewModel CurrentAccountInfo();
+    long CurrentAccountId();
+    
 }

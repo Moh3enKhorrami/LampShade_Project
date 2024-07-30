@@ -22,11 +22,16 @@ public class CartModel : PageModel
     {
         var serializer = new JavaScriptSerializer(); // Nuget Nancy - convert Cookie
         var value = Request.Cookies[CookieName];
-        CartItems = serializer.Deserialize<List<CartItem>>(value);
-        foreach (var item in CartItems)
+        var cartItems = serializer.Deserialize<List<CartItem>>(value);
+        if (string.IsNullOrEmpty(value))
+        {
+            CartItems = new List<CartItem>();
+            return;
+        }
+        foreach (var item in cartItems)
             item.CalculateTotalItemprice();
 
-        CartItems = _productQuery.CheckInventoryStatus(CartItems);
+        CartItems = _productQuery.CheckInventoryStatus(cartItems);
     }
 
     public IActionResult OnGetRemoveFromCart(long id)
@@ -37,7 +42,7 @@ public class CartModel : PageModel
         var cartItems = serializer.Deserialize<List<CartItem>>(value);
         var itemToRemove = cartItems.FirstOrDefault(x => x.Id == id);
         cartItems.Remove(itemToRemove);
-        var options = new CookieOptions{Expires = DateTime.Now.AddDays(1)};
+        var options = new CookieOptions{Expires = DateTime.Now.AddDays(2)};
         Response.Cookies.Append(CookieName, serializer.Serialize(cartItems), options);
         return RedirectToPage("/Cart");
     }
@@ -46,11 +51,11 @@ public class CartModel : PageModel
     {
         var serializer = new JavaScriptSerializer();
         var value = Request.Cookies[CookieName];
-        CartItems = serializer.Deserialize<List<CartItem>>(value);
-        foreach (var item in CartItems)
+        var cartItems = serializer.Deserialize<List<CartItem>>(value);
+        foreach (var item in cartItems)
             item.CalculateTotalItemprice();
 
-        CartItems = _productQuery.CheckInventoryStatus(CartItems);
+        CartItems = _productQuery.CheckInventoryStatus(cartItems);
         if (CartItems.Any(x => !x.IsInStock))
             return RedirectToPage("/Cart");
         return RedirectToPage("/ChechOut");

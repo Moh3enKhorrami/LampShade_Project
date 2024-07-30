@@ -21,7 +21,7 @@ public class SecurityPageFilter : IPageFilter
     public void OnPageHandlerExecuting(PageHandlerExecutingContext context)
     {
         var handlerpermission = (NeedsPermissionAttribute)context.HandlerMethod.MethodInfo.GetCustomAttribute(
-            typeof(NeedsPermissionAttribute)); //?
+            typeof(NeedsPermissionAttribute)); 
         if (handlerpermission == null)
             return;
         var accountPermissions = _authHelper.GetPermissions();

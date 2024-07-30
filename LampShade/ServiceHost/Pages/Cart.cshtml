@@ -73,7 +73,7 @@
                                                 <span id="totalPrice-@item.Id">@item.TotalPrice €</span>
                                             </td>
                                             <td class="pro-remove">
-                                                <a asp-page-handler="RemoveFromCart" asp-route-id="@item.Id">
+                                                <a methods="onget" asp-page-handler="RemoveFromCart" asp-route-id="@item.Id">
                                                     <i class="fa fa-trash-o"></i>
                                                 </a>
                                             </td>

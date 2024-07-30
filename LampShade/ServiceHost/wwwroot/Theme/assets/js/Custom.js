@@ -24,7 +24,7 @@ function addToCart(id, name, price, picture) {
         products.push(product);
     }
 
-    $.cookie(cookieName, JSON.stringify(products), { expires: 1, path: "/" });
+    $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 }
 
@@ -63,7 +63,7 @@ function removeFromCart(id) {
     products = JSON.parse(products);
     const itemToRemove = products.findIndex(x => x.id === id);
     products.splice(itemToRemove, 1);
-    $.cookie(cookieName, JSON.stringify(products), { expires: 1, path: "/" });
+    $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 }
 
@@ -76,6 +76,6 @@ function changeCartItemCount(id, totalId, count) {
     const newPrice = parseInt(product.unitPrice) * parseInt(count);
     $(`#${totalId}`).text(newPrice);
     //products[productIndex].totalPrice = newPrice;
-    $.cookie(cookieName, JSON.stringify(products), { expires: 1, path: "/" });
+    $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 }
