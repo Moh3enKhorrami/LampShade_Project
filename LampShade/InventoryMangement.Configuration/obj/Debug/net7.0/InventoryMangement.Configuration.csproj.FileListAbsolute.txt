@@ -34,3 +34,13 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/CommentManagement.Domain.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/CommentManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/CommentManagement.Domain.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/CommentManagement.Infrastructure.EFCore.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Application.Contracts.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Domain.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Infrastructure.EFCore.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/_01_LampshadeQuery.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/_01_LampshadeQuery.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/CommentManagement.Infrastructure.EFCore.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Application.Contracts.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Domain.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Infrastructure.EFCore.pdb

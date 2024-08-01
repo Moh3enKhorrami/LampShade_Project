@@ -31,10 +31,12 @@
             <div class="col-lg-12">
                 <!--=======  page wrapper  =======-->
                 <div class="page-wrapper">
-                    @foreach (var item in Model.CartItems.Where(x => !x.IsInStock))
-                    {
-                        <div class="alert alert-warning"><i class="fa fa-warning">Not available in stock with this quantity @item.Name</i></div> 
-                    }
+                    <div id="productStockWarnings">
+                        @foreach (var item in Model.CartItems.Where(x => !x.IsInStock))
+                        {
+                            <div class="alert alert-warning" id="@item.Id">Article<i class="fa fa-warning">Not available in stock with this quantity @item.Name</i></div> 
+                        }
+                    </div>
                     <div class="page-content-wrapper">
                         
                             <div class="cart-table table-responsive">

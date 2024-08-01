@@ -20,6 +20,7 @@
     <Folder Include="Areas\" />
     <Folder Include="Areas\Administration\" />
     <Folder Include="Areas\Administration\Pages\Shared\" />
+    <Folder Include="Controller\" />
     <Folder Include="wwwroot\AdminTheme\" />
     <Folder Include="wwwroot\ProductPictures\Decoration\" />
     <Folder Include="wwwroot\ProductPictures\Lighting\" />
@@ -30,10 +31,12 @@
     <Content Remove="wwwroot\AdminTheme\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
     <PackageReference Include="Nancy" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>

@@ -4,12 +4,15 @@ using _01_LampshadeQuery.Contracts;
 using AccountManagement.Configuration;
 using CommentManagement.Configuration;
 using DiscountManagement.Configuration;
+
 using InventoryMangement.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using ServiceHost;
 using ShopManagement.Configuration;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,18 +47,21 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 // End CookiePolicyOptions
 // Start Policy Authorization for Access
-builder.Services.AddAuthorization(options => 
-    {
-        options.AddPolicy("AdminArea", builder =>
-            builder.RequireRole(new List<string> { Roles.Administrator, Roles.Creator}));
-        options.AddPolicy("Shop", builder =>
-            builder.RequireRole(new List<string> { Roles.Administrator, Roles.Creator}));
-        options.AddPolicy("Account", builder =>
-            builder.RequireRole(new List<string> { Roles.Administrator}));
-        options.AddPolicy("Discount", builder =>
-            builder.RequireRole(new List<string> { Roles.Administrator}));
-    });
-    
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminArea", builder =>
+        builder.RequireRole(new List<string> { Roles.Administrator, Roles.Creator }));
+    options.AddPolicy("Shop", builder =>
+        builder.RequireRole(new List<string> { Roles.Administrator, Roles.Creator }));
+    options.AddPolicy("Account", builder =>
+        builder.RequireRole(new List<string> { Roles.Administrator }));
+    options.AddPolicy("Discount", builder =>
+        builder.RequireRole(new List<string> { Roles.Administrator }));
+});
+
+// builder.Services.AddCors(options =>
+//     options.AddPolicy("MyPolicy", builder => builder.WithOrigins().WithHeaders().WithMethods())); // CORS API
+
 builder.Services.AddRazorPages()
     .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>())
     .AddRazorPagesOptions(options =>
@@ -64,7 +70,12 @@ builder.Services.AddRazorPages()
         options.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
         options.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
         options.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
-    });
+    })
+    .AddNewtonsoftJson();
+    // .AddApplicationPart(typeof(ProductController).Assembly);
+    // .AddApplicationPart(typeof(InventoryController).Assembly);
+
+
 // End Policy Authorization for Access
 var app = builder.Build();
 
@@ -83,8 +94,12 @@ app.UseCookiePolicy(); // Add
 app.UseRouting();
 
 app.UseAuthorization(); // Add
+// app.UseCors("MyPolicy"); // CORS API
+app.UseEndpoints(endpoint =>
+{
+    app.MapRazorPages();
+    app.MapControllers();
+});
 
-app.MapRazorPages();
 
 app.Run();
-
