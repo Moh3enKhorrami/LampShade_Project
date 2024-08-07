@@ -34,7 +34,6 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/Microsoft.AspNetCore.OutputCaching.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/Microsoft.Extensions.Localization.dll
-/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/System.IO.Pipelines.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/Microsoft.AspNetCore.Components.Forms.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/ShopManagement.Application.Contracts.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application.Contracts/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb

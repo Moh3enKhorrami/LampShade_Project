@@ -103,6 +103,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM.Presentation", "SM.Prese
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IM.Presentation", "IM.Presentation", "{AAA8C4F2-FF46-491E-A3CC-8CB414BE6338}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisDatabase", "RedisDatabase\RedisDatabase.csproj", "{19DDE540-6438-466E-99AC-D80B37A4E2A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -221,6 +223,10 @@ Global
 		{95607556-0838-4907-9B28-4FE12DA5A181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95607556-0838-4907-9B28-4FE12DA5A181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95607556-0838-4907-9B28-4FE12DA5A181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DDE540-6438-466E-99AC-D80B37A4E2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DDE540-6438-466E-99AC-D80B37A4E2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DDE540-6438-466E-99AC-D80B37A4E2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DDE540-6438-466E-99AC-D80B37A4E2A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

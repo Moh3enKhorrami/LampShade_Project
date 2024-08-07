@@ -4,14 +4,13 @@ using _01_LampshadeQuery.Contracts;
 using AccountManagement.Configuration;
 using CommentManagement.Configuration;
 using DiscountManagement.Configuration;
-
 using InventoryMangement.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using ServiceHost;
 using ShopManagement.Configuration;
-
+using StackExchange.Redis;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,7 +19,23 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpContextAccessor(); // AuthHelper
 
-var connectionString = builder.Configuration.GetConnectionString("LampshadeDb");
+var connectionString = builder.Configuration.GetConnectionString("LampshadeDb"); // SqlServer
+// builder.Services.AddStackExchangeRedisCache(options =>
+// {
+//     options.Configuration = builder.Configuration.GetSection("Redis:Connection").Value;
+//     options.InstanceName = "LampShade:";
+// }); // Redis
+builder.Services.AddSingleton<IConnectionMultiplexer>(provider =>
+{
+    var host = builder.Configuration.GetValue<string>("RedisOptions:Host");
+    var port = builder.Configuration.GetValue<int>("RedisOptions:Port");
+    var options = new ConfigurationOptions
+    {
+        EndPoints = { $"{host}:{port}" },
+    };
+    return ConnectionMultiplexer.Connect(options);
+});
+
 
 ShopManagementBoostrapper.Configure(builder.Services, connectionString);
 DiscountManagementBoostrapper.Configure(builder.Services, connectionString);
