@@ -1,5 +1,6 @@
 using System.Xml.Linq;
 using _0_Framework.Application;
+using RedisDatabase.Infrastructure;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
@@ -14,7 +15,8 @@ public class ProductApplication : IProductApplication
     private readonly IFileUpLoader _fileUpLoader;
     private readonly IProductRepository _productRepository;
 
-    public ProductApplication(IProductRepository productRepository, IFileUpLoader fileUpLoader, IProductCategoryRepository productCategoryRepository)
+    public ProductApplication(IProductRepository productRepository, IFileUpLoader fileUpLoader,
+        IProductCategoryRepository productCategoryRepository)
     {
         _productRepository = productRepository;
         _fileUpLoader = fileUpLoader;
@@ -58,8 +60,10 @@ public class ProductApplication : IProductApplication
         var picturePath = _fileUpLoader.UpLoad(command.Picture,path);
 
         product.Edit(command.Name, command.Code, command.ShortDescription, command.Description, picturePath,
-            command.PictureAlt, command.PictureTitle, command.CategoryId,slug,command.Keyworks, command.MetaDescription);
+            command.PictureAlt, command.PictureTitle, command.CategoryId,slug,command.Keyworks, 
+            command.MetaDescription);
         _productRepository.SaveChanges();
+        
         return operation.Succedded();
 
 

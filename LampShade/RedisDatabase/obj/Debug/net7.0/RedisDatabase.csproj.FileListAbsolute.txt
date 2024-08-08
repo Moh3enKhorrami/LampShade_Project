@@ -1,0 +1,13 @@
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/bin/Debug/net7.0/RedisDatabase.deps.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/bin/Debug/net7.0/RedisDatabase.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/RedisDatabase.csproj.AssemblyReference.cache
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/RedisDatabase.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/RedisDatabase.AssemblyInfoInputs.cache
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/RedisDatabase.AssemblyInfo.cs
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/RedisDatabase.csproj.CoreCompileInputs.cache
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/RedisDatabase.sourcelink.json
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/refint/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/RedisDatabase.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/RedisDatabase/obj/Debug/net7.0/ref/RedisDatabase.dll

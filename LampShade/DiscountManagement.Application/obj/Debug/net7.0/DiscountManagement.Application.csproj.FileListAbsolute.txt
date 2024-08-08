@@ -20,3 +20,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/obj/Debug/net7.0/DiscountManagement.Application.sourcelink.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/obj/Debug/net7.0/Discount.FA9DCEB2.Up2Date
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/DiscountManagement.Application/bin/Debug/net7.0/RedisDatabase.pdb

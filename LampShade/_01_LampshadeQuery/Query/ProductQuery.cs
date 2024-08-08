@@ -3,21 +3,26 @@ using CommentManagement.Infrastructure.EFCore;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryMangement.Infrastructure.EFCorel;
 using Microsoft.EntityFrameworkCore;
+using RedisDatabase.Infrastructure;
 using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Domain.PictureAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Infrastructure.EFCore;
+using StackExchange.Redis;
 
 namespace _01_LampshadeQuery.Query;
 
 public class ProductQuery : IProductQuery
 {
+    private readonly IRedisCache _redisCache;
     private readonly ShopContext _context;
     private readonly InventoryContext _inventoryContext;
     private readonly DiscountContext _discountContext;
     private readonly CommentContext _commentContext;
-    public ProductQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext)
+    public ProductQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext,
+        CommentContext commentContext, IRedisCache redisCache)
     {
+        _redisCache = redisCache;
         _context = context;
         _inventoryContext = inventoryContext;
         _discountContext = discountContext;
@@ -26,6 +31,11 @@ public class ProductQuery : IProductQuery
     
     public List<ProductQueryModel> GetLatestArrivals()
     {
+        var cacheKey = "Latest-Arrivals";
+        var cacheProducts = _redisCache.Get<List<ProductQueryModel>>(cacheKey);
+        if (cacheProducts != null)
+            return cacheProducts;
+        
         var inventory = _inventoryContext.Inventories
             .Select(x => new {x.ProductId, x.UnitPrice }).ToList();
 
@@ -71,6 +81,7 @@ public class ProductQuery : IProductQuery
                 }
             }
         }
+        _redisCache.Set(cacheKey,products,5);
         return products;
     }
 
@@ -131,6 +142,10 @@ public class ProductQuery : IProductQuery
 
     public ProductQueryModel GetDetails(string slug)
     {
+        var cacheKey = $"Details-{slug}";
+        var cacheProducts = _redisCache.Get<ProductQueryModel>(cacheKey);
+        if (cacheProducts != null)
+            return cacheProducts;
         var inventory = _inventoryContext.Inventories
             .Select(x => new {x.ProductId, x.UnitPrice, x.InStock }).ToList();
 
@@ -199,7 +214,7 @@ public class ProductQuery : IProductQuery
                 Message = x.Message,
                 Name = x.Name
             }).AsNoTracking().OrderByDescending(x => x.Id).ToList();
-        
+        _redisCache.Set(cacheKey,product,5);
         return product;
     }
 

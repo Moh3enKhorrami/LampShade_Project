@@ -18,3 +18,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Application/obj/Debug/net7.0/refint/CommentManagement.Application.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Application/obj/Debug/net7.0/CommentManagement.Application.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Application/obj/Debug/net7.0/ref/CommentManagement.Application.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Application/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Application/bin/Debug/net7.0/RedisDatabase.pdb

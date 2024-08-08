@@ -22,3 +22,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/obj/Debug/net7.0/refint/AccountManagement.Configuration.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/obj/Debug/net7.0/AccountManagement.Configuration.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/obj/Debug/net7.0/ref/AccountManagement.Configuration.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Configuration/bin/Debug/net7.0/RedisDatabase.pdb

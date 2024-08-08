@@ -20,3 +20,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountMangement.Infrastructure.EFCore/obj/Debug/net7.0/AccountMangement.Infrastructure.EFCore.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountMangement.Infrastructure.EFCore/obj/Debug/net7.0/AccountMangement.Infrastructure.EFCore.genruntimeconfig.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountMangement.Infrastructure.EFCore/obj/Debug/net7.0/ref/AccountMangement.Infrastructure.EFCore.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountMangement.Infrastructure.EFCore/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountMangement.Infrastructure.EFCore/bin/Debug/net7.0/RedisDatabase.pdb

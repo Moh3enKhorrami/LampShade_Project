@@ -6,6 +6,7 @@ using DiscountManagement.Application.Contracts.CustomerDiscount;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryMangement.Infrastructure.EFCorel;
 using Microsoft.EntityFrameworkCore;
+using RedisDatabase.Infrastructure;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Infrastructure.EFCore;
 
@@ -13,11 +14,14 @@ namespace _01_LampshadeQuery.Query;
 
 public class ProductCategoryQuery : IProductCategoryQuery
 {
+    private readonly IRedisCache _redisCache;
     private readonly ShopContext _context;
     private readonly InventoryContext _inventoryContext;
     private readonly DiscountContext _discountContext;
-    public ProductCategoryQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext)
+    public ProductCategoryQuery(ShopContext context, InventoryContext inventoryContext,
+        DiscountContext discountContext, IRedisCache redisCache)
     {
+        _redisCache = redisCache;
         _discountContext = discountContext;
         _inventoryContext = inventoryContext;
         _context = context;
@@ -25,6 +29,10 @@ public class ProductCategoryQuery : IProductCategoryQuery
 
     public ProductCategoryQueryModel GetProductCategoryWithProductsBy(string slug)
     {
+        var cacheKey = $"ProductCategoryWithProductsBy-{slug}";
+        var cacheProduct = _redisCache.Get<ProductCategoryQueryModel>(cacheKey);
+        if (cacheProduct != null)
+            return cacheProduct;
         var inventory = _inventoryContext.Inventories
             .Select((x => new { x.ProductId, x.UnitPrice })).ToList();
 
@@ -72,13 +80,10 @@ public class ProductCategoryQuery : IProductCategoryQuery
                 }
             }
         }
-
+        _redisCache.Set(cacheKey,category,5);
         return category;
     }
 
-    
-    
-    
     
     public List<ProductCategoryQueryModel> GetProductCategories()
     {
@@ -96,6 +101,10 @@ public class ProductCategoryQuery : IProductCategoryQuery
     
     public List<ProductCategoryQueryModel> GetProductCategoriesWithProducts()
     {
+        var cacheKey = "ProductCategoriesWithProducts";
+        var cacheCategory = _redisCache.Get<List<ProductCategoryQueryModel>>(cacheKey);
+        if (cacheCategory != null)
+            return cacheCategory;
         var inventory = _inventoryContext.Inventories
             .Select(x => new {x.ProductId, x.UnitPrice }).ToList();
 
@@ -142,6 +151,7 @@ public class ProductCategoryQuery : IProductCategoryQuery
                 }
             }
         }
+        _redisCache.Set(cacheKey, categories,5);
         return categories;
     }
 

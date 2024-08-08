@@ -20,3 +20,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Infrastructure.EFCore/obj/Debug/net7.0/CommentManagement.Infrastructure.EFCore.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Infrastructure.EFCore/obj/Debug/net7.0/CommentManagement.Infrastructure.EFCore.genruntimeconfig.cache
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Infrastructure.EFCore/obj/Debug/net7.0/ref/CommentManagement.Infrastructure.EFCore.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Infrastructure.EFCore/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/CommentManagement.Infrastructure.EFCore/bin/Debug/net7.0/RedisDatabase.pdb

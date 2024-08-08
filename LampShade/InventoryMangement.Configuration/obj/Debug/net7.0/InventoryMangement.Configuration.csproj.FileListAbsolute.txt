@@ -44,3 +44,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Domain.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/DiscountManagement.Infrastructure.EFCore.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryMangement.Configuration/bin/Debug/net7.0/RedisDatabase.pdb

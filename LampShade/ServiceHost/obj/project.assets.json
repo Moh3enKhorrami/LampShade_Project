@@ -4722,7 +4722,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.3",
+          "RedisDatabase": "1.0.0"
         },
         "compile": {
           "bin/placeholder/0_Framework.dll": {}
@@ -5026,10 +5027,24 @@
           "bin/placeholder/InventoryMangement.Infrastructure.EFCorel.dll": {}
         }
       },
+      "RedisDatabase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.20"
+        },
+        "compile": {
+          "bin/placeholder/RedisDatabase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RedisDatabase.dll": {}
+        }
+      },
       "ShopManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "RedisDatabase": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Domain": "1.0.0"
         },
@@ -5093,6 +5108,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.20",
+          "RedisDatabase": "1.0.0",
           "ShopManagement.Domain": "1.0.0",
           "StackExchange.Redis.Extensions.AspNetCore": "10.2.0",
           "StackExchange.Redis.Extensions.Core": "10.2.0"
@@ -5111,6 +5127,7 @@
           "CommentManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryMangement.Infrastructure.EFCorel": "1.0.0",
+          "RedisDatabase": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
         },
         "compile": {
@@ -13719,6 +13736,11 @@
       "type": "project",
       "path": "../InventoryMangement.Infrastructure.EFCorel/InventoryMangement.Infrastructure.EFCorel.csproj",
       "msbuildProject": "../InventoryMangement.Infrastructure.EFCorel/InventoryMangement.Infrastructure.EFCorel.csproj"
+    },
+    "RedisDatabase/1.0.0": {
+      "type": "project",
+      "path": "../RedisDatabase/RedisDatabase.csproj",
+      "msbuildProject": "../RedisDatabase/RedisDatabase.csproj"
     },
     "ShopManagement.Application/1.0.0": {
       "type": "project",

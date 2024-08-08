@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Linq.Expressions;
 using _0_Framework.Domain;
+using Emplement.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using RedisDatabase.Infrastructure;
 
 namespace _0_Framework.Infrastructure
 {
@@ -10,6 +12,7 @@ namespace _0_Framework.Infrastructure
         private readonly DbContext _context;
         public RepositoryBase(DbContext context)
         {
+            
             _context = context;
         }
 
@@ -32,10 +35,12 @@ namespace _0_Framework.Infrastructure
 
         public List<T> Get()
         {
+            
             return _context.Set<T>().ToList();  // .Set??
             
             // _context.Products.Tolist();
             // _context.ProductCategories.Tolist();
+            
         }
 
         public void SaveChanges()

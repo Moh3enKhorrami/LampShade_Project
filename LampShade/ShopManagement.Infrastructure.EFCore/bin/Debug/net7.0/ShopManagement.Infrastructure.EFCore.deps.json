@@ -13,6 +13,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.20",
+          "RedisDatabase": "1.0.0",
           "ShopManagement.Domain": "1.0.0",
           "StackExchange.Redis.Extensions.AspNetCore": "10.2.0",
           "StackExchange.Redis.Extensions.Core": "10.2.0"
@@ -881,7 +882,7 @@
           "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Newtonsoft.Json": "13.0.3",
-          "StackExchange.Redis": "2.7.17"
+          "RedisDatabase": "1.0.0"
         },
         "runtime": {
           "0_Framework.dll": {}
@@ -902,6 +903,14 @@
         },
         "runtime": {
           "CommentManagement.Domain.dll": {}
+        }
+      },
+      "RedisDatabase/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.20"
+        },
+        "runtime": {
+          "RedisDatabase.dll": {}
         }
       },
       "ShopManagement.Application.Contracts/1.0.0": {
@@ -1648,6 +1657,11 @@
       "sha512": ""
     },
     "CommentManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RedisDatabase/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

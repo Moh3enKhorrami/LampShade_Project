@@ -4,10 +4,12 @@ using _01_LampshadeQuery.Contracts;
 using AccountManagement.Configuration;
 using CommentManagement.Configuration;
 using DiscountManagement.Configuration;
+using Emplement.Infrastructure;
 using InventoryMangement.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
+using RedisDatabase.Infrastructure;
 using ServiceHost;
 using ShopManagement.Configuration;
 using StackExchange.Redis;
@@ -46,6 +48,7 @@ AccountManagementBootStrapper.Configure(builder.Services, connectionString);
 builder.Services.AddTransient<IFileUpLoader, FileUpLoader>();
 builder.Services.AddSingleton<IPasswordHasher, PasswordHasher>();
 builder.Services.AddSingleton<IAuthHelper, AuthHelper>();
+builder.Services.AddTransient<IRedisCache, Rediscache>();
 // start CookiePolicyOptions
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {

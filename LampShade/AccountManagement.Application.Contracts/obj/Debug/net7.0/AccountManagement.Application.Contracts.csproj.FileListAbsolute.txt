@@ -14,3 +14,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Application.Contracts/obj/Debug/net7.0/refint/AccountManagement.Application.Contracts.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Application.Contracts/obj/Debug/net7.0/AccountManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Application.Contracts/obj/Debug/net7.0/ref/AccountManagement.Application.Contracts.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Application.Contracts/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/AccountManagement.Application.Contracts/bin/Debug/net7.0/RedisDatabase.pdb

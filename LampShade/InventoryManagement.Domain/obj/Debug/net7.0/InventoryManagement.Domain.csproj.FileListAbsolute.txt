@@ -18,3 +18,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Domain/bin/Debug/net7.0/ShopManagement.Application.Contracts.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Domain/obj/Debug/net7.0/InventoryManagement.Domain.sourcelink.json
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Domain/obj/Debug/net7.0/Inventor.631CB0DA.Up2Date
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Domain/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/InventoryManagement.Domain/bin/Debug/net7.0/RedisDatabase.pdb

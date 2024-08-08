@@ -1,5 +1,6 @@
 using _0_Framework.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using RedisDatabase.Infrastructure;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;
 
@@ -71,5 +72,6 @@ public class ProductRepository : RepositoryBase<long, Product>, IProductReposito
             Id = x.Id,
             Name = x.Name
         }).ToList();
+        
     }
 }

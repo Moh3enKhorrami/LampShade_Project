@@ -10,6 +10,7 @@
       <ProjectReference Include="..\CommentManagement.Infrastructure.EFCore\CommentManagement.Infrastructure.EFCore.csproj" />
       <ProjectReference Include="..\DiscountManagement.Infrastructure.EFCore\DiscountManagement.Infrastructure.EFCore.csproj" />
       <ProjectReference Include="..\InventoryMangement.Infrastructure.EFCorel\InventoryMangement.Infrastructure.EFCorel.csproj" />
+      <ProjectReference Include="..\RedisDatabase\RedisDatabase.csproj" />
       <ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
     </ItemGroup>
 

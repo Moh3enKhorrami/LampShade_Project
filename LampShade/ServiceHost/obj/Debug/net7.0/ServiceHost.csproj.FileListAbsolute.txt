@@ -408,3 +408,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/StackExchange.Redis.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/StackExchange.Redis.Extensions.AspNetCore.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/StackExchange.Redis.Extensions.Core.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/ServiceHost/bin/Debug/net7.0/RedisDatabase.pdb

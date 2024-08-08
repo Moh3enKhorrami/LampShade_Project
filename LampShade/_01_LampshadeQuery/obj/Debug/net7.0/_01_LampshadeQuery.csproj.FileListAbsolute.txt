@@ -38,3 +38,5 @@
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/CommentManagement.Domain.pdb
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/CommentManagement.Infrastructure.EFCore.dll
 /Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/CommentManagement.Infrastructure.EFCore.pdb
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/RedisDatabase.dll
+/Users/moh3enkhorrami/Projects/Atriya/Project_Shop/LampShade/_01_LampshadeQuery/bin/Debug/net7.0/RedisDatabase.pdb

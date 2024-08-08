@@ -26,6 +26,7 @@
     <None Remove="Repository\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RedisDatabase\RedisDatabase.csproj" />
     <ProjectReference Include="..\ShopManagement.Domain\ShopManagement.Domain.csproj" />
   </ItemGroup>
 </Project>
